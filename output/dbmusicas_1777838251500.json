@@ -2,11 +2,11 @@
   "artistas": [
     {
       "id": 1,
-      "nome": "Aron Stwart Little",
+      "nome": "Michael Jackson",
       "servidor": "Local",
-      "genero": "Rock",
-      "cover": "https://artist99.cdn107.com/3c7/3c70bc2e79f555d1051ef699484e6e73_lg.jpg",
-      "descricao": "Herói da sua história",
+      "genero": "Pop, Dance Pop, R&B, Funk, Rock, Dis",
+      "cover": "https://i.scdn.co/image/ab6761610000e5eb997cc9a4aec335d46c9481fd",
+      "descricao": "Michael Joseph Jackson foi um cantor, compositor, dançarino e filantropo estadunidense. Apelidado de \"Rei do Pop\", ele é considerado uma das figuras culturais mais significantes do século XX e um dos maiores artistas da história da música.",
       "albuns": [
         {
           "id": 1,
@@ -36,7 +36,7 @@
           "nome": "Identidade",
           "cover": "https://ia601909.us.archive.org/15/items/an-fr-id/cover.jpg",
           "genero": "Christian Music, Gospel",
-          "servidor": null,
+          "servidor": "internet-archive-leo",
           "ano": "2010",
           "tracks": [
             { "id": 4, "title": "01 - Identidade", "url": "https://ia601909.us.archive.org/15/items/an-fr-id/01%20-%20Identidade.mp3" },
@@ -69,7 +69,7 @@
           "nome": "Com Muito Louvor",
           "cover": "https://ia600401.us.archive.org/20/items/cas-cm-mt-lv/cover.jpg",
           "genero": "Christian Music, Gospel",
-          "servidor": null,
+          "servidor": "internet-archive-leo",
           "ano": "1999",
           "tracks": [
             { "id": 17, "title": "01 - Com Muito Louvor", "url": "https://ia600401.us.archive.org/20/items/cas-cm-mt-lv/01%20-%20Com%20Muito%20Louvor.mp3" },
@@ -103,7 +103,7 @@
           "nome": "Uma História Escrita pelo Dedo de Deus, Vol. 1 (Ao Vivo)",
           "cover": "https://ia903209.us.archive.org/18/items/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/cover.jpg",
           "genero": "Christian Music, Gospel, Groove",
-          "servidor": null,
+          "servidor": "internet-archive-leo",
           "ano": "2013",
           "tracks": [
             { "id": 31, "title": "01 - Escrita pelo Dedo de Deus (Ao Vivo)", "url": "https://ia903209.us.archive.org/18/items/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/01%20-%20Escrita%20pelo%20Dedo%20de%20Deus%20%28Ao%20Vivo%29.mp3" },
@@ -120,18 +120,124 @@
           ]
         }
       ]
+    },
+    {
+      "id": 5,
+      "nome": "Pablo",
+      "servidor": null,
+      "genero": "Arrocha, Brega, Sertanejo, Seresta",
+      "cover": "https://i.scdn.co/image/ab6761610000e5ebcc68f40b150c723cc9e13257",
+      "descricao": "Pablo, nome artístico de Agenor Apolinário dos Santos Neto, é um cantor e compositor baiano amplamente reconhecido como o criador e o maior expoente do arrocha no Brasil. Conhecido pelos títulos de \"Rei da Sofrência\" e \"A Voz Romântica\", ele transformou o gênero em um fenômeno nacional. ",
+      "albuns": [
+        {
+          "id": 6,
+          "nome": "Gênio Da Latinha",
+          "cover": "https://cdn-academy.akamaized.net/sscdn/tb/652x652/palcomp3-discografia/5/7/e/6/b12d9012989a42c1a8a7ccc43d816b77.jpg",
+          "genero": "Arrocha",
+          "servidor": "palco-mp3",
+          "ano": "2020",
+          "tracks": [
+            { "id": 53, "title": "01 - Gênio Da Latinha", "url": "https://palcocdn.akamaized.net/8/a/0/2/pablocantoroficial-genio-da-latinha-65243633.mp3" },
+            { "id": 54, "title": "02 - Voce Maltrata", "url": "https://palcocdn.akamaized.net/b/e/2/0/pablocantoroficial-voce-maltrata-7bcbbb8b.mp3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Ramirez",
+      "servidor": null,
+      "genero": "Pop Punk, Power Pop, Hardcore Melódico",
+      "cover": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/Artista.jpg",
+      "descricao": "A Ramirez foi uma banda de rock brasileira formada no Rio de Janeiro em 2004, que se tornou um dos nomes de destaque da cena independente e do pop rock nacional da década de 2000.",
+      "albuns": [
+        {
+          "id": 5,
+          "nome": "Ramirez",
+          "cover": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/cover.jpg",
+          "genero": "Pop Punk, Rock, Hardcore Melódico",
+          "servidor": "internet-archive-leo",
+          "ano": "2005",
+          "tracks": [
+            { "id": 42, "title": "01 - Alguem Melhor", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/01%20-%20Alguem%20Melhor.mp3" },
+            { "id": 43, "title": "02 - Matriz", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/02%20-%20Matriz.mp3" },
+            { "id": 44, "title": "03 - Menininha", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/03%20-%20Menininha.mp3" },
+            { "id": 45, "title": "04 - Te Esquecer", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/04%20-%20Te%20Esquecer.mp3" },
+            { "id": 46, "title": "05 - Não Fique Assim", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/05%20-%20N%C3%A3o%20Fique%20Assim.mp3" },
+            { "id": 47, "title": "06 - Vem Me Abraçar", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/06%20-%20Vem%20Me%20Abra%C3%A7ar.mp3" },
+            { "id": 48, "title": "07 - Ninguém Vai Mudar Nós Dois", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/07%20-%20Ningu%C3%A9m%20Vai%20Mudar%20N%C3%B3s%20Dois.mp3" },
+            { "id": 49, "title": "08 - Feliz Sem Mim", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/08%20-%20Feliz%20Sem%20Mim.mp3" },
+            { "id": 50, "title": "09 - Deixar Pra Tras", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/09%20-%20Deixar%20Pra%20Tras.mp3" },
+            { "id": 51, "title": "10 - Não Vê", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/10%20-%20N%C3%A3o%20V%C3%AA.mp3" },
+            { "id": 52, "title": "11 - Me diz", "url": "https://ia601908.us.archive.org/2/items/rmrz-rmrz/11%20-%20Me%20diz.mp3" }
+          ]
+        }
+      ]
     }
   ],
   "playlists": [
     {
       "id": 1,
       "nome": "Gospel acústico",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/650x650/palcomp3-playlists/34190710-7dbe-42fd-a016-7af1c9c79eff.jpg",
+      "descricao": "Ouça essa playlist feita pela nossa equipe de especialistas em artistas independentes. Ouça também pelo app, baixe agora!",
+      "artista": "Paulo Felipe, Suzi Martinez, Aldo Assis, Jonas De Souza, Alexandre Roque",
+      "servidor": "palco-mp3",
       "tracks": [
         { "id": 1, "title": "Quem É Esse", "artist": " Paulo Felipe", "url": "https://palcocdn.akamaized.net/2/4/b/b/paulo-felipe-quem-e-esse-5fd4c24f.mp3", "cover": "https://dn711103.ca.archive.org/0/items/rami-rez-1036544-rami-rez/Contracapa.jpg" },
         { "id": 2, "title": "O Céu Te Ouviu", "artist": "Priscila Sotero", "url": "https://palcocdn.akamaized.net/2/9/a/b/priscilasotero-o-ceu-te-ouviu-8a04f4c4.mp3", "cover": "" },
         { "id": 3, "title": "A Cruz Me Pertencia", "artist": "Jonas De Souza", "url": "https://palcocdn.akamaized.net/0/a/1/5/jonassouzaofficial-a-cruz-me-pertencia-804927fd.mp3", "cover": "" },
         { "id": 4, "title": "Minha Poesia", "artist": "Suzi Martinez", "url": "https://palcocdn.akamaized.net/0/9/7/6/Suzi_martinez-minha-poesia-0a9dc622.mp3", "cover": "" },
-        { "id": 5, "title": "Experiências", "artist": "Aldo Assis", "url": "https://palcocdn.akamaized.net/e/b/5/2/Aldo-Assis-aldo-assis-experiencias-6018faf1.mp3", "cover": "" }
+        { "id": 5, "title": "Experiências", "artist": "Aldo Assis", "url": "https://palcocdn.akamaized.net/e/b/5/2/Aldo-Assis-aldo-assis-experiencias-6018faf1.mp3", "cover": "" },
+        { "id": 25, "title": "Nada Irá Me Separar De Ti (Acústico", "artist": "Para Elohim", "url": "https://palcocdn.akamaized.net/b/f/c/6/paraelohim-nada-ira-me-separar-de-ti-acustico-199c02a5.mp3", "cover": "" },
+        { "id": 26, "title": "Aguenta", "artist": "Elton Adriano", "url": "https://palcocdn.akamaized.net/2/e/2/6/eltonadriano-aguenta-2dcf388a.mp3", "cover": "" },
+        { "id": 27, "title": "Você Pode Confiar 2", "artist": "Edypo Araújo", "url": "https://palcocdn.akamaized.net/4/4/6/1/edypo-voce-pode-confiar-2-56a28382.mp3", "cover": "" },
+        { "id": 28, "title": "Boa Noite", "artist": "Alexandre Roque", "url": "https://palcocdn.akamaized.net/5/3/3/2/roquealexandre-boa-noite-b40bd8b6.mp3", "cover": "" }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Chill Anime",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da842495c31017db120b0d29e134",
+      "descricao": "Uma viagem sonora pelas trilhas mais emocionantes e serenas das animações japonesas. Para aqueles momentos de introspecção e paz. ✨🎧",
+      "artista": "HIRAIDAI, Hikaru Utada, Lamp, Fujii Kaze, Masakatsu Takagi",
+      "servidor": "jango",
+      "tracks": [
+        { "id": 6, "title": "F L Y", "artist": "Spectrum", "url": "https://m4a-64.jango.com/17/37/16/1737166636664825911.m4a", "cover": "" },
+        { "id": 7, "title": "Mayonaka no Door / Stay With Me", "artist": "Miki Matsubara", "url": "https://m4a-64.jango.com/62/98/66/629866437871099510.m4a", "cover": "" },
+        { "id": 8, "title": "Lemon", "artist": "Kenshi Yonezu", "url": "https://m4a-64.jango.com/45/10/33/4510339732193775512.m4a", "cover": "" },
+        { "id": 9, "title": "ただ声一つ", "artist": "Rokudenashi", "url": "https://m4a-64.jango.com/30/73/19/3073195313914642630.m4a", "cover": "" },
+        { "id": 10, "title": "Suzume", "artist": "RADWIMPS", "url": "https://m4a-64.jango.com/31/88/19/3188191801918438564.m4a", "cover": "" },
+        { "id": 11, "title": "踊り子", "artist": "Vaundy", "url": "https://m4a-64.jango.com/41/63/84/4163840210755046136.m4a", "cover": "" },
+        { "id": 12, "title": "曲名はまだないです", "artist": "Aogumo", "url": "https://m4a-64.jango.com/16/50/86/1650867126730417225.m4a", "cover": "" },
+        { "id": 13, "title": "きときと", "artist": "Masakatsu Takagi", "url": "https://m4a-64.jango.com/33/73/01/3373010172056152965.m4a", "cover": "" },
+        { "id": 14, "title": "へび", "artist": "Yorushika", "url": "https://m4a-64.jango.com/99/86/60/998660690492239324.m4a", "cover": "" },
+        { "id": 15, "title": "Shinunoga E-Wa", "artist": "Fujii Kaze", "url": "https://m4a-64.jango.com/81/66/57/816657062597226307.m4a", "cover": "" },
+        { "id": 16, "title": "Contrast", "artist": "TOMOO", "url": "https://m4a-64.jango.com/77/17/63/771763308518540938.m4a", "cover": "" },
+        { "id": 17, "title": "幸せな約束。", "artist": "Riria.", "url": "https://m4a-64.jango.com/11/67/38/1167386797336740763.m4a", "cover": "" },
+        { "id": 18, "title": "masshiro (pure white)", "artist": "Fujii Kaze", "url": "https://m4a-64.jango.com/28/22/83/2822835760015855213.m4a", "cover": "" },
+        { "id": 19, "title": "For Lovers", "artist": "Lamp", "url": "https://m4a-64.jango.com/28/13/45/2813453949686615978.m4a", "cover": "" },
+        { "id": 20, "title": "忘れられないの", "artist": "Sakanaction", "url": "https://m4a-64.jango.com/22/76/01/2276019422933343793.m4a", "cover": "" },
+        { "id": 21, "title": "First Love", "artist": "Hikaru Utada", "url": "https://m4a-64.jango.com/16/74/47/1674473122046329786.m4a", "cover": "" },
+        { "id": 22, "title": "幸せのレシピ", "artist": "HIRAIDAI", "url": "https://m4a-64.jango.com/28/52/28/2852287218960432877.m4a", "cover": "" },
+        { "id": 23, "title": "ODDTAXI", "artist": "Skirt&PUNPEE", "url": "https://m4a-64.jango.com/31/82/64/3182649280071883621.m4a", "cover": "" },
+        { "id": 24, "title": "Comedy", "artist": "Gen Hoshino", "url": "https://m4a-64.jango.com/91/36/34/91363447826393699.m4a", "cover": "" }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Rock Nacional Independente",
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da842177a5aae9eb83615cdde5a8",
+      "descricao": "Hey, rockers! Ouça agora nossa playlist Original Palco MP3 com o melhor do gênero.",
+      "artista": "Vários",
+      "servidor": "Local",
+      "tracks": [
+        { "id": 29, "title": "Na Minha Estação", "artist": "Tedros", "url": "https://palcocdn.akamaized.net/a/7/a/4/tedrosoficial-na-minha-estacao-17d88dd0.mp3", "cover": "" },
+        { "id": 30, "title": "Milho Verde", "artist": "Tianastácia", "url": "https://palcocdn.akamaized.net/6/e/4/d/bandatianastacia-milho-verde.mp3", "cover": "" },
+        { "id": 31, "title": "Tarde Livre", "artist": "Selvagens à Procura de Lei", "url": "https://palcocdn.akamaized.net/8/8/c/5/sapdl-selvagens-a-procura-de-lei-tarde-livre-44100hz-16bits-9968b4f9.mp3", "cover": "" },
+        { "id": 32, "title": "Arquipélago", "artist": "Anônimos Anônimos", "url": "https://palcocdn.akamaized.net/7/a/5/8/anonimosanonimos-arquipelago-e8c39a40.mp3", "cover": "" },
+        { "id": 33, "title": "Não custa nada", "artist": "SUPERAUDIO", "url": "https://palcocdn.akamaized.net/b/c/5/f/superaudio-nao-custa-nada.mp3", "cover": "" },
+        { "id": 34, "title": "Outdoor", "artist": "The Pulse Rocking Band", "url": "https://palcocdn.akamaized.net/a/5/e/9/thepulserockingband-02-outdoor.mp3", "cover": "" }
       ]
     }
   ]

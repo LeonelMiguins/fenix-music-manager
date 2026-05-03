@@ -94,6 +94,21 @@
         </div>
     </div>
 
+    <div id="add-music-modal" class="modal" style="display:none;">
+  <div class="modal-content">
+
+    <h3>Adicionar Música</h3>
+
+    <input id="music-name" placeholder="Nome da música">
+    <input id="music-url" placeholder="URL da música">
+    <input id="music-cover" placeholder="Cover (opcional)">
+
+    <button onclick="saveMusic()">Salvar</button>
+    <button onclick="closeAddMusicModal()">Cancelar</button>
+
+  </div>
+</div>
+
 
     <script type="module" src="js/main.js"></script>
 </body>

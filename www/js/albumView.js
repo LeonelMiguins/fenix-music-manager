@@ -6,6 +6,7 @@ let currentAudio = null;
    🔥 LOAD ÁLBUM
 ========================= */
 export async function loadAlbum(id) {
+    localStorage.setItem("CURRENT_ALBUM_ID", id)
     const [resAlbum, resMusicas] = await Promise.all([
         fetch(`/api/albuns/${id}`),
         fetch(`/api/musicas/album/${id}`)
@@ -30,17 +31,17 @@ function renderAlbum(album, musicas) {
             <button class="back-btn" onclick="loadHome()">⬅ Voltar</button>
 
             <div class="album-info">
-
                 <img class="album-cover" src="${album.cover}" />
 
                 <div class="album-text">
                     <h2>${album.nome}</h2>
                     <p>${album.genero || ''}</p>
                     <p>${album.servidor || ''}</p>
+
+                    <!-- 🔥 BOTÃO NOVO -->
+                    <button onclick="openAddMusicModal()">+ Adicionar Música</button>
                 </div>
-
             </div>
-
         </div>
 
         <hr>
