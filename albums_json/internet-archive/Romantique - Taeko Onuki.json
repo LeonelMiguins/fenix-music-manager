@@ -1,0 +1,57 @@
+{
+  "album": "Romantique",
+  "artist": "Taeko Onuki",
+  "related": "",
+  "year": "1980",
+  "genrer": "Synth-Pop, New Wave, City Pop, J-Pop",
+  "cover": "https://ia600409.us.archive.org/33/items/taeko-romantique/Folder.jpg?cnt=0",
+  "server": "internet-archive",
+  "author": "Unknown",
+  "type": "album",
+  "tracks": [
+    {
+      "title": "01. CARNAVAL",
+      "url": "https://archive.org/download/taeko-romantique/01.%20CARNAVAL.mp3"
+    },
+    {
+      "title": "02. ディケイド・ナイト",
+      "url": "https://archive.org/download/taeko-romantique/02.%20%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%89%E3%83%BB%E3%83%8A%E3%82%A4%E3%83%88.mp3"
+    },
+    {
+      "title": "03. 雨の夜明け",
+      "url": "https://archive.org/download/taeko-romantique/03.%20%E9%9B%A8%E3%81%AE%E5%A4%9C%E6%98%8E%E3%81%91.mp3"
+    },
+    {
+      "title": "04. 若き日の望楼",
+      "url": "https://archive.org/download/taeko-romantique/04.%20%E8%8B%A5%E3%81%8D%E6%97%A5%E3%81%AE%E6%9C%9B%E6%A5%BC.mp3"
+    },
+    {
+      "title": "05. BOHEMIAN",
+      "url": "https://archive.org/download/taeko-romantique/05.%20BOHEMIAN.mp3"
+    },
+    {
+      "title": "06. 果てなき旅情",
+      "url": "https://archive.org/download/taeko-romantique/06.%20%E6%9E%9C%E3%81%A6%E3%81%AA%E3%81%8D%E6%97%85%E6%83%85.mp3"
+    },
+    {
+      "title": "07. ふたり",
+      "url": "https://archive.org/download/taeko-romantique/07.%20%E3%81%B5%E3%81%9F%E3%82%8A.mp3"
+    },
+    {
+      "title": "08. 軽蔑",
+      "url": "https://archive.org/download/taeko-romantique/08.%20%E8%BB%BD%E8%94%91.mp3"
+    },
+    {
+      "title": "09. 新しいシャツ",
+      "url": "https://archive.org/download/taeko-romantique/09.%20%E6%96%B0%E3%81%97%E3%81%84%E3%82%B7%E3%83%A3%E3%83%84.mp3"
+    },
+    {
+      "title": "10. 蜃気楼の街",
+      "url": "https://archive.org/download/taeko-romantique/10.%20%E8%9C%83%E6%B0%97%E6%A5%BC%E3%81%AE%E8%A1%97.mp3"
+    },
+    {
+      "title": "11. 愛にすくわれたい",
+      "url": "https://archive.org/download/taeko-romantique/11.%20%E6%84%9B%E3%81%AB%E3%81%99%E3%81%8F%E3%82%8F%E3%82%8C%E3%81%9F%E3%81%84.mp3"
+    }
+  ]
+}

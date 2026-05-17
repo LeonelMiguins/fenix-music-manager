@@ -1,0 +1,53 @@
+{
+  "album": "Cupid",
+  "artist": "Miki Matsubara",
+  "related": "",
+  "year": "1981",
+  "genrer": "Disco, City Pop, Funk, J-Pop",
+  "cover": "https://ia601909.us.archive.org/20/items/miki-cupid/folder.jpg?cnt=0",
+  "server": "internet-archive",
+  "author": "Unknown",
+  "type": "album",
+  "tracks": [
+    {
+      "title": "01. 10カラット・ラブ",
+      "url": "https://archive.org/download/miki-cupid/01.%2010%E3%82%AB%E3%83%A9%E3%83%83%E3%83%88%E3%83%BB%E3%83%A9%E3%83%96.mp3"
+    },
+    {
+      "title": "02. One Way Street",
+      "url": "https://archive.org/download/miki-cupid/02.%20One%20Way%20Street.mp3"
+    },
+    {
+      "title": "03. 青いボールペン",
+      "url": "https://archive.org/download/miki-cupid/03.%20%E9%9D%92%E3%81%84%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9A%E3%83%B3.mp3"
+    },
+    {
+      "title": "04. 私はもどれない",
+      "url": "https://archive.org/download/miki-cupid/04.%20%E7%A7%81%E3%81%AF%E3%82%82%E3%81%A9%E3%82%8C%E3%81%AA%E3%81%84.mp3"
+    },
+    {
+      "title": "05. オアシス",
+      "url": "https://archive.org/download/miki-cupid/05.%20%E3%82%AA%E3%82%A2%E3%82%B7%E3%82%B9.mp3"
+    },
+    {
+      "title": "06. -CUPID-",
+      "url": "https://archive.org/download/miki-cupid/06.%20-CUPID-.mp3"
+    },
+    {
+      "title": "07. ニートな午後3時",
+      "url": "https://archive.org/download/miki-cupid/07.%20%E3%83%8B%E3%83%BC%E3%83%88%E3%81%AA%E5%8D%88%E5%BE%8C3%E6%99%82.mp3"
+    },
+    {
+      "title": "08. スーヴェニール",
+      "url": "https://archive.org/download/miki-cupid/08.%20%E3%82%B9%E3%83%BC%E3%83%B4%E3%82%A7%E3%83%8B%E3%83%BC%E3%83%AB.mp3"
+    },
+    {
+      "title": "09. One Summer Night",
+      "url": "https://archive.org/download/miki-cupid/09.%20One%20Summer%20Night.mp3"
+    },
+    {
+      "title": "10. Dream in the Screen",
+      "url": "https://archive.org/download/miki-cupid/10.%20Dream%20in%20the%20Screen.mp3"
+    }
+  ]
+}

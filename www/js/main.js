@@ -17,7 +17,14 @@ document.getElementById('btn-save-music').addEventListener('click', await saveMu
 document.getElementById( 'btn-close-music-modal').addEventListener('click', closeMusicModal);
 
 // botão para salvar album como json
-document.getElementById('modal-save-album-btn-json').addEventListener('click', saveAlbumAsJson);
+document.getElementById('modal-save-album-btn-json').addEventListener('click', (e) => 
+    { e.preventDefault();saveAlbumAsJson();
+});
+
+document.getElementById('modal-save-album-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    saveAlbum();
+});
 
 // botão de abrir modal do scraper do palco mp3
 document.getElementById('btn-open-palco').addEventListener('click',openPalcoModal);
@@ -47,9 +54,6 @@ document
         searchArchiveAlbum
     );
 
-document
-    .getElementById('modal-save-album-btn')
-    .addEventListener('click', saveAlbum);
 
 document
     .getElementById('btn-import-json')

@@ -1,82 +1,38 @@
 import express from 'express';
 import path from 'path';
-
-import { fileURLToPath }
-from 'url';
-
+import { fileURLToPath }from 'url';
 import db from './routes/database.js';
-
-import exportRoutes
-from './routes/export.js';
-
-import albumRoutes
-from './routes/albums.js';
-
-import {
-    scrapeArchive
-}
-from './scripts/archiveScraper.js';
-
-import {
-    scrapePalco
-}
-from './scripts/palcoScraper.js';
-
+import exportRoutes from './routes/export.js';
+import albumRoutes from './routes/albums.js';
+import { scrapeArchive } from './scripts/archiveScraper.js';
+import { scrapePalco } from './scripts/palcoScraper.js';
 import playlistRoutes from './routes/playlists.js';
 
 
-
 const app = express();
-
-
-
 const PORT = 3000;
 
-// =========================
 // PATHS
-// =========================
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const __filename =
-    fileURLToPath(import.meta.url);
-
-const __dirname =
-    path.dirname(__filename);
-
-// =========================
 // MIDDLEWARES
-// =========================
-
 app.use(express.json());
 
 // arquivos estaticos
-
-app.use(
-    express.static(
-        path.join(__dirname, 'www')
-    )
+app.use( express.static( path.join(__dirname, 'www'))
 );
 
-// =========================
 // ROUTES
-// =========================
 
 // albums
-
-app.use(
-    '/api/albums',
-    albumRoutes
-);
-
+app.use('/api/albums',albumRoutes);
+// playlists
 app.use('/api/playlists', playlistRoutes);
+// export database
+app.use('/api/export',exportRoutes);
 
-app.use(
-    '/api/export',
-    exportRoutes
-);
-
-// =========================
 // SCRAPER ARCHIVE
-// =========================
 
 app.post(
     '/api/scrape/archive',

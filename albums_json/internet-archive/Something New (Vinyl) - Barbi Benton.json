@@ -1,0 +1,57 @@
+{
+  "album": "Something New (Vinyl)",
+  "artist": "Barbi Benton",
+  "related": "",
+  "year": "1976",
+  "genrer": "Rock, Pop, Folk, World, & Country",
+  "cover": "https://ia801004.us.archive.org/10/items/barbi_benton-something_new-vinyl-1976/01.jpeg?cnt=0",
+  "server": "internet-archive",
+  "author": "Hugin1982",
+  "type": "album",
+  "tracks": [
+    {
+      "title": "A1-Something New",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A1-Something%20New.mp3"
+    },
+    {
+      "title": "A2-Needing You",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A2-Needing%20You.mp3"
+    },
+    {
+      "title": "A3-In The Winter",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A3-In%20The%20Winter.mp3"
+    },
+    {
+      "title": "A4-#1 With A Heartache",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A4-%231%20With%20A%20Heartache.mp3"
+    },
+    {
+      "title": "A5-Lucky One",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A5-Lucky%20One.mp3"
+    },
+    {
+      "title": "A6-Riding On A Rainbow",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A6-Riding%20On%20A%20Rainbow.mp3"
+    },
+    {
+      "title": "B1-Staying Power",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/B1-Staying%20Power.mp3"
+    },
+    {
+      "title": "B2-Ride Baby Ride",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/B2-Ride%20Baby%20Ride.mp3"
+    },
+    {
+      "title": "B3-San Diego Serenade",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/B3-San%20Diego%20Serenade.mp3"
+    },
+    {
+      "title": "B4-He's A Rebel",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/B4-He%27s%20A%20Rebel.mp3"
+    },
+    {
+      "title": "B5-Thinking Of You",
+      "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/B5-Thinking%20Of%20You.mp3"
+    }
+  ]
+}

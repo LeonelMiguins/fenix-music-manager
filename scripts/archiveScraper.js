@@ -2,18 +2,39 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import fs from 'fs';
 
+// =========================
+// EXPORT JSON (OPCIONAL)
+// =========================
+
+function saveAlbumJson(albumData) {
+
+    if (!fs.existsSync('./albums_json/')) {
+        fs.mkdirSync('./albums_json/');
+    }
+
+    const safeName = albumData.album
+        .replace(/[<>:"/\\|?*]/g, '');
+
+    fs.writeFileSync(
+        `./albums_json/${safeName}.json`,
+        JSON.stringify(albumData, null, 2)
+    );
+
+    console.log('📁 JSON salvo:', safeName);
+}
+
+// =========================
+// SCRAPER PRINCIPAL
+// =========================
+
 export async function scrapeArchive(url) {
 
     try {
 
-        const itemId =
-            url.split('/details/')[1];
+        const itemId = url.split('/details/')[1];
 
         if (!itemId) {
-
-            throw new Error(
-                'url invalida'
-            );
+            throw new Error('url invalida');
         }
 
         const downloadUrl =
@@ -23,11 +44,8 @@ export async function scrapeArchive(url) {
         // PAGE
         // =========================
 
-        const { data: html } =
-            await axios.get(url);
-
-        const $ =
-            cheerio.load(html);
+        const { data: html } = await axios.get(url);
+        const $ = cheerio.load(html);
 
         // =========================
         // DADOS
@@ -39,10 +57,7 @@ export async function scrapeArchive(url) {
                 .trim();
 
         if (!albumName) {
-
-            throw new Error(
-                'album nao encontrado'
-            );
+            throw new Error('album nao encontrado');
         }
 
         const creator =
@@ -52,105 +67,70 @@ export async function scrapeArchive(url) {
                 .trim();
 
         const cover =
-            $("img.img-responsive")
-                .attr("src");
+            $("img.img-responsive").attr("src");
 
         // =========================
         // DOWNLOAD PAGE
         // =========================
 
-        const {
-            data: downloadHtml
-        } = await axios.get(downloadUrl);
+        const { data: downloadHtml } =
+            await axios.get(downloadUrl);
 
-        const $$ =
-            cheerio.load(downloadHtml);
+        const $$ = cheerio.load(downloadHtml);
 
         const tracks = [];
 
         $$("a").each((i, el) => {
 
-            const href =
-                $$(el).attr("href");
+            const href = $$(el).attr("href");
 
-            if (
-                href &&
-                href.endsWith(".mp3")
-            ) {
+            if (href && href.endsWith(".mp3")) {
 
                 tracks.push({
 
-                    title:
-                        decodeURIComponent(href)
-                            .replace(".mp3", ""),
+                    title: decodeURIComponent(href)
+                        .replace(".mp3", ""),
 
-                    url:
-                        downloadUrl + href
+                    url: downloadUrl + href
                 });
             }
         });
 
         // =========================
-        // JSON
+        // ALBUM DATA FINAL
         // =========================
 
         const albumData = {
 
-            album:
-                albumName,
+            album: albumName,
 
-            artist:
-                "Desconhecido",
+            artist: "Desconhecido",
 
-            server:
-                "internet-archive",
+            server: "internet-archive",
 
-            genrer:
-                "Rock",
+            genrer: "Rock",
 
-            author:
-                creator,
+            author: creator,
 
-            cover:
-                cover.startsWith('http')
-                    ? cover
-                    : 'https://archive.org' + cover,
+            cover: cover?.startsWith('http')
+                ? cover
+                : 'https://archive.org' + cover,
 
             tracks
         };
 
-        // salva json opcional
-
         // =========================
-        // CREATE DOWNLOADS FOLDER
+        // EXPORT JSON (OPCIONAL)
         // =========================
 
-        if (!fs.existsSync('./albums_json/')) {
-
-            fs.mkdirSync('./albums_json/');
-        }
-
-        // =========================
-        // SAVE JSON
-        // =========================
-
-        fs.writeFileSync(
-
-            `./albums_json/${albumName}.json`,
-
-            JSON.stringify(
-                albumData,
-                null,
-                2
-            )
-        );
+        // 👉 DESCOMENTE QUANDO QUISER SALVAR JSON LOCAL
+        // saveAlbumJson(albumData);
 
         return albumData;
 
     } catch (err) {
 
         console.log(err);
-
         return null;
     }
 }

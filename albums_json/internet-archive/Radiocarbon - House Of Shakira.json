@@ -1,0 +1,65 @@
+{
+  "album": "Radiocarbon",
+  "artist": "House Of Shakira",
+  "related": "",
+  "year": "2019",
+  "genrer": " Rock, Hard Rock",
+  "cover": "https://ia601604.us.archive.org/21/items/radiocarbon-raw-wav/R-14512681-1576092043-7073.jpeg.jpg?cnt=0",
+  "server": "internet-archive",
+  "author": "thatoneguyfromthatoneshowv2",
+  "type": "album",
+  "tracks": [
+    {
+      "title": "A1  Herd Instinct",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//A1%20%20Herd%20Instinct.mp3"
+    },
+    {
+      "title": "A2  One Circumstance",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//A2%20%20One%20Circumstance.mp3"
+    },
+    {
+      "title": "A3  Not Alone",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//A3%20%20Not%20Alone.mp3"
+    },
+    {
+      "title": "A4  Radiocarbon",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//A4%20%20Radiocarbon.mp3"
+    },
+    {
+      "title": "A5  A Tyrant's Tale",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//A5%20%20A%20Tyrant%27s%20Tale.mp3"
+    },
+    {
+      "title": "A6  Delusion",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//A6%20%20Delusion.mp3"
+    },
+    {
+      "title": "B1  Save Yourself",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//B1%20%20Save%20Yourself.mp3"
+    },
+    {
+      "title": "B2  Sweet Revenge",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//B2%20%20Sweet%20Revenge.mp3"
+    },
+    {
+      "title": "B3  Scavenger Lizard",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//B3%20%20Scavenger%20Lizard.mp3"
+    },
+    {
+      "title": "B4  Like A Fool",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//B4%20%20Like%20A%20Fool.mp3"
+    },
+    {
+      "title": "B5  Falling Down",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//B5%20%20Falling%20Down.mp3"
+    },
+    {
+      "title": "Radiocarbon Raw FLAC",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//Radiocarbon%20Raw%20FLAC.mp3"
+    },
+    {
+      "title": "Radiocarbon Raw WAV",
+      "url": "https://archive.org/download/radiocarbon-raw-wav//Radiocarbon%20Raw%20WAV.mp3"
+    }
+  ]
+}
