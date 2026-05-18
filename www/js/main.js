@@ -136,3 +136,18 @@ document.addEventListener('click', (event) => {
     }
 
 });
+
+
+document.getElementById( 'backup-database') .addEventListener('click',
+    async () => {
+        try {
+            const response =  await fetch('/api/backup-db', { method: 'POST'});
+                const result = await response.json();
+                console.log(result);
+                alert( 'Backup criado!');
+            } catch (err) {
+                console.log(err);
+                alert( 'Erro ao criar backup');
+            }
+        }
+    );

@@ -1,0 +1,41 @@
+{
+  "album": "Sons Of 1973",
+  "artist": "Satellite Lovers",
+  "related": "5, 3",
+  "year": "1999",
+  "genrer": "City Pop, Indie Pop, Shibuya-kei, Fusion",
+  "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/9/c/9/6/af057b25743f44df811315e2c60d4bb6.jpg",
+  "server": "palco-mp3",
+  "author": "Leo Miguins",
+  "type": "album",
+  "tracks": [
+    {
+      "title": "Best Friend",
+      "url": "https://palcocdn.akamaized.net/a/3/f/8/xcipher-best-friend-6ea11253.mp3"
+    },
+    {
+      "title": "07 Sunshine Love (Lover S Picnic Version)",
+      "url": "https://palcocdn.akamaized.net/1/2/0/a/xcipher-07-sunshine-love-lover-s-picnic-version-248a400e.mp3"
+    },
+    {
+      "title": "外はいい天気",
+      "url": "https://palcocdn.akamaized.net/7/c/0/d/xcipher-music-61c2f-12f42169.mp3"
+    },
+    {
+      "title": "空へ (S.L Meets Hv!)",
+      "url": "https://palcocdn.akamaized.net/1/4/7/9/xcipher-sl-meets-hv-c359c5bd.mp3"
+    },
+    {
+      "title": "Sunnyday, Holiday",
+      "url": "https://palcocdn.akamaized.net/8/4/8/f/xcipher-sunnyday-holiday-6a97f4c5.mp3"
+    },
+    {
+      "title": "How Much I Love You, Baby",
+      "url": "https://palcocdn.akamaized.net/0/7/7/b/xcipher-how-much-i-love-you-baby-a61f7e51.mp3"
+    },
+    {
+      "title": "夏の続き",
+      "url": "https://palcocdn.akamaized.net/c/c/4/f/xcipher-music-f1e04-4a1b875f.mp3"
+    }
+  ]
+}

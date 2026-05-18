@@ -1,0 +1,75 @@
+{
+  "album": "Pablo [Cd Promocional, Dez. 2020 - Gênio Da Latinha]",
+  "artist": "Pablo Cantor",
+  "server": "palco-mp3",
+  "genrer": "Rock",
+  "author": "Leo Miguins",
+  "year": "2020",
+  "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/5/7/e/6/b12d9012989a42c1a8a7ccc43d816b77.jpg",
+  "tracks": [
+    {
+      "title": "Gênio Da Latinha",
+      "url": "https://palcocdn.akamaized.net/8/a/0/2/pablocantoroficial-genio-da-latinha-65243633.mp3"
+    },
+    {
+      "title": "Voce Maltrata",
+      "url": "https://palcocdn.akamaized.net/b/e/2/0/pablocantoroficial-voce-maltrata-7bcbbb8b.mp3"
+    },
+    {
+      "title": "Nem Doeu",
+      "url": "https://palcocdn.akamaized.net/4/d/f/4/pablocantoroficial-nem-doeu-01ab7769.mp3"
+    },
+    {
+      "title": "So Tem Eu",
+      "url": "https://palcocdn.akamaized.net/0/b/4/0/pablocantoroficial-so-tem-eu-b1a6a709.mp3"
+    },
+    {
+      "title": "Como E Que Cancela",
+      "url": "https://palcocdn.akamaized.net/9/b/f/0/pablocantoroficial-como-e-que-cancela-a447a5fb.mp3"
+    },
+    {
+      "title": "Pen Drive de Sofrência",
+      "url": "https://palcocdn.akamaized.net/1/9/f/6/pablocantoroficial-pen-drive-de-sofrencia-f290b560.mp3"
+    },
+    {
+      "title": "Despedida de Casal",
+      "url": "https://palcocdn.akamaized.net/1/9/a/e/pablocantoroficial-despedida-de-casal-93d5964b.mp3"
+    },
+    {
+      "title": "Viva Voz",
+      "url": "https://palcocdn.akamaized.net/8/0/e/b/pablocantoroficial-viva-voz-0ab2fa34.mp3"
+    },
+    {
+      "title": "Bordel Lilas",
+      "url": "https://palcocdn.akamaized.net/e/2/9/0/pablocantoroficial-bordel-lilas-d6a1c281.mp3"
+    },
+    {
+      "title": "Nao Fale Dela",
+      "url": "https://palcocdn.akamaized.net/5/b/4/e/pablocantoroficial-nao-fale-dela-ad9373cf.mp3"
+    },
+    {
+      "title": "Voce Sabe",
+      "url": "https://palcocdn.akamaized.net/2/8/f/b/pablocantoroficial-voce-sabe-19ec0b8e.mp3"
+    },
+    {
+      "title": "Prudente",
+      "url": "https://palcocdn.akamaized.net/6/d/5/7/pablocantoroficial-prudente-1065a1c4.mp3"
+    },
+    {
+      "title": "Mega Sena",
+      "url": "https://palcocdn.akamaized.net/f/3/e/d/pablocantoroficial-mega-sena-ad000b7e.mp3"
+    },
+    {
+      "title": "Pode Fechar A Porta",
+      "url": "https://palcocdn.akamaized.net/4/0/9/8/pablocantoroficial-pode-fechar-a-porta-a046cd81.mp3"
+    },
+    {
+      "title": "Ligacao A Cobrar",
+      "url": "https://palcocdn.akamaized.net/1/8/0/a/pablocantoroficial-ligacao-a-cobrar-ad886f86.mp3"
+    },
+    {
+      "title": "Transbordo",
+      "url": "https://palcocdn.akamaized.net/c/d/4/4/pablocantoroficial-transbordo-4de38eb8.mp3"
+    }
+  ]
+}

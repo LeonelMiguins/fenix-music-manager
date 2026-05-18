@@ -7,6 +7,7 @@ import albumRoutes from './routes/albums.js';
 import { scrapeArchive } from './scripts/archiveScraper.js';
 import { scrapePalco } from './scripts/palcoScraper.js';
 import playlistRoutes from './routes/playlists.js';
+import backupRoutes from './routes/backup.js';
 
 
 const app = express();
@@ -31,6 +32,8 @@ app.use('/api/albums',albumRoutes);
 app.use('/api/playlists', playlistRoutes);
 // export database
 app.use('/api/export',exportRoutes);
+
+app.use('/api/backup-db', backupRoutes);
 
 // SCRAPER ARCHIVE
 
