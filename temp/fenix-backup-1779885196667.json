@@ -1,0 +1,2768 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "type": "album",
+      "album": "Sombras da Guerra",
+      "artist": "Independente",
+      "related": "[1, 25]",
+      "year": "1994",
+      "genrer": "[\"Rock\", \"Metal\", \"Pop\"]",
+      "cover": "https://artist99.cdn107.com/90a/90a1bab4054b8dc7d714d826b79e3006_lg.jpg",
+      "server": "Local",
+      "author": "Leo",
+      "tracks": [
+        {
+          "title": "Chamas Eternas",
+          "artist": "[\"Rock Doido\", \"Jabuticaba Rock\"]",
+          "url": "https://m4a-64.jango.com/43/03/46/4303468333325401379.m4a"
+        },
+        {
+          "title": "Eco das Ruínas",
+          "artist": "macaco reumatico",
+          "url": "https://m4a-64.jango.com/25/94/88/2594883900153723657.m4a"
+        },
+        {
+          "title": "Brilho Noturno",
+          "artist": "jeba mole",
+          "url": "https://m4a-64.jango.com/22/48/20/2248207164423705543.m4a"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "album",
+      "album": "夢がたり",
+      "artist": "Saki Kubota",
+      "related": "3, 5, 8",
+      "year": "1979",
+      "genrer": "Funk, Soul, J-Pop, City Pop",
+      "cover": "https://ia801506.us.archive.org/23/items/raw-wav_202108/R-6463454-1419868324-6926.jpeg.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "thatoneguyfromthatoneshow",
+      "tracks": [
+        {
+          "title": "ギター弾きを見ませんか",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E3%82%AE%E3%82%BF%E3%83%BC%E5%BC%BE%E3%81%8D%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8B.mp3"
+        },
+        {
+          "title": "サラーム",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E3%82%B5%E3%83%A9%E3%83%BC%E3%83%A0.mp3"
+        },
+        {
+          "title": "ナルシス",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E3%83%8A%E3%83%AB%E3%82%B7%E3%82%B9.mp3"
+        },
+        {
+          "title": "プロローグ・・・夢がたり",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E3%83%97%E3%83%AD%E3%83%AD%E3%83%BC%E3%82%B0%E3%83%BB%E3%83%BB%E3%83%BB%E5%A4%A2%E3%81%8C%E3%81%9F%E3%82%8A.mp3"
+        },
+        {
+          "title": "夢がたり Raw FLAC",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E5%A4%A2%E3%81%8C%E3%81%9F%E3%82%8A%20Raw%20FLAC.mp3"
+        },
+        {
+          "title": "夢がたり Raw WAV",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E5%A4%A2%E3%81%8C%E3%81%9F%E3%82%8A%20Raw%20WAV.mp3"
+        },
+        {
+          "title": "夢飛行",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E5%A4%A2%E9%A3%9B%E8%A1%8C.mp3"
+        },
+        {
+          "title": "帰郷",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E5%B8%B0%E9%83%B7.mp3"
+        },
+        {
+          "title": "幻想旅行",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E5%B9%BB%E6%83%B3%E6%97%85%E8%A1%8C.mp3"
+        },
+        {
+          "title": "星空の少年",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E6%98%9F%E7%A9%BA%E3%81%AE%E5%B0%91%E5%B9%B4.mp3"
+        },
+        {
+          "title": "朝",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E6%9C%9D.mp3"
+        },
+        {
+          "title": "異邦人",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E7%95%B0%E9%82%A6%E4%BA%BA.mp3"
+        },
+        {
+          "title": "白夜",
+          "artist": "Saki Kubota",
+          "url": "https://archive.org/download/raw-wav_202108/%E7%99%BD%E5%A4%9C.mp3"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "album",
+      "album": "Cupid",
+      "artist": "Miki Matsubara",
+      "related": "11, 17, ,2",
+      "year": "1981",
+      "genrer": "Disco, City Pop, Funk, J-Pop",
+      "cover": "https://ia601909.us.archive.org/20/items/miki-cupid/folder.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Unknown",
+      "tracks": [
+        {
+          "title": "01. 10カラット・ラブ",
+          "artist": "Miki Matsubara",
+          "url": "https://archive.org/download/miki-cupid/01.%2010%E3%82%AB%E3%83%A9%E3%83%83%E3%83%88%E3%83%BB%E3%83%A9%E3%83%96.mp3"
+        },
+        {
+          "title": "02. One Way Street",
+          "artist": "Miki Matsubara",
+          "url": "https://archive.org/download/miki-cupid/02.%20One%20Way%20Street.mp3"
+        },
+        {
+          "title": "03. 青いボールペン",
+          "artist": "Miki Matsubara",
+          "url": "https://archive.org/download/miki-cupid/03.%20%E9%9D%92%E3%81%84%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%9A%E3%83%B3.mp3"
+        },
+        {
+          "title": "04. 私はもどれない",
+          "artist": "Miki Matsubara",
+          "url": "https://archive.org/download/miki-cupid/04.%20%E7%A7%81%E3%81%AF%E3%82%82%E3%81%A9%E3%82%8C%E3%81%AA%E3%81%84.mp3"
+        },
+        {
+          "title": "05. オアシス",
+          "artist": "Miki Matsubara",
+          "url": "https://archive.org/download/miki-cupid/05.%20%E3%82%AA%E3%82%A2%E3%82%B7%E3%82%B9.mp3"
+        },
+        {
+          "title": "06. -CUPID-",
+          "artist": "Miki Matsubara",
+          "url": "https://archive.org/download/miki-cupid/06.%20-CUPID-.mp3"
+        },
+        {
+          "title": "07. ニートな午後3時",
+          "artist": "Miki Matsubara",
+          "url": "https://archive.org/download/miki-cupid/07.%20%E3%83%8B%E3%83%BC%E3%83%88%E3%81%AA%E5%8D%88%E5%BE%8C3%E6%99%82.mp3"
+        },
+        {
+          "title": "08. スーヴェニール",
+          "artist": "Miki Matsubara",
+          "url": "https://archive.org/download/miki-cupid/08.%20%E3%82%B9%E3%83%BC%E3%83%B4%E3%82%A7%E3%83%8B%E3%83%BC%E3%83%AB.mp3"
+        },
+        {
+          "title": "09. One Summer Night",
+          "artist": "Miki Matsubara",
+          "url": "https://archive.org/download/miki-cupid/09.%20One%20Summer%20Night.mp3"
+        },
+        {
+          "title": "10. Dream in the Screen",
+          "artist": "Miki Matsubara",
+          "url": "https://archive.org/download/miki-cupid/10.%20Dream%20in%20the%20Screen.mp3"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "album",
+      "album": "Something New (Vinyl)",
+      "artist": "Barbi Benton",
+      "related": null,
+      "year": "1976",
+      "genrer": "Rock, Pop, Folk, World, & Country",
+      "cover": "https://ia801004.us.archive.org/10/items/barbi_benton-something_new-vinyl-1976/01.jpeg?cnt=0",
+      "server": "internet-archive",
+      "author": "Hugin1982",
+      "tracks": [
+        {
+          "title": "A1-Something New",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A1-Something%20New.mp3"
+        },
+        {
+          "title": "A2-Needing You",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A2-Needing%20You.mp3"
+        },
+        {
+          "title": "A3-In The Winter",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A3-In%20The%20Winter.mp3"
+        },
+        {
+          "title": "A4-#1 With A Heartache",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A4-%231%20With%20A%20Heartache.mp3"
+        },
+        {
+          "title": "A5-Lucky One",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A5-Lucky%20One.mp3"
+        },
+        {
+          "title": "A6-Riding On A Rainbow",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/A6-Riding%20On%20A%20Rainbow.mp3"
+        },
+        {
+          "title": "B1-Staying Power",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/B1-Staying%20Power.mp3"
+        },
+        {
+          "title": "B2-Ride Baby Ride",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/B2-Ride%20Baby%20Ride.mp3"
+        },
+        {
+          "title": "B3-San Diego Serenade",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/B3-San%20Diego%20Serenade.mp3"
+        },
+        {
+          "title": "B4-He's A Rebel",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/B4-He%27s%20A%20Rebel.mp3"
+        },
+        {
+          "title": "B5-Thinking Of You",
+          "artist": "Barbi Benton",
+          "url": "https://archive.org/download/barbi_benton-something_new-vinyl-1976/B5-Thinking%20Of%20You.mp3"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "album",
+      "album": "Romantique",
+      "artist": "Taeko Onuki",
+      "related": null,
+      "year": "1980",
+      "genrer": "Synth-Pop, New Wave, City Pop, J-Pop",
+      "cover": "https://ia600409.us.archive.org/33/items/taeko-romantique/Folder.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Unknown",
+      "tracks": [
+        {
+          "title": "01. CARNAVAL",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/01.%20CARNAVAL.mp3"
+        },
+        {
+          "title": "02. ディケイド・ナイト",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/02.%20%E3%83%87%E3%82%A3%E3%82%B1%E3%82%A4%E3%83%89%E3%83%BB%E3%83%8A%E3%82%A4%E3%83%88.mp3"
+        },
+        {
+          "title": "03. 雨の夜明け",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/03.%20%E9%9B%A8%E3%81%AE%E5%A4%9C%E6%98%8E%E3%81%91.mp3"
+        },
+        {
+          "title": "04. 若き日の望楼",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/04.%20%E8%8B%A5%E3%81%8D%E6%97%A5%E3%81%AE%E6%9C%9B%E6%A5%BC.mp3"
+        },
+        {
+          "title": "05. BOHEMIAN",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/05.%20BOHEMIAN.mp3"
+        },
+        {
+          "title": "06. 果てなき旅情",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/06.%20%E6%9E%9C%E3%81%A6%E3%81%AA%E3%81%8D%E6%97%85%E6%83%85.mp3"
+        },
+        {
+          "title": "07. ふたり",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/07.%20%E3%81%B5%E3%81%9F%E3%82%8A.mp3"
+        },
+        {
+          "title": "08. 軽蔑",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/08.%20%E8%BB%BD%E8%94%91.mp3"
+        },
+        {
+          "title": "09. 新しいシャツ",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/09.%20%E6%96%B0%E3%81%97%E3%81%84%E3%82%B7%E3%83%A3%E3%83%84.mp3"
+        },
+        {
+          "title": "10. 蜃気楼の街",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/10.%20%E8%9C%83%E6%B0%97%E6%A5%BC%E3%81%AE%E8%A1%97.mp3"
+        },
+        {
+          "title": "11. 愛にすくわれたい",
+          "artist": "Taeko Onuki",
+          "url": "https://archive.org/download/taeko-romantique/11.%20%E6%84%9B%E3%81%AB%E3%81%99%E3%81%8F%E3%82%8F%E3%82%8C%E3%81%9F%E3%81%84.mp3"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "album",
+      "album": "Best I",
+      "artist": "Akina Nakamori ",
+      "related": null,
+      "year": "1986",
+      "genrer": "CityPop, J-Pop",
+      "cover": "https://ia800103.us.archive.org/3/items/akina-best-1/Folder.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Unknown",
+      "tracks": [
+        {
+          "title": "01. Slow Motion",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/01.%20Slow%20Motion.mp3"
+        },
+        {
+          "title": "02. Second Love",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/02.%20Second%20Love.mp3"
+        },
+        {
+          "title": "03. Twilight -Yuuguretayori-",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/03.%20Twilight%20-Yuuguretayori-.mp3"
+        },
+        {
+          "title": "04. Kita Wing",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/04.%20Kita%20Wing.mp3"
+        },
+        {
+          "title": "05. Southern Wind",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/05.%20Southern%20Wind.mp3"
+        },
+        {
+          "title": "06. SAND BEIGE -Sabakuhe-",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/06.%20SAND%20BEIGE%20-Sabakuhe-.mp3"
+        },
+        {
+          "title": "07. SOLITUDE",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/07.%20SOLITUDE.mp3"
+        },
+        {
+          "title": "08. Meu Amor é...",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/08.%20Meu%20Amor%20%C3%A9....mp3"
+        },
+        {
+          "title": "09. Kazarijanainoyo Namidawa",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/09.%20Kazarijanainoyo%20Namidawa.mp3"
+        },
+        {
+          "title": "10. Jukkai (1984)",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/10.%20Jukkai%20%281984%29.mp3"
+        },
+        {
+          "title": "11. Kinku",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/11.%20Kinku.mp3"
+        },
+        {
+          "title": "12. 12 no Shinwa",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/12.%2012%20no%20Shinwa.mp3"
+        },
+        {
+          "title": "13. Shojo A",
+          "artist": "Akina Nakamori ",
+          "url": "https://archive.org/download/akina-best-1/13.%20Shojo%20A.mp3"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "album",
+      "album": "Fascination",
+      "artist": "Asami Kado",
+      "related": null,
+      "year": "1979",
+      "genrer": "Ballad, City Pop, Disco, Funk, Kayōkyoku, Soul",
+      "cover": "https://ia800608.us.archive.org/28/items/asami-kado-fascination/Folder.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Unknown",
+      "tracks": [
+        {
+          "title": "1. Morning Kiss",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-fascination/1.%20Morning%20Kiss.mp3"
+        },
+        {
+          "title": "10. Blue",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-fascination/10.%20Blue.mp3"
+        },
+        {
+          "title": "2. Keep on Loving",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-fascination/2.%20Keep%20on%20Loving.mp3"
+        },
+        {
+          "title": "3. Stop Passing Night",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-fascination/3.%20Stop%20Passing%20Night.mp3"
+        },
+        {
+          "title": "4. South Shore",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-fascination/4.%20South%20Shore.mp3"
+        },
+        {
+          "title": "5. Good Luck",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-fascination/5.%20Good%20Luck.mp3"
+        },
+        {
+          "title": "6. Fascination",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-fascination/6.%20Fascination.mp3"
+        },
+        {
+          "title": "7. Darling",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-fascination/7.%20Darling.mp3"
+        },
+        {
+          "title": "8. Smile for Me",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-fascination/8.%20Smile%20for%20Me.mp3"
+        },
+        {
+          "title": "9. Fancy Evening",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-fascination/9.%20Fancy%20Evening.mp3"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "album",
+      "album": "Semi Nude",
+      "artist": "Asami Kado",
+      "related": null,
+      "year": "1981",
+      "genrer": "J-Pop, City Pop",
+      "cover": "https://ia903208.us.archive.org/20/items/asami-kado-semi-nude/Folder.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Unknown",
+      "tracks": [
+        {
+          "title": "1. Blue Moon",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-semi-nude/1.%20Blue%20Moon.mp3"
+        },
+        {
+          "title": "10. 月下美人",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-semi-nude/10.%20%E6%9C%88%E4%B8%8B%E7%BE%8E%E4%BA%BA.mp3"
+        },
+        {
+          "title": "2. すねてご機嫌",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-semi-nude/2.%20%E3%81%99%E3%81%AD%E3%81%A6%E3%81%94%E6%A9%9F%E5%AB%8C.mp3"
+        },
+        {
+          "title": "3. いちどだけ真似",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-semi-nude/3.%20%E3%81%84%E3%81%A1%E3%81%A9%E3%81%A0%E3%81%91%E7%9C%9F%E4%BC%BC.mp3"
+        },
+        {
+          "title": "4. Nice Middle",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-semi-nude/4.%20Nice%20Middle.mp3"
+        },
+        {
+          "title": "5. 自画像",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-semi-nude/5.%20%E8%87%AA%E7%94%BB%E5%83%8F.mp3"
+        },
+        {
+          "title": "6. お好きにせめて",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-semi-nude/6.%20%E3%81%8A%E5%A5%BD%E3%81%8D%E3%81%AB%E3%81%9B%E3%82%81%E3%81%A6.mp3"
+        },
+        {
+          "title": "7. 色のない構図",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-semi-nude/7.%20%E8%89%B2%E3%81%AE%E3%81%AA%E3%81%84%E6%A7%8B%E5%9B%B3.mp3"
+        },
+        {
+          "title": "8. 気まぐれKitten",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-semi-nude/8.%20%E6%B0%97%E3%81%BE%E3%81%90%E3%82%8CKitten.mp3"
+        },
+        {
+          "title": "9. Season",
+          "artist": "Asami Kado",
+          "url": "https://archive.org/download/asami-kado-semi-nude/9.%20Season.mp3"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "album",
+      "album": "Radiocarbon",
+      "artist": "House Of Shakira",
+      "related": null,
+      "year": "2019",
+      "genrer": "Rock, Hard Rock",
+      "cover": "https://ia601604.us.archive.org/21/items/radiocarbon-raw-wav/R-14512681-1576092043-7073.jpeg.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "thatoneguyfromthatoneshowv2",
+      "tracks": [
+        {
+          "title": "A1  Herd Instinct",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//A1%20%20Herd%20Instinct.mp3"
+        },
+        {
+          "title": "A2  One Circumstance",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//A2%20%20One%20Circumstance.mp3"
+        },
+        {
+          "title": "A3  Not Alone",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//A3%20%20Not%20Alone.mp3"
+        },
+        {
+          "title": "A4  Radiocarbon",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//A4%20%20Radiocarbon.mp3"
+        },
+        {
+          "title": "A5  A Tyrant's Tale",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//A5%20%20A%20Tyrant%27s%20Tale.mp3"
+        },
+        {
+          "title": "A6  Delusion",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//A6%20%20Delusion.mp3"
+        },
+        {
+          "title": "B1  Save Yourself",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//B1%20%20Save%20Yourself.mp3"
+        },
+        {
+          "title": "B2  Sweet Revenge",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//B2%20%20Sweet%20Revenge.mp3"
+        },
+        {
+          "title": "B3  Scavenger Lizard",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//B3%20%20Scavenger%20Lizard.mp3"
+        },
+        {
+          "title": "B4  Like A Fool",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//B4%20%20Like%20A%20Fool.mp3"
+        },
+        {
+          "title": "B5  Falling Down",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//B5%20%20Falling%20Down.mp3"
+        },
+        {
+          "title": "Radiocarbon Raw FLAC",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//Radiocarbon%20Raw%20FLAC.mp3"
+        },
+        {
+          "title": "Radiocarbon Raw WAV",
+          "artist": "House Of Shakira",
+          "url": "https://archive.org/download/radiocarbon-raw-wav//Radiocarbon%20Raw%20WAV.mp3"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "album",
+      "album": "How Do You Feel Now?",
+      "artist": "Joywave",
+      "related": null,
+      "year": "2015",
+      "genrer": "Indie, Indie Pop, Alternative, Alternative Rock",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273f3a8d3033666a6bbafdfa845",
+      "server": "internet-archive",
+      "author": "thatoneguyfromthatoneshow",
+      "tracks": [
+        {
+          "title": "Bad Dreams",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/Bad%20Dreams.mp3"
+        },
+        {
+          "title": "Carry Me",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/Carry%20Me.mp3"
+        },
+        {
+          "title": "Destruction",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/Destruction.mp3"
+        },
+        {
+          "title": "Feels Like A Lie",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/Feels%20Like%20A%20Lie.mp3"
+        },
+        {
+          "title": "In Clover",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/In%20Clover.mp3"
+        },
+        {
+          "title": "Nice House",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/Nice%20House.mp3"
+        },
+        {
+          "title": "Now",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/Now.mp3"
+        },
+        {
+          "title": "Parade",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/Parade.mp3"
+        },
+        {
+          "title": "Somebody New",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/Somebody%20New.mp3"
+        },
+        {
+          "title": "Tongues",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/Tongues.mp3"
+        },
+        {
+          "title": "Traveling At The Speed Of Light",
+          "artist": "Joywave",
+          "url": "https://archive.org/download/traveling-at-the-speed-of-light/Traveling%20At%20The%20Speed%20Of%20Light.mp3"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "album",
+      "album": "Chase - Mami Ayukawa V",
+      "artist": "Mami Ayukawa",
+      "related": "3, 17, 2",
+      "year": "1986",
+      "genrer": "CityPop, J-Pop",
+      "cover": "https://ia800902.us.archive.org/28/items/mami-ayukawa-chase/Folder.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Unknown",
+      "tracks": [
+        {
+          "title": "1 ジンクスは信じない",
+          "artist": "Mami Ayukawa",
+          "url": "https://archive.org/download/mami-ayukawa-chase/1%20%E3%82%B8%E3%83%B3%E3%82%AF%E3%82%B9%E3%81%AF%E4%BF%A1%E3%81%98%E3%81%AA%E3%81%84.mp3"
+        },
+        {
+          "title": "10 エピローグ-DRESS UP THE NIGHT-",
+          "artist": "Mami Ayukawa",
+          "url": "https://archive.org/download/mami-ayukawa-chase/10%20%E3%82%A8%E3%83%94%E3%83%AD%E3%83%BC%E3%82%B0-DRESS%20UP%20THE%20NIGHT-.mp3"
+        },
+        {
+          "title": "2 Wのウィスパー",
+          "artist": "Mami Ayukawa",
+          "url": "https://archive.org/download/mami-ayukawa-chase/2%20W%E3%81%AE%E3%82%A6%E3%82%A3%E3%82%B9%E3%83%91%E3%83%BC.mp3"
+        },
+        {
+          "title": "3 冬のカーニバル",
+          "artist": "Mami Ayukawa",
+          "url": "https://archive.org/download/mami-ayukawa-chase/3%20%E5%86%AC%E3%81%AE%E3%82%AB%E3%83%BC%E3%83%8B%E3%83%90%E3%83%AB.mp3"
+        },
+        {
+          "title": "4 STAR DUST BLUES",
+          "artist": "Mami Ayukawa",
+          "url": "https://archive.org/download/mami-ayukawa-chase/4%20STAR%20DUST%20BLUES.mp3"
+        },
+        {
+          "title": "5 ムーンアヴェニューの影になって",
+          "artist": "Mami Ayukawa",
+          "url": "https://archive.org/download/mami-ayukawa-chase/5%20%E3%83%A0%E3%83%BC%E3%83%B3%E3%82%A2%E3%83%B4%E3%82%A7%E3%83%8B%E3%83%A5%E3%83%BC%E3%81%AE%E5%BD%B1%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6.mp3"
+        },
+        {
+          "title": "6 アクセルON",
+          "artist": "Mami Ayukawa",
+          "url": "https://archive.org/download/mami-ayukawa-chase/6%20%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%ABON.mp3"
+        },
+        {
+          "title": "7 太陽少年",
+          "artist": "Mami Ayukawa",
+          "url": "https://archive.org/download/mami-ayukawa-chase/7%20%E5%A4%AA%E9%99%BD%E5%B0%91%E5%B9%B4.mp3"
+        },
+        {
+          "title": "8 クラクション",
+          "artist": "Mami Ayukawa",
+          "url": "https://archive.org/download/mami-ayukawa-chase/8%20%E3%82%AF%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3.mp3"
+        },
+        {
+          "title": "9 Approach",
+          "artist": "Mami Ayukawa",
+          "url": "https://archive.org/download/mami-ayukawa-chase/9%20Approach.mp3"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "album",
+      "album": "The Obvious I vinyl rip",
+      "artist": "Ed Dowie",
+      "related": null,
+      "year": "2021",
+      "genrer": "Electronic, Minimal, Dance-pop, Experimental, Synth-pop",
+      "cover": "https://ia601900.us.archive.org/30/items/the-obvious-i-raw-wav/R-18031618-1616847284-3684.png.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "thatoneguyfromthatoneshowv2",
+      "tracks": [
+        {
+          "title": "A1 Then Send Them",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/A1%20Then%20Send%20Them.mp3"
+        },
+        {
+          "title": "A2 The Obvious I",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/A2%20The%20Obvious%20I.mp3"
+        },
+        {
+          "title": "A3 Red Stone",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/A3%20Red%20Stone.mp3"
+        },
+        {
+          "title": "A4 How Light I",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/A4%20How%20Light%20I.mp3"
+        },
+        {
+          "title": "A5 Number Eight Wire",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/A5%20Number%20Eight%20Wire.mp3"
+        },
+        {
+          "title": "B1 Under The Waves",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/B1%20Under%20The%20Waves.mp3"
+        },
+        {
+          "title": "B2 Dear Florence",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/B2%20Dear%20Florence.mp3"
+        },
+        {
+          "title": "B3 The Island",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/B3%20The%20Island.mp3"
+        },
+        {
+          "title": "B4 Robot Joy Army",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/B4%20Robot%20Joy%20Army.mp3"
+        },
+        {
+          "title": "The Obvious I Raw FLAC",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/The%20Obvious%20I%20Raw%20FLAC.mp3"
+        },
+        {
+          "title": "The Obvious I Raw WAV",
+          "artist": "Ed Dowie",
+          "url": "https://archive.org/download/the-obvious-i-raw-wav/The%20Obvious%20I%20Raw%20WAV.mp3"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "type": "album",
+      "album": "Live On Yokohama Stadium 1987",
+      "artist": "Michael Jackson",
+      "related": null,
+      "year": "1987",
+      "genrer": "Pop, R&B, Rock, Soul, Dance, Funk, Disco",
+      "cover": "https://ia601000.us.archive.org/14/items/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast/cover.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Ignacio Carrizo664",
+      "tracks": [
+        {
+          "title": "01 - Wanna Be Startin' Somethin' (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//01%20-%20Wanna%20Be%20Startin%27%20Somethin%27%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "02 - Human Nature (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//02%20-%20Human%20Nature%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "03 - Heartbreak Hotel (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//03%20-%20Heartbreak%20Hotel%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "04 - I Want You Back _ The Love You Save _ Can You Feel It (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//04%20-%20I%20Want%20You%20Back%20_%20The%20Love%20You%20Save%20_%20Can%20You%20Feel%20It%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "05 - She's Out Of My Life (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//05%20-%20She%27s%20Out%20Of%20My%20Life%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "06 - Things I Do For You (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//06%20-%20Things%20I%20Do%20For%20You%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "07 - Off The Wall (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//07%20-%20Off%20The%20Wall%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "08 - Rock With You (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//08%20-%20Rock%20With%20You%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "09 - Lovely One (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//09%20-%20Lovely%20One%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "10 - Working Day And Night (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//10%20-%20Working%20Day%20And%20Night%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "11 - Beat It (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//11%20-%20Beat%20It%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "12 - Billie Jean (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//12%20-%20Billie%20Jean%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "13 - Shake You Body _ Don't Stop 'Til You Get Enough _ Shake Your Body (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//13%20-%20Shake%20You%20Body%20_%20Don%27t%20Stop%20%27Til%20You%20Get%20Enough%20_%20Shake%20Your%20Body%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "14 - Thriller (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//14%20-%20Thriller%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "15 - I Just Can't Stop Loving You (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//15%20-%20I%20Just%20Can%27t%20Stop%20Loving%20You%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        },
+        {
+          "title": "16 - Bad (Live 1987 FM Broadcast)",
+          "artist": "Michael Jackson",
+          "url": "https://archive.org/download/13-shake-you-body-dont-stop-til-you-get-enough-shake-your-body-live-1987-fm-broadcast//16%20-%20Bad%20%28Live%201987%20FM%20Broadcast%29.mp3"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "album",
+      "album": "Como não amar - Ao Vivo Belém",
+      "artist": "Calcinha Preta",
+      "related": "16",
+      "year": "2022",
+      "genrer": "Forró, Forró Eletrônico",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/3/a/f/0/55dc66947c544548b47db4fb959f525a.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Abelha Que Virou Anjo",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/d/c/9/0/calcinhapreta-01-abelha-que-virou-anjo-e432a345.mp3"
+        },
+        {
+          "title": "Cobertor - Ao Vivo",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/d/a/2/2/calcinhapreta-03-cobertor-ao-vivo-02abb25c.mp3"
+        },
+        {
+          "title": "A Calcinha É Nossa",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/8/9/5/e/calcinhapreta-02-a-calcinha-e-nossa-fbd90c5a.mp3"
+        },
+        {
+          "title": "Manchete Dos Jornais - Ao Vivo Belém",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/9/7/d/b/calcinhapreta-04-manchete-dos-jornais-a53d0325.mp3"
+        },
+        {
+          "title": "Louca Por Ti",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/3/6/0/d/calcinhapreta-05-louca-por-ti-a8cef4b9.mp3"
+        },
+        {
+          "title": "E O Vento Levou",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/9/0/b/0/calcinhapreta-06-e-o-vento-levou-ef0353b0.mp3"
+        },
+        {
+          "title": "Um Degrau Na Escada",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/6/6/e/7/calcinhapreta-07-um-degrau-na-escada-bbb7f34f.mp3"
+        },
+        {
+          "title": "Sonho Lindo / Vem Me Deixar Louca",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/b/d/4/3/calcinhapreta-08-sonho-lindo-vem-me-deixar-louca-6d7c1384.mp3"
+        },
+        {
+          "title": "Faço Chover - Ao Vivo Belém",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/c/f/3/c/calcinhapreta-09-faco-chover-8f2807b6.mp3"
+        },
+        {
+          "title": "Mágica - Ao Vivo Belém",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/0/6/2/f/calcinhapreta-10-magica-7ae8cb8d.mp3"
+        },
+        {
+          "title": "Te Acho Tão Linda",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/a/b/e/a/calcinhapreta-11-te-acho-tao-linda-c0127244.mp3"
+        },
+        {
+          "title": "Seu Namorado",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/1/8/2/6/calcinhapreta-12-seu-namorado-153b8dda.mp3"
+        },
+        {
+          "title": "Hoje à Noite - Ao Vivo Belém",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/f/6/3/1/calcinhapreta-13-hoje-a-noite-9c531f8d.mp3"
+        },
+        {
+          "title": "Armadilha",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/4/2/d/c/calcinhapreta-14-armadilha-75a1d0ad.mp3"
+        },
+        {
+          "title": "Babydoll",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/d/6/1/7/calcinhapreta-15-babydoll-3e8b0ddf.mp3"
+        },
+        {
+          "title": "Por Amor / O Que É Que Eu Vou Fazer",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/7/c/3/e/calcinhapreta-16-por-amor-o-que-e-que-eu-vou-fazer-686f8936.mp3"
+        },
+        {
+          "title": "Já Me Acostumei - Ao Vivo Belém",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/e/a/3/f/calcinhapreta-17-ja-me-acostumei-dac47000.mp3"
+        },
+        {
+          "title": "Paulinha - Ao Vivo Belém",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/0/1/a/6/calcinhapreta-18-paulinha-f0d8e50e.mp3"
+        },
+        {
+          "title": "Não Me Deixe Agora",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/c/c/5/0/calcinhapreta-19-nao-me-deixe-agora-7b1a134d.mp3"
+        },
+        {
+          "title": "Ainda Te Amo",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/8/f/a/5/calcinhapreta-20-ainda-te-amo-e12e7d8c.mp3"
+        },
+        {
+          "title": "O Navio E O Mar",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/7/0/8/4/calcinhapreta-21-o-navio-e-o-mar-f47c0638.mp3"
+        },
+        {
+          "title": "Liga Pra Mim",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/2/6/1/3/calcinhapreta-22-liga-pra-mim-4458cf5f.mp3"
+        },
+        {
+          "title": "Novo Namorado",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/a/7/a/6/calcinhapreta-23-novo-namorado-337bdc40.mp3"
+        },
+        {
+          "title": "Fica Comigo",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/b/d/0/4/calcinhapreta-24-fica-comigo-f7e17de7.mp3"
+        },
+        {
+          "title": "Furunfa / Te Quero Namorar",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/0/c/c/0/calcinhapreta-25-furunfa-te-quero-namorar-d9de76ab.mp3"
+        },
+        {
+          "title": "Venha Me Amar",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/0/6/7/3/calcinhapreta-26-venha-me-amar-48a8cd07.mp3"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "album",
+      "album": "Gênio Da Latinha",
+      "artist": "Pablo Cantor",
+      "related": null,
+      "year": "2020",
+      "genrer": "Arrocha, Sertanejo, Sofrência, Brega",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/5/7/e/6/b12d9012989a42c1a8a7ccc43d816b77.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Gênio Da Latinha",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/8/a/0/2/pablocantoroficial-genio-da-latinha-65243633.mp3"
+        },
+        {
+          "title": "Voce Maltrata",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/b/e/2/0/pablocantoroficial-voce-maltrata-7bcbbb8b.mp3"
+        },
+        {
+          "title": "Nem Doeu",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/4/d/f/4/pablocantoroficial-nem-doeu-01ab7769.mp3"
+        },
+        {
+          "title": "So Tem Eu",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/0/b/4/0/pablocantoroficial-so-tem-eu-b1a6a709.mp3"
+        },
+        {
+          "title": "Como E Que Cancela",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/9/b/f/0/pablocantoroficial-como-e-que-cancela-a447a5fb.mp3"
+        },
+        {
+          "title": "Pen Drive de Sofrência",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/1/9/f/6/pablocantoroficial-pen-drive-de-sofrencia-f290b560.mp3"
+        },
+        {
+          "title": "Despedida de Casal",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/1/9/a/e/pablocantoroficial-despedida-de-casal-93d5964b.mp3"
+        },
+        {
+          "title": "Viva Voz",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/8/0/e/b/pablocantoroficial-viva-voz-0ab2fa34.mp3"
+        },
+        {
+          "title": "Bordel Lilas",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/e/2/9/0/pablocantoroficial-bordel-lilas-d6a1c281.mp3"
+        },
+        {
+          "title": "Nao Fale Dela",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/5/b/4/e/pablocantoroficial-nao-fale-dela-ad9373cf.mp3"
+        },
+        {
+          "title": "Voce Sabe",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/2/8/f/b/pablocantoroficial-voce-sabe-19ec0b8e.mp3"
+        },
+        {
+          "title": "Prudente",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/6/d/5/7/pablocantoroficial-prudente-1065a1c4.mp3"
+        },
+        {
+          "title": "Mega Sena",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/f/3/e/d/pablocantoroficial-mega-sena-ad000b7e.mp3"
+        },
+        {
+          "title": "Pode Fechar A Porta",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/4/0/9/8/pablocantoroficial-pode-fechar-a-porta-a046cd81.mp3"
+        },
+        {
+          "title": "Ligacao A Cobrar",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/1/8/0/a/pablocantoroficial-ligacao-a-cobrar-ad886f86.mp3"
+        },
+        {
+          "title": "Transbordo",
+          "artist": "Pablo Cantor",
+          "url": "https://palcocdn.akamaized.net/c/d/4/4/pablocantoroficial-transbordo-4de38eb8.mp3"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "type": "album",
+      "album": "Amando Mais Uma Vez",
+      "artist": "Limão Com Mel",
+      "related": "14",
+      "year": "2015",
+      "genrer": "Forró, Forró Romântico, Forró Eletrônico",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/e/2/4/0/74027ec86b054b439eb1d4bf06dd9a78.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Onde Te Encontrarei",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/2/9/f/e/limaocommel-onde-te-encontrarei-32e3b31b.mp3"
+        },
+        {
+          "title": "Não Existe Nada Entre Nós",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/2/0/8/6/limaocommel-nao-existe-nada-entre-nos-e799b4c3.mp3"
+        },
+        {
+          "title": "Sou Feliz Por Ter Você",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/2/a/8/c/limaocommeloficial-sou-feliz-por-ter-voce-403769dd.mp3"
+        },
+        {
+          "title": "Nem Tudo É Pra Sempre",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/4/7/b/5/limaocommel-nem-tudo-e-pra-sempre-e6c65623.mp3"
+        },
+        {
+          "title": "Amando Mais Uma Vez",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/a/4/d/d/limaocommeloficial-amando-mais-uma-vez-9e6735ee.mp3"
+        },
+        {
+          "title": "Se Toca",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/0/a/d/4/limaocommel-se-toca-585ddd7a.mp3"
+        },
+        {
+          "title": "Eu Aceito",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/6/b/d/a/limaocommel-eu-aceito-bd15f970.mp3"
+        },
+        {
+          "title": "Esperança Perdida",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/1/9/e/7/limaocommel-esperanca-perdida-8f7d4d7b.mp3"
+        },
+        {
+          "title": "Por Eu Ter Me Machucado",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/c/2/e/0/limaocommel-por-eu-ter-me-machucado-6f3d835c.mp3"
+        },
+        {
+          "title": "Bate Um Coração",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/4/d/4/8/limaocommel-bate-um-coracao-f864c2e8.mp3"
+        },
+        {
+          "title": "Não Me Procure Mais",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/9/1/8/6/limaocommel-nao-me-procure-mais-d3e02218.mp3"
+        },
+        {
+          "title": "Pense",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/a/5/b/7/limaocommel-pense-73db08d3.mp3"
+        },
+        {
+          "title": "DNA",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/4/2/7/f/limaocommeloficial-11-dna-3b2707ec.mp3"
+        },
+        {
+          "title": "Coração Que Sofre",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/9/5/a/6/limaocommel-coracao-que-sofre-d8aef8e3.mp3"
+        },
+        {
+          "title": "Eu Sei Que Você Lembra",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/0/4/d/f/limaocommel-eu-sei-que-voce-lembra-a076367d.mp3"
+        },
+        {
+          "title": "Coração Despedaçado",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/c/6/b/2/limaocommeloficial-02-coracao-despedacado-ep-f8a686b6.mp3"
+        },
+        {
+          "title": "Um Dia",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/1/3/7/5/limaocommeloficial-01-um-dia-ep-5d0af1d1.mp3"
+        },
+        {
+          "title": "Não Sou de Ferro",
+          "artist": "Limão Com Mel",
+          "url": "https://palcocdn.akamaized.net/a/e/8/b/limaocommeloficial-04-nao-sou-de-ferro-ep-d965ad4f.mp3"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "type": "album",
+      "album": "Sons Of 1973",
+      "artist": "Satellite Lovers",
+      "related": "11, 2, 7, 5",
+      "year": "1999",
+      "genrer": "City Pop, Indie Pop, Shibuya-kei, Fusion",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/9/c/9/6/af057b25743f44df811315e2c60d4bb6.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Best Friend",
+          "artist": "Satellite Lovers",
+          "url": "https://palcocdn.akamaized.net/a/3/f/8/xcipher-best-friend-6ea11253.mp3"
+        },
+        {
+          "title": "07 Sunshine Love (Lover S Picnic Version)",
+          "artist": "Satellite Lovers",
+          "url": "https://palcocdn.akamaized.net/1/2/0/a/xcipher-07-sunshine-love-lover-s-picnic-version-248a400e.mp3"
+        },
+        {
+          "title": "外はいい天気",
+          "artist": "Satellite Lovers",
+          "url": "https://palcocdn.akamaized.net/7/c/0/d/xcipher-music-61c2f-12f42169.mp3"
+        },
+        {
+          "title": "空へ (S.L Meets Hv!)",
+          "artist": "Satellite Lovers",
+          "url": "https://palcocdn.akamaized.net/1/4/7/9/xcipher-sl-meets-hv-c359c5bd.mp3"
+        },
+        {
+          "title": "Sunnyday, Holiday",
+          "artist": "Satellite Lovers",
+          "url": "https://palcocdn.akamaized.net/8/4/8/f/xcipher-sunnyday-holiday-6a97f4c5.mp3"
+        },
+        {
+          "title": "How Much I Love You, Baby",
+          "artist": "Satellite Lovers",
+          "url": "https://palcocdn.akamaized.net/0/7/7/b/xcipher-how-much-i-love-you-baby-a61f7e51.mp3"
+        },
+        {
+          "title": "夏の続き",
+          "artist": "Satellite Lovers",
+          "url": "https://palcocdn.akamaized.net/c/c/4/f/xcipher-music-f1e04-4a1b875f.mp3"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "type": "album",
+      "album": "Disparando o Sucesso! Vol. 02",
+      "artist": "Banda AR-15",
+      "related": null,
+      "year": "2008",
+      "genrer": "Tecno Brega, Tecno Melody",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/7/0/6/f/431dd86fb6934da7b812ae16192a2f7f.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Só Pra Te Amar",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/2/c/6/e/bandaar15oficial-so-pra-te-amar-e7ef1d1e.mp3"
+        },
+        {
+          "title": "Te Quero Demais",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/a/d/a/e/bandaar15oficial-te-quero-demais-ae853be3.mp3"
+        },
+        {
+          "title": "Louca paixão",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/e/a/8/d/bandaar15oficial-louca-paixao-86be35c5.mp3"
+        },
+        {
+          "title": "Amor Pra Recordar",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/d/a/5/c/bandaar15oficial-amor-pra-recordar-3f727a62.mp3"
+        },
+        {
+          "title": "Meu Primeiro Amor",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/9/7/6/1/bandaar15oficial-meu-primeiro-amor-62c7df19.mp3"
+        },
+        {
+          "title": "Amor Pra Toda Vida (Sempre Te Amarei)",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/c/e/4/b/bandaar15oficial-amor-pra-toda-vida-b2454db2.mp3"
+        },
+        {
+          "title": "Dói Demais (Tudo Que Vivemos)",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/6/0/5/d/bandaar15oficial-doi-demais-tudo-que-vivemos-ec637a64.mp3"
+        },
+        {
+          "title": "Entra Em Minha Vida (Harrisson Lemos)",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/2/e/7/3/bandaar15oficial-entra-em-minha-vida-f8e8ac26.mp3"
+        },
+        {
+          "title": "Paixão (part. Bruno & Trio)",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/0/a/5/2/bandaar15oficial-paixao-2072c11c.mp3"
+        },
+        {
+          "title": "Super Pop Faz O S.",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/7/7/c/a/bandaar15oficial-super-pop-faz-o-s-3583fb66.mp3"
+        },
+        {
+          "title": "Ao Som Do Príncipe",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/2/7/c/1/bandaar15oficial-ao-som-do-principe-24e9464d.mp3"
+        },
+        {
+          "title": "As Coelhetes e S. Coelho",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/1/6/2/6/bandaar15oficial-as-coelhetes-e-s-coelho-962ee2be.mp3"
+        },
+        {
+          "title": "Galera Da Moto",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/b/0/3/4/bandaar15oficial-galera-da-moto-905a46b6.mp3"
+        },
+        {
+          "title": "Preciso Te Amar",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/1/c/7/4/bandaar15oficial-preciso-te-amar-6c85d10d.mp3"
+        },
+        {
+          "title": "Jeito De Olhar",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/b/3/8/c/bandaar15oficial-jeito-de-olhar-75b5bb91.mp3"
+        },
+        {
+          "title": "Sofro De Amor",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/c/3/5/b/bandaar15oficial-sofro-de-amor-00ecd146.mp3"
+        },
+        {
+          "title": "Verdadeiro Amor (Harrisson Lemos)",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/0/3/0/8/bandaar15oficial-verdadeiro-amor-80521de1.mp3"
+        },
+        {
+          "title": "Anjo Bom",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/d/d/c/9/bandaar15oficial-anjo-bom-a7cdc5f5.mp3"
+        },
+        {
+          "title": "Eu e o Mar (Harrisson Lemos)",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/1/1/2/5/bandaar15oficial-eu-e-o-mar-4fee43d2.mp3"
+        },
+        {
+          "title": "Remix das Aparelhagens",
+          "artist": "Banda AR-15",
+          "url": "https://palcocdn.akamaized.net/9/0/d/b/bandaar15oficial-remix-das-aparelhagens-ee47a7e7.mp3"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "type": "album",
+      "album": "Aguenta Mais Um Pouquinho",
+      "artist": "Thiagão",
+      "related": null,
+      "year": "2023",
+      "genrer": "Rap, Cristian Rap, Gospel",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/4/7/4/c/41a232ca57ed4278a7848e24172cce2e.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "O Nosso Rap É Depoimento",
+          "artist": "Thiagão",
+          "url": "https://palcocdn.akamaized.net/5/6/e/b/thiagao-gospel-o-nosso-rap-e-depoimento-b1b50c31.mp3"
+        },
+        {
+          "title": "Aprender Com Os Erros Dos Outros É Uma Arte",
+          "artist": "Thiagão",
+          "url": "https://palcocdn.akamaized.net/4/3/0/1/thiagao-gospel-aprender-com-os-erros-dos-outros-e-uma-arte-04c276e2.mp3"
+        },
+        {
+          "title": "A Esperança Não Pode Morrer",
+          "artist": "Thiagão",
+          "url": "https://palcocdn.akamaized.net/f/2/7/d/thiagao-gospel-a-esperanca-nao-pode-morrer-25d8208e.mp3"
+        },
+        {
+          "title": "Preferiram Barrabás",
+          "artist": "Thiagão",
+          "url": "https://palcocdn.akamaized.net/3/a/8/b/thiagao-gospel-preferiram-barrabas-88c29ddd.mp3"
+        },
+        {
+          "title": "Não Se Leva Nada Desse Mundo",
+          "artist": "Thiagão",
+          "url": "https://palcocdn.akamaized.net/d/c/7/a/thiagao-gospel-nao-se-leva-nada-desse-mundo-0a8e7770.mp3"
+        },
+        {
+          "title": "Aguenta Mais Um Pouquinho",
+          "artist": "Thiagão",
+          "url": "https://palcocdn.akamaized.net/d/8/e/d/thiagao-gospel-aguenta-mais-um-pouquinho-3751dcdb.mp3"
+        },
+        {
+          "title": "Carinhas",
+          "artist": "Thiagão",
+          "url": "https://palcocdn.akamaized.net/4/f/e/d/thiagao-gospel-carinhas-b5d5e612.mp3"
+        },
+        {
+          "title": "Alcateia 3",
+          "artist": "Thiagão",
+          "url": "https://palcocdn.akamaized.net/f/5/b/b/thiagao-gospel-alcateia-3-a66acfca.mp3"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "type": "album",
+      "album": "DVD CP 25 Anos - Ao Vivo em Aracaju",
+      "artist": "Calcinha Preta",
+      "related": null,
+      "year": "2020",
+      "genrer": "Forró, Forró Eletrônico",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/6/5/1/0/2204efe8b9b944c5bf75fed600cf7695.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "01 Desilusão",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/0/a/3/a/calcinhapreta-01-desilusao-f8201834.mp3"
+        },
+        {
+          "title": "02 Hoje A Noite",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/4/e/4/7/calcinhapreta-02-hoje-a-noite-c69315e9.mp3"
+        },
+        {
+          "title": "03 Mágica E O Vento Levou",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/d/1/7/2/calcinhapreta-magica-e-o-vento-levou-2558e04d.mp3"
+        },
+        {
+          "title": "04 Agora Estou Sofrendo Ft. Gusttavo Lima",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/2/9/d/7/calcinhapreta-agora-estou-sofrendo-ft-gusttavo-lima-febf1233.mp3"
+        },
+        {
+          "title": "05 Um Degrau Na Escada Ft. Gusttavo Lima",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/3/e/c/c/calcinhapreta-um-degrau-na-escada-ft-gusttavo-lima-9d0fd005.mp3"
+        },
+        {
+          "title": "06 Baby Doll",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/3/f/e/b/calcinhapreta-01-baby-doll-e752f447.mp3"
+        },
+        {
+          "title": "07 Dois Amores, Duas Paixões Manchete Nos Jornais",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/d/3/9/f/calcinhapreta-dois-amores-duas-paixoes-manchete-nos-jornais-67ea395d.mp3"
+        },
+        {
+          "title": "08 Conta De Luz Ft. Wesley Safadão",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/0/f/2/b/calcinhapreta-02-conta-de-luz-ft-wesley-safadao-bf58058b.mp3"
+        },
+        {
+          "title": "09 Como Vou Deixar Você Ft. Wesley Safadão",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/8/d/6/a/calcinhapreta-como-vou-deixar-voce-ft-wesley-safadao-cb0db293.mp3"
+        },
+        {
+          "title": "10 Cobertor Onde O Sonho Mora",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/4/7/c/9/calcinhapreta-cobertor-onde-o-sonho-mora-604eb27c.mp3"
+        },
+        {
+          "title": "11 Por Amor O Que É Que Eu Vou Fazer",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/9/8/0/4/calcinhapreta-por-amor-o-que-e-que-eu-vou-fazer-3960151d.mp3"
+        },
+        {
+          "title": "12 Daniela Ft. Raí Saia Rodada",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/7/a/0/7/calcinhapreta-daniela-ft-rai-saia-rodada-0d53279c.mp3"
+        },
+        {
+          "title": "13 Motel De Br Ft. Wallas Arrais",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/b/6/3/0/calcinhapreta-motel-de-br-ft-wallas-arrais-2624990c.mp3"
+        },
+        {
+          "title": "14 Sonho Lindo Vem Me Deixar Louca",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/0/2/8/1/calcinhapreta-sonho-lindo-vem-me-deixar-louca-e97b8d50.mp3"
+        },
+        {
+          "title": "15 Eu Vim Pra Te Ver Vem Ver A Moçada É Só Filé",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/5/c/3/6/calcinhapreta-eu-vim-pra-te-ver-vem-ver-a-mocada-e-so-file-f5d9e2d0.mp3"
+        },
+        {
+          "title": "16 Não Sei Voar",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/5/e/2/f/calcinhapreta-03-nao-sei-voar-078d38d9.mp3"
+        },
+        {
+          "title": "17 Perdeu Playboy Ft. Márcia Fellipe",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/5/e/c/8/calcinhapreta-perdeu-playboy-ft-marcia-fellipe-04c5483b.mp3"
+        },
+        {
+          "title": "18 Você Não Vale Nada",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/d/6/e/5/calcinhapreta-04-voce-nao-vale-nada-19331909.mp3"
+        },
+        {
+          "title": "19 Balada Prime",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/c/8/9/9/calcinhapreta-balada-prime-d7407088.mp3"
+        },
+        {
+          "title": "20 Tchau Pro Seu Amor Ft. Jottapê",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/f/1/f/5/calcinhapreta-tchau-pro-seu-amor-ft-jottape-c605a980.mp3"
+        },
+        {
+          "title": "21 Excitadinha",
+          "artist": "Calcinha Preta",
+          "url": "https://palcocdn.akamaized.net/e/3/3/9/calcinhapreta-excitadinha-db2d63e5.mp3"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "album",
+      "album": "Híbrido",
+      "artist": "Tribo da Periferia",
+      "related": null,
+      "year": "2021",
+      "genrer": "Hip Hop / Rap",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/1/9/4/9/3987989ce6ee444ea64752c4aa8f367f.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Resiliência",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/a/2/e/f/tribodaperiferia-resiliencia-935480e1.mp3"
+        },
+        {
+          "title": "Fechamento De Sempre",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/9/1/e/1/tribodaperiferia-fechamento-de-sempre-145e77b8.mp3"
+        },
+        {
+          "title": "O Retorno É Lei",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/b/8/6/5/tribodaperiferia-o-retorno-e-lei-050c7c66.mp3"
+        },
+        {
+          "title": "Festival De Nós Dois",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/f/1/6/8/tribodaperiferia-festival-de-nos-dois-1a1ac3e8.mp3"
+        },
+        {
+          "title": "Segunda Noite",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/c/4/5/d/tribodaperiferia-segunda-noite-e9142972.mp3"
+        },
+        {
+          "title": "Rolê Sagrado",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/a/b/8/7/tribodaperiferia-role-sagrado-3fd4af79.mp3"
+        },
+        {
+          "title": "Gelo E Gin",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/3/0/f/8/tribodaperiferia-gelo-e-gin-cac6c4c8.mp3"
+        },
+        {
+          "title": "Dia De Poderoso",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/e/a/d/b/tribodaperiferia-dia-de-poderoso-2c66b3ef.mp3"
+        },
+        {
+          "title": "Tema",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/7/2/1/8/tribodaperiferia-tema-fa7b7590.mp3"
+        },
+        {
+          "title": "Cegonha",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/1/7/d/4/tribodaperiferia-cegonha-tribo-da-periferia-123311a4.mp3"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "type": "album",
+      "album": "4° Último",
+      "artist": "Tribo da Periferia",
+      "related": null,
+      "year": "2016",
+      "genrer": "Hip Hop / Rap",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/a/d/a/6/bbbfd84a764347a38c582b10c579ab22.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Sem Rótulo",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/0/7/2/2/tribodaperiferia-sem-rotulo-3d94d6.mp3"
+        },
+        {
+          "title": "Alma de Pipa",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/0/d/c/f/tribodaperiferia-tribo-da-periferia-alma-de-pipa-a6a0a218.mp3"
+        },
+        {
+          "title": "Matilha",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/d/4/7/1/tribodaperiferia-matilha-00f50d.mp3"
+        },
+        {
+          "title": "Inocente",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/c/c/9/8/tribodaperiferia-inocente-118a67ea.mp3"
+        },
+        {
+          "title": "O Barco e o Quintal",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/e/c/a/2/tribodaperiferia-o-barco-e-o-quintal-1-5dc7e2.mp3"
+        },
+        {
+          "title": "Não Sou Otário",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/a/5/8/9/tribodaperiferia-tribo-da-periferia-nao-sou-otario-cf6add42.mp3"
+        },
+        {
+          "title": "Efeitos do Longe",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/2/0/f/f/tribodaperiferia-tribo-da-periferia-efeitos-do-longe-96a51200.mp3"
+        },
+        {
+          "title": "Carro Velho (part. Son d'Play)",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/d/9/5/6/tribodaperiferia-carro-velho-ec4211d7.mp3"
+        },
+        {
+          "title": "Visão Tá Ouro (part. Belladona)",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/f/3/7/d/tribodaperiferia-tribo-da-periferia-ft-look-belladona-visao-ta-ouro-81abdbbb.mp3"
+        },
+        {
+          "title": "Sha. Lu. Na. (part. 3 Um Só)",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/3/9/f/c/tribodaperiferia-tribo-da-periferia-ft-3-um-so-look-sha-lu-na-a5dddf7a.mp3"
+        },
+        {
+          "title": "Magazine",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/c/a/0/b/tribodaperiferia-magazine-tribo-e3960852.mp3"
+        },
+        {
+          "title": "Espetáculo Gratuito",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/7/1/6/3/tribodaperiferia-espetaculo-gratuito-a8154c25.mp3"
+        },
+        {
+          "title": "Infinito do Espelho",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/e/b/7/c/tribodaperiferia-infinito-do-espelho-b03fc0af.mp3"
+        },
+        {
+          "title": "Dinamite (part. 3 Um Só)",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/7/5/9/3/tribodaperiferia-dinamite-4c014f1b.mp3"
+        },
+        {
+          "title": "A Química Dela (part. Chino)",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/2/a/e/d/tribodaperiferia-a-quimica-dela-cdddd21b.mp3"
+        },
+        {
+          "title": "O Filme",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/b/3/d/7/tribodaperiferia-o-filme-a81f685f.mp3"
+        },
+        {
+          "title": "Aquela Porta",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/7/b/9/2/tribodaperiferia-aquela-porta-e22af294.mp3"
+        },
+        {
+          "title": "O Funil (part. Fidalgo)",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/f/a/0/0/tribodaperiferia-o-funil-9da78896.mp3"
+        },
+        {
+          "title": "A Lua e Nós",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/9/7/b/2/tribodaperiferia-a-lua-e-nos-4dbfda2c.mp3"
+        },
+        {
+          "title": "Dr. Enfermo",
+          "artist": "Tribo da Periferia",
+          "url": "https://palcocdn.akamaized.net/3/e/5/3/tribodaperiferia-tribo-da-periferia-dr-enfermo-96d53212.mp3"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "type": "album",
+      "album": "Selvagens à Procura de Lei",
+      "artist": "Selvagens à Procura de Lei",
+      "related": null,
+      "year": "2013",
+      "genrer": "Rock Alternativo, Pop Rock, Indie Rock",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/8/8/a/9/654557e6c2ad4eeb8c4ba20b0fcb7b80.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Brasileiro",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/2/c/c/6/selvagensaprocuradelei-03-brasileiro-mp3-128kbps-bc032bfb.mp3"
+        },
+        {
+          "title": "Despedida",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/f/0/2/f/selvagensaprocuradelei-05-despedida-mp3-128kbps-cdfe2bb4.mp3"
+        },
+        {
+          "title": "Juventude Solitude",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/f/1/f/f/selvagensaprocuradelei-02-juventude-solitude-mp3-128kbps-fdda5931.mp3"
+        },
+        {
+          "title": "Massarrara",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/f/8/b/3/selvagensaprocuradelei-01-massarrara-mp3-128kbps-86be061c.mp3"
+        },
+        {
+          "title": "Mar Fechado",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/5/5/5/9/selvagensaprocuradelei-08-mar-fechado-mp3-128kbps-252264a4.mp3"
+        },
+        {
+          "title": "Carrossel Em Câmera Lenta",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/8/6/b/1/selvagensaprocuradelei-07-carrossel-em-camera-lenta-mp3-128kbps-f43b5943.mp3"
+        },
+        {
+          "title": "Crescer Dói",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/f/1/8/8/selvagensaprocuradelei-09-crescer-doi-mp3-128kbps-ce6dc1f6.mp3"
+        },
+        {
+          "title": "Enquanto Eu Passar Na Sua Rua",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/a/6/3/d/selvagensaprocuradelei-10-enquanto-eu-passar-na-sua-rua-mp3-128kbps-0719c555.mp3"
+        },
+        {
+          "title": "Música De Amor Número Um",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/2/2/b/6/selvagensaprocuradelei-04-musica-de-amor-numero-um-mp3-128kbps-0eb85402.mp3"
+        },
+        {
+          "title": "O Amor Existe, Mas Não Querem Que Você Acredite",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/8/5/2/5/selvagensaprocuradelei-12-o-amor-existe-mas-nao-querem-que-voce-acredite-mp3-128kbps-66ea7192.mp3"
+        },
+        {
+          "title": "Mucambo Cafundó (2013)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/e/5/f/4/selvagensaprocuradelei-11-mucambo-cafundo-mp3-128kbps-a07d1a27.mp3"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "type": "album",
+      "album": "Ao Vivo na Maloca Dragão",
+      "artist": "Selvagens à Procura de Lei",
+      "related": null,
+      "year": "2019",
+      "genrer": "Rock Alternativo, Pop Rock, Indie Rock",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/e/1/7/e/9f11e196dd0c41ae919e991ecf549c50.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Dois De Fevereiro (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/2/c/3/7/selvagensaprocuradelei-dois-de-fevereiro-ao-vivo-5a66271d.mp3"
+        },
+        {
+          "title": "Massarrara (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/a/d/2/a/selvagensaprocuradelei-massarrara-ao-vivo-d4e4616e.mp3"
+        },
+        {
+          "title": "Amigos Libertinos (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/5/2/2/6/selvagensaprocuradelei-amigos-libertinos-ao-vivo-299e449a.mp3"
+        },
+        {
+          "title": "Juventude Solitude (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/6/5/a/6/selvagensaprocuradelei-juventude-solitude-ao-vivo-9202a0c0.mp3"
+        },
+        {
+          "title": "Enquanto Eu Passar Na Sua Rua (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/e/7/1/f/selvagensaprocuradelei-enquanto-eu-passar-na-sua-rua-ao-vivo-4bdbff27.mp3"
+        },
+        {
+          "title": "Carrossel Em Câmera Lenta (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/5/f/a/1/selvagensaprocuradelei-carrossel-em-camera-lenta-ao-vivo-104220b5.mp3"
+        },
+        {
+          "title": "Lua Branca (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/2/1/6/3/selvagensaprocuradelei-lua-branca-ao-vivo-f2230ce1.mp3"
+        },
+        {
+          "title": "Gostar Só Dela (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/3/4/9/0/selvagensaprocuradelei-gostar-so-dela-ao-vivo-ca3089c7.mp3"
+        },
+        {
+          "title": "Mar Fechado (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/7/4/d/2/selvagensaprocuradelei-mar-fechado-ao-vivo-3fab6570.mp3"
+        },
+        {
+          "title": "Sr. Coronel (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/0/e/a/a/selvagensaprocuradelei-sr-coronel-ao-vivo-b9a16ddb.mp3"
+        },
+        {
+          "title": "Bem Vindo Ao Brasil (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/6/0/4/6/selvagensaprocuradelei-bem-vindo-ao-brasil-ao-vivo-078148ff.mp3"
+        },
+        {
+          "title": "Guetos Urbanos (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/e/6/8/5/selvagensaprocuradelei-guetos-urbanos-ao-vivo-12a7a9cb.mp3"
+        },
+        {
+          "title": "O Que Será O Amanhã (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/3/7/e/f/selvagensaprocuradelei-o-que-sera-o-amanha-ao-vivo-13a964a1.mp3"
+        },
+        {
+          "title": "Jamoga (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/0/4/e/5/selvagensaprocuradelei-jamoga-ao-vivo-614ac91f.mp3"
+        },
+        {
+          "title": "Doce Amargo (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/5/5/0/2/selvagensaprocuradelei-doce-amargo-ao-vivo-fad59fe0.mp3"
+        },
+        {
+          "title": "O Amor É Um Rock 2 (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/0/b/9/c/selvagensaprocuradelei-o-amor-e-um-rock-2-ao-vivo-fee8f362.mp3"
+        },
+        {
+          "title": "Despedida (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/5/1/c/5/selvagensaprocuradelei-despedida-ao-vivo-677cc7fa.mp3"
+        },
+        {
+          "title": "Tarde Livre (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/5/b/a/4/selvagensaprocuradelei-tarde-livre-ao-vivo-d16a64e6.mp3"
+        },
+        {
+          "title": "Brasileiro (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/6/8/e/4/selvagensaprocuradelei-brasileiro-ao-vivo-e069f845.mp3"
+        },
+        {
+          "title": "Mucambo Cafundó (Ao Vivo)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/c/e/5/6/selvagensaprocuradelei-mucambo-cafundo-ao-vivo-a5825edb.mp3"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "type": "album",
+      "album": "Aprendendo a Mentir",
+      "artist": "Selvagens à Procura de Lei",
+      "related": null,
+      "year": "2011",
+      "genrer": "Rock Alternativo, Pop Rock, Indie Rock",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/d/1/2/4/542d1189a2694c94bcb1c0c9af07a972.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Amigos Libertinos",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/6/4/8/8/selvagensaprocuradelei-amigos-libertinos-cf942987.mp3"
+        },
+        {
+          "title": "Adeus É Tudo Que Eu Preciso Ouvir De Você",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/c/9/f/c/selvagensaprocuradelei-adeus-e-tudo-que-eu-preciso-ouvir-de-voce-490521f6.mp3"
+        },
+        {
+          "title": "Casona",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/6/d/4/a/selvagensaprocuradelei-casona-6f471f7b.mp3"
+        },
+        {
+          "title": "Semana Passada",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/a/3/2/d/selvagensaprocuradelei-semana-passada-65d33a90.mp3"
+        },
+        {
+          "title": "Jamoga",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/1/b/d/b/selvagensaprocuradelei-jamoga-610f86d1.mp3"
+        },
+        {
+          "title": "Mais Um Palhaço No Seu Carnaval",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/7/2/1/f/selvagensaprocuradelei-mais-um-palhaco-no-seu-carnaval-a33ad3e9.mp3"
+        },
+        {
+          "title": "Romance Na Cidade Grande",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/8/4/b/e/selvagensaprocuradelei-romance-na-cidade-grande-f226d23d.mp3"
+        },
+        {
+          "title": "Surpresas",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/1/3/2/c/selvagensaprocuradelei-surpresas-bd0ed4da.mp3"
+        },
+        {
+          "title": "Aprendendo A Mentir",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/0/1/a/c/selvagensaprocuradelei-aprendendo-a-mentir-71d77c5f.mp3"
+        },
+        {
+          "title": "Doce/Amargo (2011)",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/b/a/a/6/selvagensaprocuradelei-doceamargo-9013df9e.mp3"
+        },
+        {
+          "title": "Esperando Pelo 051",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/1/3/1/0/selvagensaprocuradelei-esperando-pelo-051-95b93929.mp3"
+        },
+        {
+          "title": "Sobre Meninos Elétricos E Mães Solteiras",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/8/9/6/7/selvagensaprocuradelei-sobre-meninos-eletricos-e-maes-solteiras-b6afeab1.mp3"
+        },
+        {
+          "title": "Mucambo Cafundó",
+          "artist": "Selvagens à Procura de Lei",
+          "url": "https://palcocdn.akamaized.net/f/a/d/1/selvagensaprocuradelei-mucambo-cafundo-9072f025.mp3"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "type": "album",
+      "album": "Baita Astral [EP]",
+      "artist": "Anônimos Anônimos",
+      "related": "23",
+      "year": "2022",
+      "genrer": "Rock Alternativo, Pop Rock, Indie Rock",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/326x326/palcomp3-discografia/6/a/f/6/9a436fbc4f9d40c0a3142b519e65c988.jpg",
+      "server": "palco-mp3",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "Só Se Morre Uma Vez",
+          "artist": "Anônimos Anônimos",
+          "url": "https://palcocdn.akamaized.net/3/3/c/0/anonimosanonimos-so-se-morre-uma-vez-db11eabd.mp3"
+        },
+        {
+          "title": "Esse Cara Não Sou Eu",
+          "artist": "Anônimos Anônimos",
+          "url": "https://palcocdn.akamaized.net/4/6/c/0/anonimosanonimos-esse-cara-nao-sou-eu-47e41561.mp3"
+        },
+        {
+          "title": "Tô Bem Não",
+          "artist": "Anônimos Anônimos",
+          "url": "https://palcocdn.akamaized.net/f/f/e/0/anonimosanonimos-to-bem-nao-b401f202.mp3"
+        },
+        {
+          "title": "Arquipélago",
+          "artist": "Anônimos Anônimos",
+          "url": "https://palcocdn.akamaized.net/7/a/5/8/anonimosanonimos-arquipelago-e8c39a40.mp3"
+        },
+        {
+          "title": "Seja Ridículo, Seja Feliz",
+          "artist": "Anônimos Anônimos",
+          "url": "https://palcocdn.akamaized.net/8/5/a/b/anonimosanonimos-seja-ridiculo-seja-feliz-19259716.mp3"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "type": "album",
+      "album": "A Paz Necessária [EP] ",
+      "artist": "Alessa",
+      "related": null,
+      "year": "2009",
+      "genrer": "Christian Metalcore, Metalcore, Hardcore",
+      "cover": "https://ia801900.us.archive.org/13/items/a-paz-ness-aless/cover.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "A Paz Necessária",
+          "artist": "Alessa",
+          "url": "https://archive.org/download/a-paz-ness-aless//A%20Paz%20Necess%C3%A1ria.mp3"
+        },
+        {
+          "title": "A Queda",
+          "artist": "Alessa",
+          "url": "https://archive.org/download/a-paz-ness-aless//A%20Queda.mp3"
+        },
+        {
+          "title": "Ascenção",
+          "artist": "Alessa",
+          "url": "https://archive.org/download/a-paz-ness-aless//Ascen%C3%A7%C3%A3o.mp3"
+        },
+        {
+          "title": "Quando Ela Viu o Céu",
+          "artist": "Alessa",
+          "url": "https://archive.org/download/a-paz-ness-aless//Quando%20Ela%20Viu%20o%20C%C3%A9u.mp3"
+        },
+        {
+          "title": "Sua Vez",
+          "artist": "Alessa",
+          "url": "https://archive.org/download/a-paz-ness-aless//Sua%20Vez.mp3"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "type": "album",
+      "album": "Uma História Escrita pelo Dedo de Deus, Vol. 1 (Ao Vivo)",
+      "artist": "Thalles Roberto",
+      "related": null,
+      "year": "2013",
+      "genrer": "Christian Music, Gospel, Groove, Pop Rock, Soul",
+      "cover": "https://ia803209.us.archive.org/18/items/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/cover.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "01 - Escrita pelo Dedo de Deus (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/01%20-%20Escrita%20pelo%20Dedo%20de%20Deus%20%28Ao%20Vivo%29.mp3"
+        },
+        {
+          "title": "02 - Deus da Minha Vida (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/02%20-%20Deus%20da%20Minha%20Vida%20%28Ao%20Vivo%29.mp3"
+        },
+        {
+          "title": "03 - Me Faz Viver (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/03%20-%20Me%20Faz%20Viver%20%28Ao%20Vivo%29.mp3"
+        },
+        {
+          "title": "04 - Arde Outra Vez (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/04%20-%20Arde%20Outra%20Vez%20%28Ao%20Vivo%29.mp3"
+        },
+        {
+          "title": "05 - Como É Bom Poder Acordar (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/05%20-%20Como%20%C3%89%20Bom%20Poder%20Acordar%20%28Ao%20Vivo%29.mp3"
+        },
+        {
+          "title": "06 - Eu Amo Vocês 3 (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/06%20-%20Eu%20Amo%20Voc%C3%AAs%203%20%28Ao%20Vivo%29.mp3"
+        },
+        {
+          "title": "07 - Eu Escolho Deus (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/07%20-%20Eu%20Escolho%20Deus%20%28Ao%20Vivo%29.mp3"
+        },
+        {
+          "title": "08 - Mesmo Sem Entender (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/08%20-%20Mesmo%20Sem%20Entender%20%28Ao%20Vivo%29.mp3"
+        },
+        {
+          "title": "09 - Nada Além de Ti (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/09%20-%20Nada%20Al%C3%A9m%20de%20Ti%20%28Ao%20Vivo%29.mp3"
+        },
+        {
+          "title": "10 - Casa do Pai (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/10%20-%20Casa%20do%20Pai%20%28Ao%20Vivo%29.mp3"
+        },
+        {
+          "title": "11 - Oh Meu Irmãozinho (Ao Vivo)",
+          "artist": "Thalles Roberto",
+          "url": "https://archive.org/download/thalles-roberto-uma-historia-escrita-pelo-dedo-de-deus-vol.-1-ao-vivo/11%20-%20Oh%20Meu%20Irm%C3%A3ozinho%20%28Ao%20Vivo%29.mp3"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "type": "album",
+      "album": "Com Muito Louvor",
+      "artist": "Cassiane",
+      "related": null,
+      "year": "1999",
+      "genrer": "Gospel, Cristã Contemporânea",
+      "cover": "https://ia800401.us.archive.org/20/items/cas-cm-mt-lv/cover.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "01 - Com Muito Louvor",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/01%20-%20Com%20Muito%20Louvor.mp3"
+        },
+        {
+          "title": "02 - Festa no Céu",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/02%20-%20Festa%20no%20C%C3%A9u.mp3"
+        },
+        {
+          "title": "03 - Com Cristo é Vencer",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/03%20-%20Com%20Cristo%20%C3%A9%20Vencer.mp3"
+        },
+        {
+          "title": "04 - Basta Uma Palavra",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/04%20-%20Basta%20Uma%20Palavra.mp3"
+        },
+        {
+          "title": "05 - Fogo Santo",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/05%20-%20Fogo%20Santo.mp3"
+        },
+        {
+          "title": "06 - Hino da Vitória",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/06%20-%20Hino%20da%20Vit%C3%B3ria.mp3"
+        },
+        {
+          "title": "07 - Cachoeira de Poder",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/07%20-%20Cachoeira%20de%20Poder.mp3"
+        },
+        {
+          "title": "08 - Santo, Santo",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/08%20-%20Santo%2C%20Santo.mp3"
+        },
+        {
+          "title": "09 - Oferta Agradável a Ti",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/09%20-%20Oferta%20Agrad%C3%A1vel%20a%20Ti.mp3"
+        },
+        {
+          "title": "10 - Forte Campeão",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/10%20-%20Forte%20Campe%C3%A3o.mp3"
+        },
+        {
+          "title": "11 - Como Deus Não Há",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/11%20-%20Como%20Deus%20N%C3%A3o%20H%C3%A1.mp3"
+        },
+        {
+          "title": "12 - Deus Tem Poder",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/12%20-%20Deus%20Tem%20Poder.mp3"
+        },
+        {
+          "title": "13 - O Chamado",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/13%20-%20O%20Chamado.mp3"
+        },
+        {
+          "title": "14 - Tudo Novo",
+          "artist": "Cassiane",
+          "url": "https://archive.org/download/cas-cm-mt-lv/14%20-%20Tudo%20Novo.mp3"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "type": "album",
+      "album": "Identidade",
+      "artist": "Anderson Freire",
+      "related": "29, 28",
+      "year": "2010",
+      "genrer": "Christian Music, Gospel",
+      "cover": "https://ia601909.us.archive.org/15/items/an-fr-id/cover.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "01 - Identidade",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/01%20-%20Identidade.mp3"
+        },
+        {
+          "title": "02 - Coração Valente",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/02%20-%20Cora%C3%A7%C3%A3o%20Valente.mp3"
+        },
+        {
+          "title": "03 - Capacita-me",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/03%20-%20Capacita-me.mp3"
+        },
+        {
+          "title": "04 - Canção do Céu",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/04%20-%20Can%C3%A7%C3%A3o%20do%20C%C3%A9u.mp3"
+        },
+        {
+          "title": "05 - Primeira Essência (Jardim Particular)",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/05%20-%20Primeira%20Ess%C3%AAncia%20%28Jardim%20Particular%29.mp3"
+        },
+        {
+          "title": "06 - Colisão",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/06%20-%20Colis%C3%A3o.mp3"
+        },
+        {
+          "title": "07 - Meu Carpinteiro",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/07%20-%20Meu%20Carpinteiro.mp3"
+        },
+        {
+          "title": "08 - Imperfeito",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/08%20-%20Imperfeito.mp3"
+        },
+        {
+          "title": "09 - Remédio Sobrenatural",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/09%20-%20Rem%C3%A9dio%20Sobrenatural.mp3"
+        },
+        {
+          "title": "10 - A Senha",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/10%20-%20A%20Senha.mp3"
+        },
+        {
+          "title": "11 - Imensidão",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/11%20-%20Imensid%C3%A3o.mp3"
+        },
+        {
+          "title": "12 - Coração de Jó",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/12%20-%20Cora%C3%A7%C3%A3o%20de%20J%C3%B3.mp3"
+        },
+        {
+          "title": "13 - Adorador",
+          "artist": "Anderson Freire",
+          "url": "https://archive.org/download/an-fr-id/13%20-%20Adorador.mp3"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "type": "album",
+      "album": "Kids on the Slope Original Soundtrack Plus more & rare",
+      "artist": "Yoko Kanno",
+      "related": null,
+      "year": "2012",
+      "genrer": "Jazz, Soundtrack, Anime Soundtrack",
+      "cover": "https://ia601506.us.archive.org/18/items/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/Cover.jpg?cnt=0",
+      "server": "internet-archive",
+      "author": "Leo Miguins",
+      "tracks": [
+        {
+          "title": "01. Angel and Rosary",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/01.%20Angel%20and%20Rosary.mp3"
+        },
+        {
+          "title": "02. Sentaro Drum Solo",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/02.%20Sentaro%20Drum%20Solo.mp3"
+        },
+        {
+          "title": "03. Moanin' (copy) (mono mix)",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/03.%20Moanin%27%20%28copy%29%20%28mono%20mix%29.mp3"
+        },
+        {
+          "title": "04. But not for me [Festival Jazz version]",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/04.%20But%20not%20for%20me%20%5BFestival%20Jazz%20version%5D.mp3"
+        },
+        {
+          "title": "05. Slasher than Bop",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/05.%20Slasher%20than%20Bop.mp3"
+        },
+        {
+          "title": "06. Raindrops keep swingin' on my head",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/06.%20Raindrops%20keep%20swingin%27%20on%20my%20head.mp3"
+        },
+        {
+          "title": "07. Skip",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/07.%20Skip.mp3"
+        },
+        {
+          "title": "08. Button2",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/08.%20Button2.mp3"
+        },
+        {
+          "title": "09. Memory",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/09.%20Memory.mp3"
+        },
+        {
+          "title": "10. Hey Boy _featuring Nobuhiko Okamoto as Seiji Matsuoka sings_",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/10.%20Hey%20Boy%20_featuring%20Nobuhiko%20Okamoto%20as%20Seiji%20Matsuoka%20sings_.mp3"
+        },
+        {
+          "title": "11. Bang Bang Bang _featuring Nobuhiko Okamoto as Seiji Matsuoka sings_",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/11.%20Bang%20Bang%20Bang%20_featuring%20Nobuhiko%20Okamoto%20as%20Seiji%20Matsuoka%20sings_.mp3"
+        },
+        {
+          "title": "12. Grande valse brillante",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/12.%20Grande%20valse%20brillante.mp3"
+        },
+        {
+          "title": "13. Slope",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/13.%20Slope.mp3"
+        },
+        {
+          "title": "14. Piano2",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/14.%20Piano2.mp3"
+        },
+        {
+          "title": "15. nichijo3",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/15.%20nichijo3.mp3"
+        },
+        {
+          "title": "16. Moanin' (Organ version) (Kaoru & Sentaro Duo)",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/16.%20Moanin%27%20%28Organ%20version%29%20%28Kaoru%20%26%20Sentaro%20Duo%29.mp3"
+        },
+        {
+          "title": "17. kumori",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/17.%20kumori.mp3"
+        },
+        {
+          "title": "18. Days of Egg",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/18.%20Days%20of%20Egg.mp3"
+        },
+        {
+          "title": "19. nichijo0",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/19.%20nichijo0.mp3"
+        },
+        {
+          "title": "20. Smokey4",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/20.%20Smokey4.mp3"
+        },
+        {
+          "title": "21. Button5",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/21.%20Button5.mp3"
+        },
+        {
+          "title": "22. Blue Egg",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/22.%20Blue%20Egg.mp3"
+        },
+        {
+          "title": "23. YURUKA (DJ Mitsu the Beats re-arrange version)",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/23.%20YURUKA%20%28DJ%20Mitsu%20the%20Beats%20re-arrange%20version%29.mp3"
+        },
+        {
+          "title": "24. Without a word",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/24.%20Without%20a%20word.mp3"
+        },
+        {
+          "title": "25. Ritsuko's rit..",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/25.%20Ritsuko%27s%20rit...mp3"
+        },
+        {
+          "title": "26. Kira Kira Road",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/26.%20Kira%20Kira%20Road.mp3"
+        },
+        {
+          "title": "27. Honey Mustard Waltz",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/27.%20Honey%20Mustard%20Waltz.mp3"
+        },
+        {
+          "title": "28. Piano1",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/28.%20Piano1.mp3"
+        },
+        {
+          "title": "29. Lullaby of Birdland _featuring Aoi Teshima vo. & Masato Honda sax._ (Sax-intro version)",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/29.%20Lullaby%20of%20Birdland%20_featuring%20Aoi%20Teshima%20vo.%20%26%20Masato%20Honda%20sax._%20%28Sax-intro%20version%29.mp3"
+        },
+        {
+          "title": "30. Flutter Jam",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/30.%20Flutter%20Jam.mp3"
+        },
+        {
+          "title": "31. Conflict",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/31.%20Conflict.mp3"
+        },
+        {
+          "title": "32. Baka Session",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/32.%20Baka%20Session.mp3"
+        },
+        {
+          "title": "33. hope",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/33.%20hope.mp3"
+        },
+        {
+          "title": "34. hope",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/34.%20hope.mp3"
+        },
+        {
+          "title": "35. Someday My Prince Will Come (Full version)",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/35.%20Someday%20My%20Prince%20Will%20Come%20%28Full%20version%29.mp3"
+        },
+        {
+          "title": "36. Moanin' (Ending version) (Kaoru & Sentaro Duo)",
+          "artist": "Yoko Kanno",
+          "url": "https://archive.org/download/23.-yuruka-dj-mitsu-the-beats-re-arrange-version/36.%20Moanin%27%20%28Ending%20version%29%20%28Kaoru%20%26%20Sentaro%20Duo%29.mp3"
+        }
+      ]
+    }
+  ],
+  "playlists": [
+    {
+      "id": 1,
+      "type": "playlist",
+      "album": "90's Country",
+      "artist": "Samuel, Nathalia, Judas...",
+      "related": "3",
+      "year": "2026",
+      "genrer": "Rock",
+      "cover": "https://i.scdn.co/image/ab67616d0000b27367d804f8f809ffa088fb3527",
+      "server": "spotify",
+      "author": "Leo",
+      "tracks": [
+        {
+          "title": "Tempted",
+          "artist": "Marty Stuart",
+          "url": "https://m4a-64.jango.com/96/38/04/963804237715107422.m4a"
+        },
+        {
+          "title": "That Don't Impress Me Much",
+          "artist": "Shania Twain",
+          "url": "https://m4a-64.jango.com/03/90/49/0390495855.m4a"
+        },
+        {
+          "title": "T-R-O-U-B-L-E",
+          "artist": "Travis Tritt",
+          "url": "https://m4a-64.jango.com/12/63/91/1263910919059348921.m4a"
+        },
+        {
+          "title": "Down To My Last Teardrop",
+          "artist": "Tanya Tucker",
+          "url": "https://m4a-64.jango.com/20/23/09/2023098775.m4a"
+        },
+        {
+          "title": "She Don't Know She's Beautiful",
+          "artist": "Sammy Kershaw",
+          "url": "https://m4a-64.jango.com/09/26/83/0926838120.m4a"
+        },
+        {
+          "title": "Boot Scootin' Boogie",
+          "artist": "Brooks & Dunn",
+          "url": "https://m4a-64.jango.com/09/84/00/0984004100.m4a"
+        },
+        {
+          "title": "Every Light In The House",
+          "artist": "Trace Adkins",
+          "url": "https://m4a-64.jango.com/16/40/53/1640539571542125416.m4a"
+        },
+        {
+          "title": "Heads Carolina, Tails California",
+          "artist": "Jo Dee Messina",
+          "url": "https://m4a-64.jango.com/05/81/47/0581475361.m4a"
+        },
+        {
+          "title": "Fast as You",
+          "artist": "Dwight Yoakam",
+          "url": "https://m4a-64.jango.com/32/20/94/3220944585606096362.m4a"
+        },
+        {
+          "title": "No News",
+          "artist": "Lonestar",
+          "url": "https://m4a-64.jango.com/09/60/51/0960515769.m4a"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "playlist",
+      "album": "Rap acústico",
+      "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+      "related": "",
+      "year": "2023",
+      "genrer": "Hip Hop , Rap, Rap Acústico",
+      "cover": "https://cdn-academy.akamaized.net/sscdn/tb/650x650/palcomp3-playlists/7d8479d4-559e-42cb-a35a-d2cf1e54da3f.jpg",
+      "server": "palco-mp3",
+      "author": "Equipe Palco Mp3",
+      "tracks": [
+        {
+          "title": "Tudo Pro Ar",
+          "artist": "João Rios",
+          "url": "https://palcocdn.akamaized.net/4/d/5/9/joaorios-tudo-pro-ar-b257f4ba.mp3"
+        },
+        {
+          "title": "Preta",
+          "artist": "Hungria Hip Hop (Feat. João Carlos Martins)",
+          "url": "https://palcocdn.akamaized.net/b/d/9/0/hungriahiphop-preta-feat-joao-carlos-martins-77a8c819.mp3"
+        },
+        {
+          "title": "Ela Me Faz Tão Bem",
+          "artist": "Anderson Haad - (Feat Cris Hagman)",
+          "url": "https://palcocdn.akamaized.net/9/4/5/d/andersonhaad-anderson-haad-cris-hagman-ela-me-faz-tao-bem-437b1bf2.mp3"
+        },
+        {
+          "title": "Amanhã Vai Ser Melhor Que Ontem",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/b/e/4/4/medinnamc-amanha-vai-ser-melhor-que-ontem-544eef44.mp3"
+        },
+        {
+          "title": "Clichê (ft: JMZ)",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/6/0/5/8/eojuaumm-cliche-2902eda1.mp3"
+        },
+        {
+          "title": "Outro Plano",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/d/b/0/e/joaorios-outro-plano-0a371b91.mp3"
+        },
+        {
+          "title": "Maluquin",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/0/1/7/b/pelemilflows-maluquin-2bbac97b.mp3"
+        },
+        {
+          "title": "Lembranças Do Passado",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/2/a/b/e/viny-araujo-lembrancas-do-passado-854aa1cf.mp3"
+        },
+        {
+          "title": "Maloqueira De Jpa  (Prod. Masterpnobeat)",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/8/3/f/2/hugrjoficial-maloqueira-de-jpa-hug-prod-masterpnobeat-e828b5f5.mp3"
+        },
+        {
+          "title": "Reinventar",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/9/e/3/1/raufao-reinventar-4a259cd0.mp3"
+        },
+        {
+          "title": "Las Vegas",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/c/4/b/0/tribodaperiferia-las-vegas-1ac2bb19.mp3"
+        },
+        {
+          "title": "Queixa",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/2/2/5/3/gabriellwhite-queixa-45104559.mp3"
+        },
+        {
+          "title": "Ela é Gata",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/7/2/c/0/luanblack-ela-e-gata-05a1bfdb.mp3"
+        },
+        {
+          "title": "Jesus e Cruz ' Amor e vida",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/6/9/5/c/RBALLASPD-isso-e-amor-829bdd5e.mp3"
+        },
+        {
+          "title": "Nigga Dee -Dois  Em 1 (Versão  Acústica  ) Prod Eliel",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/3/0/a/8/NiggaDee-nigga-dee-dois-em-1-versao-acustica-prod-eliel-e4c6b87d.mp3"
+        },
+        {
+          "title": "Da Boca Dela Ft. Perim",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/3/e/1/3/Floco-floco-da-boca-dela-ft-perim-95c11f65.mp3"
+        },
+        {
+          "title": "Superar",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/c/0/4/3/All-StarBrasilOficial-superar-09472886.mp3"
+        },
+        {
+          "title": "Mo Money Mo Problems",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/5/a/8/3/princeamine-mo-money-mo-problems-710e60e7.mp3"
+        },
+        {
+          "title": "Quem Diria",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/7/a/e/e/brunob6-quem-diria-1a346c89.mp3"
+        },
+        {
+          "title": "Minha Reza - Part. Maria Angélica",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/2/8/a/3/oficialrottweiler-minha-reza-part-maria-angelica-7e25b486.mp3"
+        },
+        {
+          "title": "Filipão - Então Me Leva",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/a/3/c/0/filipaooficial-filipao-entao-me-leva-de3c61ae.mp3"
+        },
+        {
+          "title": "Acústico Feat De Fé #1 - Ago De Souza, Stella Yeshua, Dablyo, Jana Baps - Siga Adiante",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/6/a/f/3/featdefe-acustico-feat-de-fe-1-ago-de-souza-stella-yeshua-dablyo-jana-baps-siga-adiante-f20d1e15.mp3"
+        },
+        {
+          "title": "Se Eu Te Ligar",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/0/a/2/1/koltyrp-se-eu-te-ligar-637f5a5d.mp3"
+        },
+        {
+          "title": "Amizade",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/d/f/4/1/westmc-amizade-5bb9491f.mp3"
+        },
+        {
+          "title": "Amor Largado",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/c/1/0/f/oficialtchello-amor-largado-d0b70af6.mp3"
+        },
+        {
+          "title": "05    a todo vapor",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/5/f/b/6/hectorpriamo-05-a-todo-vapor-8d5d64cc.mp3"
+        },
+        {
+          "title": "Será Que Ela Vai Voltar",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/1/f/1/f/blackspeare-sera-que-ela-vai-voltar-36b93727.mp3"
+        },
+        {
+          "title": "Não Mais",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/1/e/4/8/ronyli-nao-mais-9dc7f173.mp3"
+        },
+        {
+          "title": "Pedro Feat. Fhael",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/c/3/c/2/mannorah-pedro-feat-fhael-8511268c.mp3"
+        },
+        {
+          "title": "Eu Era - Marcos & Belutti (Cover) Prod. Younguil | Acusticokê",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/b/1/d/f/younguiloficial-eu-era-marcos-belutti-cover-prod-younguil-acusticoke-f82e69ed.mp3"
+        },
+        {
+          "title": "2m Ft Lukyx Aonde Nois Chegou",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/1/4/6/a/2MOficial2021-2m-ft-lukyx-aonde-nois-chegou-0432092b.mp3"
+        },
+        {
+          "title": "Apenas Fotos (Part.1)",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/6/7/b/2/hansemc-yhanse-mc-apenas-fotos-parte-1-1156a5dc.mp3"
+        },
+        {
+          "title": "A Palavra - Voz e Violão",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/6/0/7/c/mcrobert-a-palavra-58be1cb7.mp3"
+        },
+        {
+          "title": "07 Coletivo Carambola Feat. Bianca Almeida Eu Não Quero Ver",
+          "artist": "Kolty, Héctor Príamo, Coletivo Carambola, Hanse Mc...",
+          "url": "https://palcocdn.akamaized.net/c/3/1/9/coletivocarambola-07-coletivo-carambola-feat-bianca-almeida-eu-nao-quero-ver-7a9a7115.mp3"
+        }
+      ]
+    }
+  ]
+}

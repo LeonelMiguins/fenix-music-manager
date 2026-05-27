@@ -46,7 +46,7 @@ export async function renderPlaylistPage(playlistId) {
             </span>
 
             <span class="track-title">
-                ${track.titulo || track.title || 'Sem nome'}
+                ${track.titulo || track.title || 'Sem nome'}  - ${track.artista}
             </span>
 
         </div>

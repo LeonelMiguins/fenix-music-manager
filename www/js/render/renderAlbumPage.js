@@ -46,7 +46,7 @@ export async function renderAlbumPage(albumId) {
                 </span>
 
                 <span class="track-title">
-                    ${track.titulo}
+                    ${track.titulo} - ${track.artista}
                 </span>
 
             </div>

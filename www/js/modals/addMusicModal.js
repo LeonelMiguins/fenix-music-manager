@@ -1,3 +1,5 @@
+import { renderPlaylistPage } from '../render/renderPlaylistPage.js';
+
 let CURRENT_TYPE = null;
 let CURRENT_ID = null;
 
@@ -96,8 +98,8 @@ export async function saveMusic() {
 
         closeMusicModal();
 
-        // recarrega tela
-
+        //recarrega a playlis/album mostrando a nova musica adicionada
+        renderPlaylistPage(localStorage.getItem('CURRENT_PLAYLIST_ID'));
         //location.reload();
 
     } catch (err) {
