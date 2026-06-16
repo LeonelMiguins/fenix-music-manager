@@ -5,6 +5,16 @@ import express from 'express';
 
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename =
+    fileURLToPath(import.meta.url);
+
+const __dirname =
+    path.dirname(__filename);
+
+const projectRoot =
+    path.resolve(__dirname, '..');
 
 const router =
     express.Router();
@@ -21,13 +31,17 @@ router.post(
             // =========================
 
             const dbPath =
-                path.resolve(
-                    './db/music.db'
+                path.join(
+                    projectRoot,
+                    'db',
+                    'music.db'
                 );
 
             const backupPath =
-                path.resolve(
-                    './db/music_backup.db'
+                path.join(
+                    projectRoot,
+                    'db',
+                    'music_backup.db'
                 );
 
             // =========================

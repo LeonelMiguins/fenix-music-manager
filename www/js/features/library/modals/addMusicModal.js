@@ -1,4 +1,5 @@
-import { renderPlaylistPage } from '../render/renderPlaylistPage.js';
+import { renderAlbumPage } from '../../albums/pages/renderAlbumPage.js';
+import { renderPlaylistPage } from '../../playlists/pages/renderPlaylistPage.js';
 
 let CURRENT_TYPE = null;
 let CURRENT_ID = null;
@@ -98,9 +99,11 @@ export async function saveMusic() {
 
         closeMusicModal();
 
-        //recarrega a playlis/album mostrando a nova musica adicionada
-        renderPlaylistPage(localStorage.getItem('CURRENT_PLAYLIST_ID'));
-        //location.reload();
+        if (CURRENT_TYPE === 'album') {
+            renderAlbumPage(CURRENT_ID);
+        } else {
+            renderPlaylistPage(CURRENT_ID);
+        }
 
     } catch (err) {
 

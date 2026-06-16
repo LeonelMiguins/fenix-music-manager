@@ -1,7 +1,7 @@
 import {
     openMusicModal
 }
-from '../modals/addMusicModal.js';
+from '../../library/modals/addMusicModal.js';
 
 export async function renderAlbumPage(albumId) {
 

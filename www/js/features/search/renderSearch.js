@@ -1,17 +1,17 @@
 import {
     createAlbumCard
 }
-from '../components/albumCard.js';
+from '../albums/components/albumCard.js';
 
 import {
     renderAlbumPage
 }
-from './renderAlbumPage.js';
+from '../albums/pages/renderAlbumPage.js';
 
 import {
     renderPlaylistPage
 }
-from './renderPlaylistPage.js';
+from '../playlists/pages/renderPlaylistPage.js';
 
 export async function renderSearch(query) {
 

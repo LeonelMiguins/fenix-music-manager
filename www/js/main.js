@@ -1,12 +1,26 @@
-//imports
-import { renderAlbums } from './render/renderAlbums.js';
-import { openAlbumModal, closeAlbumModal, fillAlbumModal, importJsonAlbum, saveAlbum, saveAlbumAsJson} from './modals/modalAlbum.js';
-import { openArchiveModal, closeArchiveModal, searchArchiveAlbum } from './modals/archiveImporter.js';
-import { openPalcoModal,closePalcoModal,searchPalcoAlbum } from './modals/palcoImporter.js';
-import { renderPlaylists } from './render/renderPlaylists.js';
-import { saveMusic, closeMusicModal } from './modals/addMusicModal.js';
-import {exportDatabaseJson } from './managerDb/exportDb.js';
-import { renderSearch} from './render/renderSearch.js';
+import { renderAlbums } from './features/albums/pages/renderAlbums.js';
+import {
+    importJsonAlbum,
+    saveAlbum,
+    saveAlbumAsJson
+} from './features/albums/modals/modalAlbum.js';
+import {
+    openArchiveModal,
+    closeArchiveModal,
+    searchArchiveAlbum
+} from './features/importers/archiveImporter.js';
+import {
+    openPalcoModal,
+    closePalcoModal,
+    searchPalcoAlbum
+} from './features/importers/palcoImporter.js';
+import { renderPlaylists } from './features/playlists/pages/renderPlaylists.js';
+import {
+    saveMusic,
+    closeMusicModal
+} from './features/library/modals/addMusicModal.js';
+import { exportDatabaseJson } from './features/library/actions/exportDatabaseJson.js';
+import { renderSearch } from './features/search/renderSearch.js';
 
 // exporta o banco de dados para arquivo .json
 document .getElementById('export-db-to-json') .addEventListener( 'click',  exportDatabaseJson);

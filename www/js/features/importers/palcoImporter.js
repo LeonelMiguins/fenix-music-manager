@@ -3,27 +3,27 @@ import {
     openAlbumModal,
     fillAlbumModal
 
-} from '../modals/modalAlbum.js';
+} from '../albums/modals/modalAlbum.js';
 
 // =========================
-// OPEN MODAL
+// OPEN
 // =========================
 
-export function openArchiveModal() {
+export function openPalcoModal() {
 
     document
-        .getElementById('modal-archive')
+        .getElementById('modal-palco')
         .classList.remove('hidden');
 }
 
 // =========================
-// CLOSE MODAL
+// CLOSE
 // =========================
 
-export function closeArchiveModal() {
+export function closePalcoModal() {
 
     document
-        .getElementById('modal-archive')
+        .getElementById('modal-palco')
         .classList.add('hidden');
 }
 
@@ -31,28 +31,29 @@ export function closeArchiveModal() {
 // SEARCH
 // =========================
 
-export async function searchArchiveAlbum() {
+export async function searchPalcoAlbum() {
 
     const error =
         document.getElementById(
-            'archive-error'
+            'palco-error'
         );
 
     error.textContent = '';
 
     const url =
         document.getElementById(
-            'archive-url'
+            'palco-url'
         ).value;
 
     const response =
         await fetch(
-            '/api/scrape/archive',
+            '/api/scrape/palco',
             {
 
                 method: 'POST',
 
                 headers: {
+
                     'Content-Type':
                         'application/json'
                 },
@@ -67,7 +68,7 @@ export async function searchArchiveAlbum() {
         await response.json();
 
     // =========================
-    // ERRO
+    // ERROR
     // =========================
 
     if (!data.success) {
@@ -75,14 +76,17 @@ export async function searchArchiveAlbum() {
         error.textContent =
             'Álbum não encontrado';
 
+        error.style.color =
+            'red';
+
         return;
     }
 
     // =========================
-    // SUCESSO
+    // SUCCESS
     // =========================
 
-    closeArchiveModal();
+    closePalcoModal();
 
     openAlbumModal();
 

@@ -1,14 +1,14 @@
 import {
-    createAlbumCard
+    createPlaylistCard
 }
-from '../components/albumCard.js';
+from '../components/playlistCard.js';
 
 import {
-    renderAlbumPage
+    renderPlaylistPage
 }
-from './renderAlbumPage.js';
+from './renderPlaylistPage.js';
 
-export async function renderAlbums() {
+export async function renderPlaylists() {
 
     const main =
         document.getElementById(
@@ -17,14 +17,14 @@ export async function renderAlbums() {
 
     main.innerHTML = `
         <div class="loading">
-            Carregando albums...
+            Carregando playlists...
         </div>
     `;
 
     const response =
-        await fetch('/api/albums');
+        await fetch('/api/playlists');
 
-    const albums =
+    const playlists =
         await response.json();
 
     main.innerHTML = '';
@@ -35,10 +35,12 @@ export async function renderAlbums() {
     grid.className =
         'albums-grid';
 
-    albums.forEach(album => {
+    playlists.forEach(playlist => {
 
         const card =
-            createAlbumCard(album);
+            createPlaylistCard(
+                playlist
+            );
 
         // =========================
         // CLICK
@@ -46,10 +48,13 @@ export async function renderAlbums() {
 
         card.addEventListener('click', () => {
 
-            // salva o id do album atual no localstorage
-            localStorage.setItem('CURRENT_ALBUM_ID', album.id)
-            renderAlbumPage(
-                album.id
+            localStorage.setItem(
+                'CURRENT_PLAYLIST_ID',
+                playlist.id
+            );
+
+            renderPlaylistPage(
+                playlist.id
             );
 
         });
@@ -59,4 +64,5 @@ export async function renderAlbums() {
     });
 
     main.appendChild(grid);
+
 }

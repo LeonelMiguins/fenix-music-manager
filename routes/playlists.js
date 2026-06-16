@@ -1,5 +1,10 @@
 import express from 'express';
-import db from './database.js';
+import {
+    addMusicToPlaylist,
+    getPlaylistById,
+    getPlaylists,
+    removePlaylist
+} from '../services/playlistService.js';
 
 const router = express.Router();
 
@@ -7,168 +12,69 @@ const router = express.Router();
 // GET PLAYLISTS
 // =========================
 
-router.get('/', (req, res) => {
-
-    db.all(`
-        SELECT *
-        FROM playlists
-        ORDER BY id DESC
-    `, [], (err, rows) => {
-
-        if (err) {
-
-            console.log(err);
-
-            return res.status(500).json({
-                error: err.message
-            });
-        }
-
-        res.json(rows);
-
-    });
-
+router.get('/', async (req, res) => {
+    try {
+        const playlists = await getPlaylists();
+        res.json(playlists);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // =========================
 // DELETE PLAYLIST
 // =========================
 
-router.delete('/:id', (req, res) => {
-
-    const playlistId =
-        req.params.id;
-
-    db.run(`
-        DELETE FROM playlists
-        WHERE id = ?
-    `, [playlistId], function (err) {
-
-        if (err) {
-
-            console.log(err);
-
-            return res.status(500).json({
-                error: err.message
-            });
-        }
+router.delete('/:id', async (req, res) => {
+    try {
+        await removePlaylist(req.params.id);
 
         res.json({
             success: true
         });
-
-    });
-
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // =========================
 // ADD MUSIC PLAYLIST
 // =========================
 
-router.post('/:id/music', (req, res) => {
-
-    const playlistId =
-        req.params.id;
-
-    const music =
-        req.body;
-
-    db.run(`
-        INSERT INTO playlists_musicas (
-
-            playlist_id,
-            titulo,
-            artista,
-            url,
-            cover
-
-        )
-        VALUES (?, ?, ?, ?, ?)
-    `, [
-
-        playlistId,
-        music.title,
-        music.artist,
-        music.url,
-        music.cover
-
-    ], function (err) {
-
-        if (err) {
-
-            console.log(err);
-
-            return res.status(500).json({
-                error: err.message
-            });
-        }
+router.post('/:id/music', async (req, res) => {
+    try {
+        await addMusicToPlaylist(req.params.id, req.body);
 
         res.json({
             success: true
         });
-
-    });
-
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // =========================
 // GET PLAYLIST BY ID
 // =========================
 
-router.get('/:id', (req, res) => {
-
-    const playlistId =
-        req.params.id;
-
-    db.get(`
-        SELECT *
-        FROM playlists
-        WHERE id = ?
-    `, [playlistId], (err, playlist) => {
-
-        if (err) {
-
-            console.log(err);
-
-            return res.status(500).json({
-                error: err.message
-            });
-        }
+router.get('/:id', async (req, res) => {
+    try {
+        const playlist = await getPlaylistById(req.params.id);
 
         if (!playlist) {
-
             return res.status(404).json({
                 error: 'playlist nao encontrada'
             });
         }
 
-        // =========================
-        // MUSICAS
-        // =========================
-
-        db.all(`
-            SELECT *
-            FROM playlists_musicas
-            WHERE playlist_id = ?
-        `, [playlistId], (err, tracks) => {
-
-            if (err) {
-
-                console.log(err);
-
-                return res.status(500).json({
-                    error: err.message
-                });
-            }
-
-            playlist.tracks = tracks;
-
-            res.json(playlist);
-
-        });
-
-    });
-
+        res.json(playlist);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 

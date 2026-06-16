@@ -1,11 +1,13 @@
 import express from 'express';
-import db from './database.js';
 
 import {
-    getAlbums,
     addAlbum,
+    addMusicToAlbum,
+    getAlbumById,
+    getAlbums,
     deleteAlbum
-} from '../services/albumservices.js';
+} from '../services/albumServices.js';
+import { createPlaylist } from '../services/playlistService.js';
 
 const router = express.Router();
 
@@ -14,8 +16,13 @@ const router = express.Router();
 // =========================
 
 router.get('/', async (req, res) => {
-    const albums = await getAlbums();
-    res.json(albums);
+    try {
+        const albums = await getAlbums();
+        res.json(albums);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // =========================
@@ -23,151 +30,28 @@ router.get('/', async (req, res) => {
 // =========================
 
 router.post('/', async (req, res) => {
+    try {
+        const album = req.body;
 
-    const album = req.body;
+        if (album.type === 'playlist') {
+            const playlistId = await createPlaylist(album);
 
-    // =========================
-    // PLAYLIST
-    // =========================
-
-    if (album.type === 'playlist') {
-
-        db.run(`
-            INSERT INTO playlists (
-                artista_nome,
-                artista_relacionado,
-                titulo,
-                ano,
-                genero,
-                cover,
-                servidor,
-                autor
-            )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-        `, [
-            album.artist,
-            album.related,
-            album.album,
-            album.year,
-            album.genrer,
-            album.cover,
-            album.server,
-            album.author
-        ], function (err) {
-
-            if (err) {
-                console.error(err);
-                return res.status(500).json({ error: err.message });
-            }
-
-            const playlistId = this.lastID;
-
-            if (!album.tracks || album.tracks.length === 0) {
-                return res.json({
-                    success: true,
-                    playlistId
-                });
-            }
-
-            const stmt = db.prepare(`
-                INSERT INTO playlists_musicas (
-                    playlist_id,
-                    titulo,
-                    artista,
-                    url,
-                    cover
-                )
-                VALUES (?, ?, ?, ?, ?)
-            `);
-
-            album.tracks.forEach(track => {
-                stmt.run([
-                    playlistId,
-                    track.title,
-                    album.artist,
-                    track.url,
-                    album.cover
-                ]);
-            });
-
-            stmt.finalize();
-
-            res.json({
+            return res.json({
                 success: true,
                 playlistId
             });
-
-        });
-
-        return;
-    }
-
-    // =========================
-    // ÁLBUM NORMAL
-    // =========================
-
-    db.run(`
-        INSERT INTO albums (
-            artista_nome,
-            titulo,
-            ano,
-            genero,
-            cover,
-            servidor,
-            autor
-        )
-        VALUES (?, ?, ?, ?, ?, ?, ?)
-    `, [
-        album.artist,
-        album.album,
-        album.year,
-        album.genrer,
-        album.cover,
-        album.server,
-        album.author
-    ], function (err) {
-
-        if (err) {
-            console.error(err);
-            return res.status(500).json({ error: err.message });
         }
 
-        const albumId = this.lastID;
-
-        // =========================
-        // INSERT MUSICAS
-        // =========================
-
-        if (album.tracks && album.tracks.length > 0) {
-
-            const stmt = db.prepare(`
-                INSERT INTO musicas (
-                    album_id,
-                    titulo,
-                    artista,
-                    url
-                )
-                VALUES (?, ?, ?, ?)
-            `);
-
-            album.tracks.forEach(track => {
-                stmt.run([
-                    albumId,
-                    track.title,
-                    album.artist,
-                    track.url
-                ]);
-            });
-
-            stmt.finalize();
-        }
+        const albumId = await addAlbum(album);
 
         res.json({
             success: true,
             albumId
         });
-
-    }); // ✅ FECHAMENTO CORRETO DO db.run
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // =========================
@@ -175,91 +59,54 @@ router.post('/', async (req, res) => {
 // =========================
 
 router.delete('/:id', async (req, res) => {
-    await deleteAlbum(req.params.id);
+    try {
+        await deleteAlbum(req.params.id);
 
-    res.json({
-        success: true
-    });
+        res.json({
+            success: true
+        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // =========================
 // GET ONE
 // =========================
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
+    try {
+        const album = await getAlbumById(req.params.id);
 
-    const id = req.params.id;
-
-    db.get(`
-        SELECT *
-        FROM albums
-        WHERE id = ?
-    `, [id], (err, album) => {
-
-        if (err) {
-            return res.status(500).json({
-                error: err.message
+        if (!album) {
+            return res.status(404).json({
+                error: 'album nao encontrado'
             });
         }
 
-        db.all(`
-            SELECT *
-            FROM musicas
-            WHERE album_id = ?
-        `, [id], (err, tracks) => {
-
-            if (err) {
-                return res.status(500).json({
-                    error: err.message
-                });
-            }
-
-            album.tracks = tracks;
-            res.json(album);
-
-        });
-
-    });
-
+        res.json(album);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // =========================
 // ADD MUSIC TO ALBUM
 // =========================
 
-router.post('/:id/music', (req, res) => {
-
-    const albumId = req.params.id;
-    const music = req.body;
-
-    db.run(`
-        INSERT INTO musicas (
-            album_id,
-            titulo,
-            artista,
-            url
-        )
-        VALUES (?, ?, ?, ?)
-    `, [
-        albumId,
-        music.title,
-        music.artist,
-        music.url
-    ], function (err) {
-
-        if (err) {
-            console.log(err);
-            return res.status(500).json({
-                error: err.message
-            });
-        }
+router.post('/:id/music', async (req, res) => {
+    try {
+        await addMusicToAlbum(req.params.id, req.body);
 
         res.json({
             success: true
         });
-
-    });
-
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 export default router;

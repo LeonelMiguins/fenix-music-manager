@@ -1,23 +1,19 @@
-import db from '../routes/database.js';
+import {
+    deleteAlbumById,
+    findAlbumById,
+    findAlbumTracksById,
+    findAllAlbums,
+    insertAlbum,
+    insertAlbumTracks,
+    insertMusicIntoAlbum
+} from '../repositories/albumRepository.js';
 
 // =========================
 // GET ALL
 // =========================
 
 export function getAlbums() {
-
-    return new Promise((resolve, reject) => {
-
-        db.all(`
-            SELECT * FROM albums
-        `, (err, rows) => {
-
-            if (err) reject(err);
-            else resolve(rows);
-
-        });
-
-    });
+    return findAllAlbums();
 
 }
 
@@ -26,97 +22,7 @@ export function getAlbums() {
 // =========================
 
 export function addAlbum(album) {
-
-    return new Promise((resolve, reject) => {
-
-        // =========================
-        // SALVA ALBUM
-        // =========================
-
-        db.run(`
-            INSERT INTO albums (
-                artista_nome,
-                titulo,
-                ano,
-                genero,
-                cover,
-                servidor,
-                autor
-            )
-            VALUES (?, ?, ?, ?, ?, ?, ?)
-        `, [
-
-            album.artist,
-            album.album,
-            album.year,
-            album.genrer,
-            album.cover,
-            album.server,
-            album.author
-
-        ], function (err) {
-
-            if (err) {
-
-                reject(err);
-
-                return;
-            }
-
-            // id do album criado
-
-            const albumId =
-                this.lastID;
-
-            // =========================
-            // SEM MUSICAS
-            // =========================
-
-            if (
-                !album.tracks ||
-                album.tracks.length === 0
-            ) {
-
-                resolve(albumId);
-
-                return;
-            }
-
-            // =========================
-            // SALVAR MUSICAS
-            // =========================
-
-            const stmt =
-                db.prepare(`
-                    INSERT INTO musicas (
-                        album_id,
-                        titulo,
-                        url,
-                        artista
-                    )
-                    VALUES (?, ?, ?, ?)
-                `);
-
-            album.tracks.forEach(track => {
-
-                stmt.run([
-
-                    albumId,
-                    track.title,
-                    track.url,
-                    album.artist
-
-                ]);
-
-            });
-
-            stmt.finalize();
-
-            resolve(albumId);
-
-        });
-
-    });
+    return createAlbum(album);
 
 }
 
@@ -125,19 +31,36 @@ export function addAlbum(album) {
 // =========================
 
 export function deleteAlbum(id) {
+    return deleteAlbumById(id);
 
-    return new Promise((resolve, reject) => {
+}
 
-        db.run(`
-            DELETE FROM albums
-            WHERE id = ?
-        `, [id], function (err) {
+export async function createAlbum(album) {
+    const result = await insertAlbum(album);
+    const albumId = result.lastID;
 
-            if (err) reject(err);
-            else resolve();
+    if (album.tracks && album.tracks.length > 0) {
+        await insertAlbumTracks(albumId, album.tracks, album.artist);
+    }
 
-        });
+    return albumId;
+}
 
-    });
+export async function getAlbumById(id) {
+    const album = await findAlbumById(id);
 
+    if (!album) {
+        return null;
+    }
+
+    const tracks = await findAlbumTracksById(id);
+
+    return {
+        ...album,
+        tracks
+    };
+}
+
+export async function addMusicToAlbum(albumId, music) {
+    await insertMusicIntoAlbum(albumId, music);
 }

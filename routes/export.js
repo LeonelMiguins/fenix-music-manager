@@ -2,11 +2,21 @@ import express from 'express';
 
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 import {
     exportDB
 }
-from '../scripts/exportDB.js';
+from '../scripts/exportDb.js';
+
+const __filename =
+    fileURLToPath(import.meta.url);
+
+const __dirname =
+    path.dirname(__filename);
+
+const projectRoot =
+    path.resolve(__dirname, '..');
 
 const router =
     express.Router();
@@ -22,13 +32,19 @@ router.get(
                 await exportDB();
 
             const tempDir =
-                path.resolve('./temp');
+                path.join(
+                    projectRoot,
+                    'temp'
+                );
 
             if (
                 !fs.existsSync(tempDir)
             ) {
 
-                fs.mkdirSync(tempDir);
+                fs.mkdirSync(
+                    tempDir,
+                    { recursive: true }
+                );
 
             }
 
