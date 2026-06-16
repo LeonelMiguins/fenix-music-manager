@@ -2,8 +2,12 @@
   "name": "fenix-music-manager",
   "type": "module",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "db:create": "node scripts/createDb.js",
+    "db:export": "node scripts/exportDbCli.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

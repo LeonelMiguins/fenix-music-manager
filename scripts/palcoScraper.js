@@ -1,6 +1,8 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import fs from 'fs';
+import path from 'path';
+import { paths } from '../config/index.js';
 
 // =========================
 // EXPORT JSON (OPCIONAL)
@@ -8,9 +10,12 @@ import fs from 'fs';
 
 function saveAlbumJson(albumData) {
 
-    if (!fs.existsSync('./albums_json/')) {
+    if (!fs.existsSync(paths.albumsJsonDir)) {
 
-        fs.mkdirSync('./albums_json/');
+        fs.mkdirSync(
+            paths.albumsJsonDir,
+            { recursive: true }
+        );
     }
 
     // remove caracteres invalidos
@@ -28,8 +33,10 @@ function saveAlbumJson(albumData) {
         );
 
     fs.writeFileSync(
-
-        `./albums_json/${safeAlbum} - ${safeArtist}.json`,
+        path.join(
+            paths.albumsJsonDir,
+            `${safeAlbum} - ${safeArtist}.json`
+        ),
 
         JSON.stringify(
             albumData,

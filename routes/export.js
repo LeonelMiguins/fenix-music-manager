@@ -1,22 +1,11 @@
 import express from 'express';
 
 import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
 import {
-    exportDB
-}
-from '../scripts/exportDb.js';
-
-const __filename =
-    fileURLToPath(import.meta.url);
-
-const __dirname =
-    path.dirname(__filename);
-
-const projectRoot =
-    path.resolve(__dirname, '..');
+    createExportFilePath,
+    paths
+} from '../config/index.js';
+import { exportDB } from '../scripts/exportDb.js';
 
 const router =
     express.Router();
@@ -31,31 +20,19 @@ router.get(
             const data =
                 await exportDB();
 
-            const tempDir =
-                path.join(
-                    projectRoot,
-                    'temp'
-                );
-
             if (
-                !fs.existsSync(tempDir)
+                !fs.existsSync(paths.tempDir)
             ) {
 
                 fs.mkdirSync(
-                    tempDir,
+                    paths.tempDir,
                     { recursive: true }
                 );
 
             }
 
             const filePath =
-                path.join(
-
-                    tempDir,
-
-                    `fenix-backup-${Date.now()}.json`
-
-                );
+                createExportFilePath();
 
             fs.writeFileSync(
 

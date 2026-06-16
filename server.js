@@ -1,6 +1,4 @@
 import express from 'express';
-import path from 'path';
-import { fileURLToPath }from 'url';
 import db from './routes/database.js';
 import exportRoutes from './routes/export.js';
 import albumRoutes from './routes/albums.js';
@@ -9,21 +7,16 @@ import { scrapePalco } from './scripts/palcoScraper.js';
 import playlistRoutes from './routes/playlists.js';
 import backupRoutes from './routes/backup.js';
 import searchRoutes from './routes/search.js';
+import { appConfig, paths } from './config/index.js';
 
 
 const app = express();
-const PORT = 3000;
-
-// PATHS
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 // MIDDLEWARES
 app.use(express.json());
 
 // arquivos estaticos
-app.use( express.static( path.join(__dirname, 'www'))
-);
+app.use(express.static(paths.webRoot));
 
 // ROUTES
 
@@ -175,12 +168,7 @@ app.post(
 app.get('/', (req, res) => {
 
     res.sendFile(
-
-        path.join(
-            __dirname,
-            'www',
-            'index.html'
-        )
+        paths.webIndexFile
     );
 });
 
@@ -190,11 +178,11 @@ app.get('/', (req, res) => {
 // SERVER
 // =========================
 
-app.listen(PORT, () => {
+app.listen(appConfig.port, () => {
 
     console.log(`
 🚀 servidor:
-http://localhost:${PORT}
+http://localhost:${appConfig.port}
     `);
 
 });

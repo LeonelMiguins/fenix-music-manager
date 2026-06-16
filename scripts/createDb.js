@@ -1,18 +1,13 @@
 import sqlite3 from 'sqlite3';
-import path from 'path';
 import fs from 'fs';
-import { fileURLToPath } from 'url';
+import path from 'path';
+import { paths } from '../config/index.js';
 
 sqlite3.verbose();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const DB_PATH = path.resolve(__dirname, '../db/music.db');
-
 // cria pasta db
 fs.mkdirSync(
-    path.dirname(DB_PATH),
+    paths.dbDir,
     { recursive: true }
 );
 
@@ -46,7 +41,7 @@ function initDb() {
 
     return new Promise(async (resolve, reject) => {
 
-        const db = new sqlite3.Database(DB_PATH);
+        const db = new sqlite3.Database(paths.dbFile);
 
         try {
 

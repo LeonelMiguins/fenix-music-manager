@@ -4,17 +4,7 @@
 import express from 'express';
 
 import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename =
-    fileURLToPath(import.meta.url);
-
-const __dirname =
-    path.dirname(__filename);
-
-const projectRoot =
-    path.resolve(__dirname, '..');
+import { paths } from '../config/index.js';
 
 const router =
     express.Router();
@@ -30,27 +20,13 @@ router.post(
             // PATHS
             // =========================
 
-            const dbPath =
-                path.join(
-                    projectRoot,
-                    'db',
-                    'music.db'
-                );
-
-            const backupPath =
-                path.join(
-                    projectRoot,
-                    'db',
-                    'music_backup.db'
-                );
-
             // =========================
             // COPIA
             // =========================
 
             fs.copyFileSync(
-                dbPath,
-                backupPath
+                paths.dbFile,
+                paths.dbBackupFile
             );
 
             // =========================

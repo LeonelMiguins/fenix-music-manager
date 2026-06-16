@@ -1,6 +1,8 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import fs from 'fs';
+import path from 'path';
+import { paths } from '../config/index.js';
 
 // =========================
 // EXPORT JSON (OPCIONAL)
@@ -8,15 +10,21 @@ import fs from 'fs';
 
 function saveAlbumJson(albumData) {
 
-    if (!fs.existsSync('./albums_json/')) {
-        fs.mkdirSync('./albums_json/');
+    if (!fs.existsSync(paths.albumsJsonDir)) {
+        fs.mkdirSync(
+            paths.albumsJsonDir,
+            { recursive: true }
+        );
     }
 
     const safeName = albumData.album
         .replace(/[<>:"/\\|?*]/g, '');
 
     fs.writeFileSync(
-        `./albums_json/${safeName}.json`,
+        path.join(
+            paths.albumsJsonDir,
+            `${safeName}.json`
+        ),
         JSON.stringify(albumData, null, 2)
     );
 
