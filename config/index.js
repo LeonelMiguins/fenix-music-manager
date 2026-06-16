@@ -11,7 +11,7 @@ export const projectRoot =
     path.resolve(__dirname, '..');
 
 export const appConfig = {
-    port: 3000
+    port: 3060
 };
 
 export const paths = {

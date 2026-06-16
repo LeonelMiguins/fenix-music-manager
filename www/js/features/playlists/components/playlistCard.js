@@ -16,11 +16,12 @@ export function createPlaylistCard(playlist) {
         <div class="album-info">
 
             <div class="album-title">
+                <span class="album-id">playlist</span>
                 ${playlist.titulo}
             </div>
 
             <div class="album-artist">
-                Playlist
+                ${playlist.artista_nome || 'Curadoria manual'}
             </div>
 
         </div>

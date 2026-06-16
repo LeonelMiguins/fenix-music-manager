@@ -7,6 +7,7 @@ import { scrapePalco } from './scripts/palcoScraper.js';
 import playlistRoutes from './routes/playlists.js';
 import backupRoutes from './routes/backup.js';
 import searchRoutes from './routes/search.js';
+import dashboardRoutes from './routes/dashboard.js';
 import { appConfig, paths } from './config/index.js';
 
 
@@ -30,6 +31,7 @@ app.use('/api/export',exportRoutes);
 app.use('/api/backup-db', backupRoutes);
 
 app.use('/api/search',searchRoutes);
+app.use('/api/dashboard', dashboardRoutes);
 
 // SCRAPER ARCHIVE
 

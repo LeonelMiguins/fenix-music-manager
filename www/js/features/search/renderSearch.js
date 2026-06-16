@@ -2,6 +2,10 @@ import {
     createAlbumCard
 }
 from '../albums/components/albumCard.js';
+import {
+    createPlaylistCard
+}
+from '../playlists/components/playlistCard.js';
 
 import {
     renderAlbumPage
@@ -31,18 +35,43 @@ export async function renderSearch(query) {
     const results =
         await response.json();
 
-    main.innerHTML = '';
+    const cardsHtml =
+        results.length > 0
+            ? ''
+            : `
+                <div class="empty-state-card">
+                    <strong>Nenhum resultado encontrado</strong>
+                    <span>Tente outro termo, artista ou nome de album para localizar itens da biblioteca.</span>
+                </div>
+            `;
+
+    main.innerHTML = `
+        <section class="page-shell">
+            <div class="page-header">
+                <div>
+                    <span class="section-kicker">Pesquisa</span>
+                    <h1>Resultados para "${query}"</h1>
+                    <p>Resultados combinados entre albuns e playlists.</p>
+                </div>
+                <div class="page-header-meta">
+                    <strong>${results.length}</strong>
+                    <span>${results.length === 1 ? 'resultado encontrado' : 'resultados encontrados'}</span>
+                </div>
+            </div>
+            ${cardsHtml}
+            <div class="albums-grid"></div>
+        </section>
+    `;
 
     const grid =
-        document.createElement('div');
-
-    grid.className =
-        'albums-grid';
+        main.querySelector('.albums-grid');
 
     results.forEach(item => {
 
         const card =
-            createAlbumCard(item);
+            item.type === 'playlist'
+                ? createPlaylistCard(item)
+                : createAlbumCard(item);
 
         card.addEventListener(
             'click',
@@ -52,23 +81,30 @@ export async function renderSearch(query) {
                     item.type === 'playlist'
                 ) {
 
+                    localStorage.setItem(
+                        'CURRENT_PLAYLIST_ID',
+                        item.id
+                    );
+
                     renderPlaylistPage(
                         item.id
                     );
 
-                } else {
-
-                    renderAlbumPage(
-                        item.id
-                    );
+                    return;
                 }
 
+                localStorage.setItem(
+                    'CURRENT_ALBUM_ID',
+                    item.id
+                );
+
+                renderAlbumPage(
+                    item.id
+                );
             }
         );
 
         grid.appendChild(card);
 
     });
-
-    main.appendChild(grid);
 }

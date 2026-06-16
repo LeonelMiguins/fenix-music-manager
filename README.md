@@ -14,6 +14,7 @@ O projeto combina:
 O Fenix Music Manager permite:
 
 - listar albuns e playlists salvos no banco
+- visualizar uma home com resumo do acervo, fontes e itens recentes
 - criar albuns e playlists manualmente pela interface
 - adicionar musicas a um album ou playlist existente
 - importar albuns por URL do Internet Archive
@@ -74,7 +75,7 @@ Exporta o conteudo do banco para um arquivo JSON na pasta `temp/`.
 1. Instale as dependencias com `npm install`
 2. Execute `npm run db:create`
 3. Execute `npm run dev`
-4. Acesse `http://localhost:3000`
+4. Acesse `http://localhost:3060`
 
 ## Estrutura do Projeto
 
@@ -92,6 +93,7 @@ fenix-music-manager/
 |-- routes/
 |   |-- albums.js
 |   |-- backup.js
+|   |-- dashboard.js
 |   |-- database.js
 |   |-- export.js
 |   |-- playlists.js
@@ -114,6 +116,7 @@ fenix-music-manager/
 |       |-- main.js
 |       `-- features/
 |           |-- albums/
+|           |-- home/
 |           |-- importers/
 |           |-- library/
 |           |-- playlists/
@@ -136,6 +139,7 @@ O backend esta organizado em camadas:
 O frontend esta organizado por dominio:
 
 - `features/albums/`
+- `features/home/`
 - `features/playlists/`
 - `features/search/`
 - `features/importers/`
@@ -396,6 +400,27 @@ Resposta:
 ]
 ```
 
+### Dashboard
+
+#### `GET /api/dashboard/summary`
+
+Retorna o resumo consumido pela home da aplicacao.
+
+Resposta:
+
+```json
+{
+  "stats": {
+    "albums": 32,
+    "playlists": 2,
+    "tracks": 478,
+    "libraryItems": 34
+  },
+  "recentItems": [],
+  "sources": []
+}
+```
+
 ### Exportacao e Backup
 
 #### `GET /api/export/db-json`
@@ -467,6 +492,12 @@ Body:
 Retorna todas as linhas da tabela `albums`. Serve como teste simples de conexao com o banco.
 
 ## Fluxo de Uso na Interface
+
+### 0. Home
+
+- a home e carregada ao abrir a aplicacao
+- o frontend chama `GET /api/dashboard/summary`
+- a tela mostra totais, itens recentes e origem do acervo
 
 ### 1. Listar albuns
 
@@ -676,6 +707,12 @@ Responsavel por:
 
 - `GET /api/search`
 
+#### `routes/dashboard.js`
+
+Responsavel por:
+
+- `GET /api/dashboard/summary`
+
 #### `routes/export.js`
 
 Responsavel por:
@@ -721,6 +758,12 @@ Funcoes:
 
 - `searchLibrary(query)`: busca em albuns e playlists
 
+#### `services/dashboardService.js`
+
+Funcoes:
+
+- `getDashboardSummary()`: agrega estatisticas para a home
+
 #### `repositories/dbHelpers.js`
 
 Funcoes auxiliares para SQLite:
@@ -754,6 +797,18 @@ Funcoes:
 - `findPlaylistById(id)`
 - `findPlaylistTracksById(playlistId)`
 - `searchPlaylists(search)`
+
+#### `repositories/dashboardRepository.js`
+
+Funcoes:
+
+- `countAlbums()`
+- `countPlaylists()`
+- `countAlbumTracks()`
+- `countPlaylistTracks()`
+- `findRecentAlbums(limit)`
+- `findRecentPlaylists(limit)`
+- `findLibrarySources()`
 
 #### `scripts/createDb.js`
 
@@ -801,6 +856,12 @@ Responsavel por:
 - disparar renderizacao de albuns, playlists e busca
 - abrir importadores
 - acionar backup e exportacao
+
+#### `features/home/renderHome.js`
+
+Funcoes:
+
+- `renderHome()`: renderiza a home com resumo do banco, itens recentes e fontes
 
 #### `features/albums/components/albumCard.js`
 
@@ -906,7 +967,7 @@ Arquivo legado nao usado no fluxo atual. Foi mantido apenas como referencia hist
 
 ## Observacoes Importantes
 
-- A porta esta fixa em `3000`
+- A porta atual esta em `3060`
 - A porta esta centralizada em `config/index.js`
 - O projeto nao usa variaveis de ambiente atualmente
 - O banco e local e baseado em arquivo SQLite

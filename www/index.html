@@ -9,52 +9,66 @@
     <title>Fenix Music Manager</title>
 
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/albumCard.css" />
     <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/renderAlbumPage.css" />
     <link rel="stylesheet" href="css/renderPlaylistPage.css" />
     <link rel="stylesheet" href="css/addMusicModal.css" />
-    <link rel="stylesheet" href="css/search.css" />
 
 </head>
 
 <body>
 
+    <div class="app-backdrop"></div>
+
     <!-- ========================= -->
     <!-- HEADER -->
     <!-- ========================= -->
 
-    <header class="topbar">
+    <header class="topbar app-header">
 
-        <div class="logo">
-            Fenix Music
+        <div class="brand-block">
+            <div class="logo-mark">
+                FM
+            </div>
+            <div class="logo-copy">
+                <div class="logo">
+                    Fenix Music Manager
+                </div>
+                <p class="logo-subtitle">
+                    Biblioteca local, importacao e organizacao do acervo
+                </p>
+            </div>
         </div>
 
-        <nav class="navbar">
-            <button class="nav-btn active">
-                Home
+        <nav class="navbar primary-nav">
+            <button class="nav-btn active" id="btn-render-home" data-view="home">
+                Visao geral
             </button>
-            <button class="nav-btn" id="btn-render-albums">
-                Albums
+            <button class="nav-btn" id="btn-render-albums" data-view="albums">
+                Albuns
             </button>
-            <button id="btn-render-playlists" class="nav-btn">
+            <button id="btn-render-playlists" class="nav-btn" data-view="playlists">
                 Playlists
             </button>
+        </nav>
 
-            <div class="search-box">
+        <div class="header-actions">
+            <div class="search-box app-search">
 
-                <input type="text" id="search-input" placeholder="Pesquisar álbum ou artista...">
+                <input type="text" id="search-input" placeholder="Pesquisar album, artista ou playlist">
 
                 <button id="btn-search">
-                    🔍
+                    Buscar
                 </button>
 
             </div>
 
             <!-- Scraper -->
             <div class="dropdown">
-                <button class="nav-btn dropdown-toggle">
-                    Import ▼
+                <button class="nav-btn nav-btn-ghost dropdown-toggle">
+                    Importar
                 </button>
                 <div class="dropdown-menu">
                     <button id="btn-import-archive" class="dropdown-item">Internet Archive</button>
@@ -65,8 +79,8 @@
 
             <!-- Exportar -->
             <div class="dropdown">
-                <button class="nav-btn dropdown-toggle">
-                    Exportar ▼
+                <button class="nav-btn nav-btn-ghost dropdown-toggle">
+                    Biblioteca
                 </button>
                 <div class="dropdown-menu">
                     <button id="backup-database" class="dropdown-item">Backup DB</button>
@@ -74,8 +88,10 @@
                 </div>
 
             </div>
-
-        </nav>
+            <button class="nav-btn nav-btn-primary" id="btn-open-album-modal">
+                Novo item
+            </button>
+        </div>
 
     </header>
 

@@ -46,7 +46,7 @@ export async function renderAlbumPage(albumId) {
                 </span>
 
                 <span class="track-title">
-                    ${track.titulo} - ${track.artista}
+                    ${track.titulo || track.title || 'Faixa sem titulo'} - ${track.artista || album.artista_nome}
                 </span>
 
             </div>
@@ -242,7 +242,15 @@ deleteBtn.addEventListener(
 
             // volta para lista
 
-            location.reload();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+
+            const { renderAlbums } =
+                await import('./renderAlbums.js');
+
+            renderAlbums();
 
         } catch (err) {
 

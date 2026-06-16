@@ -242,7 +242,15 @@ export async function renderPlaylistPage(playlistId) {
                     'Playlist excluída!'
                 );
 
-                location.reload();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+
+                const { renderPlaylists } =
+                    await import('./renderPlaylists.js');
+
+                renderPlaylists();
 
             } catch (err) {
 

@@ -1,230 +1,151 @@
-/* =========================
-   PAGE
-========================= */
-
 .album-page {
-
     display: flex;
-
     flex-direction: column;
-
-    gap: 35px;
+    gap: 28px;
 }
-
-/* =========================
-   HEADER
-========================= */
 
 .album-header {
-
     display: flex;
-
-    gap: 35px;
-
-    align-items: flex-start;
+    gap: 28px;
+    align-items: stretch;
+    padding: 26px;
+    border-radius: 32px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    box-shadow: var(--soft-shadow);
 }
 
-/* =========================
-   LEFT
-========================= */
-
 .album-header-left {
-
     flex-shrink: 0;
 }
 
-/* =========================
-   COVER
-========================= */
-
 .album-page-cover {
-
     width: 320px;
-
-    border-radius: 24px;
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,0.4);
+    min-height: 320px;
+    object-fit: cover;
+    border-radius: 26px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
 }
 
-/* =========================
-   RIGHT
-========================= */
-
 .album-header-right {
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-between;
-
-    gap: 25px;
-
+    gap: 22px;
     flex: 1;
 }
 
-/* =========================
-   INFO
-========================= */
-
 .album-page-info {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 12px;
 }
 
 .album-page-info h1 {
-
-    font-size: 42px;
+    font-size: clamp(2.1rem, 4vw, 3.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
 }
 
 .album-page-info h2 {
-
-    font-size: 24px;
-
-    color: #b8c0d9;
+    font-size: 1.3rem;
+    color: var(--text-soft);
 }
 
 .album-page-info p {
-
-    color: #8e99b3;
-
+    color: var(--text-muted);
     font-size: 15px;
 }
 
-/* =========================
-   ACTIONS
-========================= */
-
 .album-actions {
-
     display: flex;
-
     gap: 14px;
-
     flex-wrap: wrap;
 }
 
 .album-action-btn {
-
-    border: none;
-
-    background: #22293a;
-
-    color: white;
-
+    border: 1px solid var(--border);
+    background: var(--panel-muted);
+    color: var(--text-primary);
     padding: 14px 18px;
-
-    border-radius: 14px;
-
+    border-radius: 999px;
     cursor: pointer;
-
-    transition: 0.2s;
-
-    font-weight: bold;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    font-weight: 700;
 }
 
 .album-action-btn:hover {
-
-    background: #2f3850;
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
 }
 
 .album-action-btn.danger {
-
-    background: #aa2b2b;
+    background: rgba(212, 91, 91, 0.14);
+    border-color: rgba(212, 91, 91, 0.22);
 }
 
 .album-action-btn.danger:hover {
-
-    background: #d63d3d;
+    background: rgba(212, 91, 91, 0.22);
 }
-
-/* =========================
-   TRACKS
-========================= */
 
 .album-page-tracks {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 14px;
+    padding: 26px;
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    box-shadow: var(--soft-shadow);
 }
 
-/* =========================
-   TRACK
-========================= */
+.album-page-tracks h3 {
+    font-size: 1.25rem;
+}
 
 .album-track {
-
     display: flex;
-
     align-items: center;
-
     gap: 14px;
-
-    padding: 14px 18px;
-
-    border-radius: 14px;
-
-    background: #181d28;
-
+    padding: 16px 18px;
+    border-radius: 18px;
+    background: var(--panel-muted);
+    border: 1px solid transparent;
     cursor: pointer;
-
     transition: 0.2s;
 }
 
 .album-track:hover {
-
-    background: #22293a;
+    border-color: rgba(226, 161, 81, 0.28);
+    background: rgba(255, 255, 255, 0.06);
 }
 
-/* track ativa */
-
 .active-track {
-
-    background: #6c8cff !important;
-
+    background: rgba(226, 161, 81, 0.18) !important;
+    border-color: rgba(226, 161, 81, 0.3) !important;
     color: white;
 }
 
-/* numero */
-
 .track-number {
-
-    min-width: 30px;
-
+    min-width: 34px;
     opacity: 0.7;
-
-    font-weight: bold;
+    font-weight: 700;
 }
-
-/* titulo */
 
 .track-title {
-
     font-size: 15px;
+    line-height: 1.5;
 }
 
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 850px) {
-
+@media (max-width: 920px) {
     .album-header {
-
         flex-direction: column;
     }
 
     .album-page-cover {
-
         width: 100%;
     }
-
 }
