@@ -4,6 +4,7 @@ import exportRoutes from './routes/export.js';
 import albumRoutes from './routes/albums.js';
 import { scrapeArchive } from './scripts/archiveScraper.js';
 import { scrapePalco } from './scripts/palcoScraper.js';
+import { runArchiveProfileBatchImport } from './scripts/archiveProfileBatchScraper.js';
 import playlistRoutes from './routes/playlists.js';
 import backupRoutes from './routes/backup.js';
 import searchRoutes from './routes/search.js';
@@ -80,6 +81,61 @@ app.post(
 
                 error:
                     'erro interno'
+            });
+        }
+    }
+);
+
+app.post(
+    '/api/scrape/archive/profile',
+
+    async (req, res) => {
+
+        try {
+
+            const {
+                profileUrl,
+                delayMs,
+                limit,
+                dryRun
+            } = req.body;
+
+            const result =
+                await runArchiveProfileBatchImport({
+                    profileUrl,
+                    delayMs:
+                        Number.parseInt(delayMs, 10) || 1500,
+                    limit:
+                        Number.parseInt(limit, 10) || 20,
+                    dryRun: Boolean(dryRun),
+                    showBrowser: false
+                });
+
+            res.json({
+                success: true,
+                result: {
+                    found: result.detailUrls.length,
+                    imported: result.imported.length,
+                    skipped: result.skipped.length,
+                    failed: result.failed.length,
+                    preview: result.preview.length,
+                    importedItems: result.imported,
+                    skippedItems: result.skipped,
+                    failedItems: result.failed,
+                    previewItems: result.preview
+                }
+            });
+
+        } catch (err) {
+
+            console.log(err);
+
+            res.status(500).json({
+
+                success: false,
+
+                error:
+                    err.message || 'erro interno'
             });
         }
     }

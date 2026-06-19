@@ -47,7 +47,7 @@ export async function insertAlbumTracks(albumId, tracks, artist) {
         `, [
             albumId,
             track.title,
-            artist,
+            track.artist || artist,
             track.url
         ]);
     }

@@ -42,6 +42,9 @@ export async function saveAlbum() {
             title:
                 trackEl.dataset.title || '',
 
+            artist:
+                trackEl.dataset.artist || '',
+
             url:
                 trackEl.dataset.url || ''
 
@@ -233,11 +236,14 @@ export function fillAlbumModal(album) {
         div.dataset.title =
             track.title || '';
 
+        div.dataset.artist =
+            track.artist || '';
+
         div.dataset.url =
             track.url || '';
 
         div.innerHTML = `
-            ${index + 1} • ${track.title}
+            ${index + 1} • ${track.title}${track.artist ? ` - ${track.artist}` : ''}
         `;
 
         tracksContainer.appendChild(div);
@@ -305,6 +311,9 @@ export async function saveAlbumAsJson() {
 
             title:
                 trackEl.dataset.title || '',
+
+            artist:
+                trackEl.dataset.artist || '',
 
             url:
                 trackEl.dataset.url || ''

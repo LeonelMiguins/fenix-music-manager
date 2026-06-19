@@ -55,9 +55,88 @@ function saveAlbumJson(albumData) {
 // SCRAPER PALCO MP3
 // =========================
 
+function cleanText(value = '') {
+    return value
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function getTrackPairsFromRows($) {
+    const tracks = [];
+    const seen = new Set();
+
+    $('li, tr, div').each((_, element) => {
+        const row =
+            $(element);
+
+        const rowText =
+            cleanText(row.text());
+
+        if (
+            !rowText ||
+            !/plays?/i.test(rowText)
+        ) {
+            return;
+        }
+
+        const anchors =
+            row.find('a');
+
+        if (anchors.length < 2) {
+            return;
+        }
+
+        const title =
+            cleanText(
+                $(anchors[0]).text()
+            );
+
+        const artist =
+            cleanText(
+                $(anchors[1]).text()
+            );
+
+        if (!title || !artist) {
+            return;
+        }
+
+        if (
+            /^(m[uú]sicas?|artista|plays?)$/i.test(title) ||
+            /^(m[uú]sicas?|artista|plays?)$/i.test(artist)
+        ) {
+            return;
+        }
+
+        const key =
+            `${title}::${artist}`;
+
+        if (seen.has(key)) {
+            return;
+        }
+
+        seen.add(key);
+
+        tracks.push({
+            title,
+            artist
+        });
+    });
+
+    return tracks;
+}
+
+function inferPalcoType(url) {
+    return url.includes('/playlist/')
+        ? 'playlist'
+        : 'album';
+}
+
 export async function scrapePalco(url) {
 
     try {
+
+        const palcoType =
+            inferPalcoType(url);
 
         console.log(
             '🚀 carregando página...'
@@ -133,22 +212,29 @@ export async function scrapePalco(url) {
         // =========================
 
         const musicNames = [];
+        const musicArtists = [];
 
-        $('a._6fBao._16Uya')
-            .each((i, el) => {
+        if (palcoType === 'playlist') {
+            const trackPairs =
+                getTrackPairsFromRows($);
 
-                const title =
-                    $(el)
-                        .text()
-                        .trim();
-
-                if (title) {
-
-                    musicNames.push(
-                        title
-                    );
-                }
+            trackPairs.forEach(track => {
+                musicNames.push(track.title);
+                musicArtists.push(track.artist);
             });
+        } else {
+            $('a._6fBao._16Uya')
+                .each((i, el) => {
+                    const title =
+                        cleanText(
+                            $(el).text()
+                        );
+
+                    if (title) {
+                        musicNames.push(title);
+                    }
+                });
+        }
 
         // =========================
         // MP3 URLS
@@ -178,6 +264,11 @@ export async function scrapePalco(url) {
                         musicNames[index] ||
                         `Faixa ${index + 1}`,
 
+                    artist:
+                        palcoType === 'playlist'
+                            ? (musicArtists[index] || artist)
+                            : artist,
+
                     url:
                         trackUrl.replace(
                             /\\/g,
@@ -192,6 +283,9 @@ export async function scrapePalco(url) {
         // =========================
 
         const albumData = {
+
+            type:
+                palcoType,
 
             album,
 

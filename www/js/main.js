@@ -8,7 +8,10 @@ import {
 import {
     openArchiveModal,
     closeArchiveModal,
-    searchArchiveAlbum
+    searchArchiveAlbum,
+    openArchiveProfileModal,
+    closeArchiveProfileModal,
+    importArchiveProfileBatch
 } from './features/importers/archiveImporter.js';
 import {
     openPalcoModal,
@@ -20,7 +23,11 @@ import {
     saveMusic,
     closeMusicModal
 } from './features/library/modals/addMusicModal.js';
-import { exportDatabaseJson } from './features/library/actions/exportDatabaseJson.js';
+import {
+    exportDatabaseJson,
+    openExportModal,
+    closeExportModal
+} from './features/library/actions/exportDatabaseJson.js';
 import { renderSearch } from './features/search/renderSearch.js';
 
 const navigationButtons =
@@ -37,6 +44,14 @@ function setActiveView(viewName) {
 
 document
     .getElementById('export-db-to-json')
+    .addEventListener('click', openExportModal);
+
+document
+    .getElementById('close-export-json-modal')
+    .addEventListener('click', closeExportModal);
+
+document
+    .getElementById('btn-run-export-json')
     .addEventListener('click', exportDatabaseJson);
 
 document
@@ -99,12 +114,24 @@ document
     .addEventListener('click', openArchiveModal);
 
 document
+    .getElementById('btn-import-archive-profile')
+    .addEventListener('click', openArchiveProfileModal);
+
+document
     .getElementById('close-archive-modal')
     .addEventListener('click', closeArchiveModal);
 
 document
+    .getElementById('close-archive-profile-modal')
+    .addEventListener('click', closeArchiveProfileModal);
+
+document
     .getElementById('btn-search-archive')
     .addEventListener('click', searchArchiveAlbum);
+
+document
+    .getElementById('btn-import-archive-profile-run')
+    .addEventListener('click', importArchiveProfileBatch);
 
 document
     .getElementById('btn-import-json')

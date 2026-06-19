@@ -1,52 +1,45 @@
 import express from 'express';
-
-import fs from 'fs';
-import {
-    createExportFilePath,
-    paths
-} from '../config/index.js';
 import { exportDB } from '../scripts/exportDb.js';
 
 const router =
     express.Router();
 
-router.get(
-    '/db-json',
+router.post(
+    '/songs-json',
 
     async (req, res) => {
 
         try {
+            const {
+                includeAlbums = true,
+                includePlaylists = true
+            } = req.body || {};
 
             const data =
-                await exportDB();
+                await exportDB({
+                    includeAlbums:
+                        Boolean(includeAlbums),
+                    includePlaylists:
+                        Boolean(includePlaylists)
+                });
 
-            if (
-                !fs.existsSync(paths.tempDir)
-            ) {
+            res.setHeader(
+                'Content-Type',
+                'application/json; charset=utf-8'
+            );
 
-                fs.mkdirSync(
-                    paths.tempDir,
-                    { recursive: true }
-                );
+            res.setHeader(
+                'Content-Disposition',
+                'attachment; filename="songs.json"'
+            );
 
-            }
-
-            const filePath =
-                createExportFilePath();
-
-            fs.writeFileSync(
-
-                filePath,
-
+            res.send(
                 JSON.stringify(
                     data,
                     null,
                     2
                 )
-
             );
-
-            res.download(filePath);
 
         } catch (err) {
 

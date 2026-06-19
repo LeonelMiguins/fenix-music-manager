@@ -72,6 +72,7 @@
                 </button>
                 <div class="dropdown-menu">
                     <button id="btn-import-archive" class="dropdown-item">Internet Archive</button>
+                    <button id="btn-import-archive-profile" class="dropdown-item">Archive perfil (lote)</button>
                     <button id="btn-open-palco" class="dropdown-item">Palco Mp3</button>
                     <button id="btn-import-json" class="dropdown-item">Importar Json</button>
                 </div>
@@ -80,11 +81,11 @@
             <!-- Exportar -->
             <div class="dropdown">
                 <button class="nav-btn nav-btn-ghost dropdown-toggle">
-                    Biblioteca
+                    Exportar
                 </button>
                 <div class="dropdown-menu">
+                    <button id="export-db-to-json" class="dropdown-item">Songs Json</button>
                     <button id="backup-database" class="dropdown-item">Backup DB</button>
-                    <button id="export-db-to-json" class="dropdown-item">Exportar Json</button>
                 </div>
 
             </div>
@@ -203,6 +204,95 @@
 
             <p id="archive-error" class="archive-error">
             </p>
+
+        </div>
+
+    </div>
+
+    <div class="app-modal hidden" id="modal-archive-profile">
+
+        <div class="app-modal-box archive-modal-box">
+
+            <button class="app-modal-close" id="close-archive-profile-modal">
+                ✕
+            </button>
+
+            <h2 class="modal-title">
+                Importar perfil do Internet Archive
+            </h2>
+
+            <div class="form-group">
+                <label>
+                    URL do perfil
+                </label>
+                <input type="text" id="archive-profile-url" placeholder="https://archive.org/details/@usuario/uploads">
+            </div>
+
+            <div class="archive-profile-grid">
+                <div class="form-group">
+                    <label>
+                        Limite de álbuns
+                    </label>
+                    <input type="number" id="archive-profile-limit" value="20" min="1" max="200">
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        Espera entre álbuns (ms)
+                    </label>
+                    <input type="number" id="archive-profile-delay" value="1500" min="0" step="500">
+                </div>
+            </div>
+
+            <label class="archive-profile-checkbox">
+                <input type="checkbox" id="archive-profile-dry-run">
+                Testar sem salvar no banco
+            </label>
+
+            <button id="btn-import-archive-profile-run">
+                Importar Perfil
+            </button>
+
+            <p id="archive-profile-error" class="archive-error"></p>
+            <div id="archive-profile-result" class="archive-profile-result hidden"></div>
+
+        </div>
+
+    </div>
+
+    <div class="app-modal hidden" id="modal-export-json">
+
+        <div class="app-modal-box export-modal-box">
+
+            <button class="app-modal-close" id="close-export-json-modal">
+                ✕
+            </button>
+
+            <h2 class="modal-title">
+                Exportar songs.json
+            </h2>
+
+            <p class="export-modal-copy">
+                Escolha quais dados do banco devem entrar no arquivo.
+            </p>
+
+            <div class="export-options">
+                <label class="export-option">
+                    <input type="checkbox" id="export-include-albums" checked>
+                    <span>Albuns</span>
+                </label>
+
+                <label class="export-option">
+                    <input type="checkbox" id="export-include-playlists" checked>
+                    <span>Playlists</span>
+                </label>
+            </div>
+
+            <button id="btn-run-export-json">
+                Exportar
+            </button>
+
+            <p id="export-json-error" class="archive-error"></p>
 
         </div>
 

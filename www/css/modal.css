@@ -343,6 +343,70 @@
     cursor: pointer;
 }
 
+#btn-import-archive-profile-run {
+
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #9333ea
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#btn-import-archive-profile-run:disabled {
+
+    opacity: 0.7;
+
+    cursor: wait;
+}
+
+#btn-run-export-json {
+
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #9333ea
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#btn-run-export-json:disabled {
+
+    opacity: 0.7;
+
+    cursor: wait;
+}
+
 .archive-error {
 
     margin-top: 14px;
@@ -350,6 +414,96 @@
     color: #ff5b5b;
 
     font-size: 14px;
+}
+
+.archive-profile-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.archive-profile-checkbox {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #b7c1d6;
+
+    margin-top: 8px;
+}
+
+.archive-profile-checkbox input {
+    width: auto;
+}
+
+.archive-profile-result {
+
+    margin-top: 16px;
+
+    padding: 16px;
+
+    border-radius: 16px;
+
+    background: #11151d;
+
+    border: 1px solid #2c3446;
+
+    color: #d8def0;
+
+    line-height: 1.6;
+}
+
+.archive-profile-result.hidden {
+    display: none;
+}
+
+.export-modal-box {
+    max-width: 520px;
+}
+
+.export-modal-copy {
+
+    color: #b7c1d6;
+
+    margin-bottom: 20px;
+}
+
+.export-options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.export-option {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 16px;
+
+    border-radius: 14px;
+
+    background: #11151d;
+
+    border: 1px solid #2c3446;
+
+    color: #d8def0;
+}
+
+.export-option input {
+    width: auto;
 }
 
 /* =========================
@@ -392,4 +546,12 @@
     background: #6c8cff;
 
     color: white;
+}
+
+@media (max-width: 900px) {
+
+    .archive-profile-grid {
+
+        grid-template-columns: 1fr;
+    }
 }

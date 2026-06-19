@@ -51,9 +51,9 @@ export async function insertPlaylistTracks(playlistId, tracks, artist, cover) {
         `, [
             playlistId,
             track.title,
-            artist,
+            track.artist || artist,
             track.url,
-            cover
+            track.cover || cover
         ]);
     }
 }
