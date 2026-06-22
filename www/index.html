@@ -434,7 +434,22 @@
                         Gênero
                     </label>
 
-                    <input type="text" id="modal-album-genero" placeholder="Rock">
+                    <input type="hidden" id="modal-album-genero">
+
+                    <div class="genre-selector" id="modal-genre-selector">
+                        <div class="genre-selected-list" id="modal-genre-selected">
+                        </div>
+
+                        <input
+                            type="text"
+                            id="modal-genre-search"
+                            class="genre-search-input"
+                            placeholder="Buscar genero..."
+                        >
+
+                        <div class="genre-options-list" id="modal-genre-options">
+                        </div>
+                    </div>
 
                 </div>
 

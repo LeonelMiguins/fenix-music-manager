@@ -3,7 +3,8 @@ import { renderAlbums } from './features/albums/pages/renderAlbums.js';
 import {
     importJsonAlbum,
     saveAlbum,
-    saveAlbumAsJson
+    saveAlbumAsJson,
+    initGenreSelector
 } from './features/albums/modals/modalAlbum.js';
 import {
     openArchiveModal,
@@ -238,3 +239,4 @@ document
     });
 
 renderHome();
+initGenreSelector();

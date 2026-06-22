@@ -291,6 +291,138 @@
     background: #262f44;
 }
 
+.genre-selector {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    border-radius: 16px;
+
+    background: #0f141d;
+
+    border: 1px solid #31384b;
+}
+
+.genre-selected-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    min-height: 18px;
+}
+
+.genre-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 12px;
+
+    border-radius: 999px;
+
+    background: #6c8cff;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.genre-tag-remove {
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    padding: 0;
+
+    line-height: 1;
+}
+
+.genre-search-input {
+
+    width: 100%;
+
+    background: #131926;
+
+    border: 1px solid #31384b;
+
+    border-radius: 12px;
+
+    padding: 12px 14px;
+
+    color: white;
+
+    outline: none;
+}
+
+.genre-options-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    max-height: 180px;
+
+    overflow-y: auto;
+}
+
+.genre-option-btn {
+
+    border: 1px solid #31384b;
+
+    background: #1b2130;
+
+    color: #d8def0;
+
+    padding: 10px 14px;
+
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.genre-option-btn:hover {
+
+    background: #2b3550;
+}
+
+.genre-option-btn.active {
+
+    background: #7c3aed;
+
+    border-color: #9f67ff;
+
+    color: white;
+}
+
+.genre-empty-state {
+
+    color: #8c95aa;
+
+    font-size: 14px;
+}
+
 /* =========================
    RESPONSIVO
 ========================= */
