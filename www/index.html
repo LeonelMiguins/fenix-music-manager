@@ -74,6 +74,7 @@
                     <button id="btn-import-archive" class="dropdown-item">Internet Archive</button>
                     <button id="btn-import-archive-profile" class="dropdown-item">Archive perfil (lote)</button>
                     <button id="btn-open-palco" class="dropdown-item">Palco Mp3</button>
+                    <button id="btn-open-jango" class="dropdown-item">Jango Radio</button>
                     <button id="btn-import-json" class="dropdown-item">Importar Json</button>
                 </div>
             </div>
@@ -165,6 +166,70 @@
                 <p id="palco-error"></p>
 
             </div>
+
+        </div>
+
+    </div>
+
+    <div class="app-modal hidden" id="modal-jango">
+
+        <div class="app-modal-box jango-modal-box">
+
+            <button class="app-modal-close" id="close-jango-modal">
+                ✕
+            </button>
+
+            <h2 class="modal-title">
+                Importar Jango Radio
+            </h2>
+
+            <p class="export-modal-copy">
+                O Jango bloqueia scraping direto por servidor. Capture no navegador da estação e cole o JSON aqui.
+            </p>
+
+            <div class="jango-steps">
+                <div class="jango-step">
+                    1. Abra a estação do Jango no navegador e deixe tocar.
+                </div>
+
+                <div class="jango-step">
+                    2. Clique em copiar o script abaixo e cole no console da página.
+                </div>
+
+                <div class="jango-step">
+                    3. Depois de capturar algumas músicas, rode <code>copy(JSON.stringify(jangoCaptureStop(), null, 2))</code> no console.
+                </div>
+
+                <div class="jango-step">
+                    4. Cole o JSON aqui e importe.
+                </div>
+            </div>
+
+            <div class="jango-actions-row">
+                <button id="btn-copy-jango-script" type="button">
+                    Copiar Script
+                </button>
+
+                <button id="btn-fill-jango-example" type="button" class="jango-secondary-btn">
+                    Exemplo
+                </button>
+            </div>
+
+            <p id="jango-copy-feedback" class="jango-feedback"></p>
+
+            <div class="form-group">
+                <label>
+                    JSON capturado
+                </label>
+
+                <textarea id="jango-json-input" class="jango-json-input" placeholder='Cole aqui o JSON retornado por jangoCaptureStop()'></textarea>
+            </div>
+
+            <button id="btn-import-jango-json" type="button">
+                Importar Captura
+            </button>
+
+            <p id="jango-error" class="archive-error"></p>
 
         </div>
 

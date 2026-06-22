@@ -19,6 +19,13 @@ import {
     closePalcoModal,
     searchPalcoAlbum
 } from './features/importers/palcoImporter.js';
+import {
+    openJangoModal,
+    closeJangoModal,
+    copyJangoCaptureScript,
+    importJangoCapturedJson,
+    fillJangoExample
+} from './features/importers/jangoImporter.js';
 import { renderPlaylists } from './features/playlists/pages/renderPlaylists.js';
 import {
     saveMusic,
@@ -103,12 +110,32 @@ document
     .addEventListener('click', openPalcoModal);
 
 document
+    .getElementById('btn-open-jango')
+    .addEventListener('click', openJangoModal);
+
+document
     .getElementById('close-palco-modal')
     .addEventListener('click', closePalcoModal);
 
 document
+    .getElementById('close-jango-modal')
+    .addEventListener('click', closeJangoModal);
+
+document
     .getElementById('btn-search-palco')
     .addEventListener('click', searchPalcoAlbum);
+
+document
+    .getElementById('btn-copy-jango-script')
+    .addEventListener('click', copyJangoCaptureScript);
+
+document
+    .getElementById('btn-import-jango-json')
+    .addEventListener('click', importJangoCapturedJson);
+
+document
+    .getElementById('btn-fill-jango-example')
+    .addEventListener('click', fillJangoExample);
 
 document
     .getElementById('btn-import-archive')
