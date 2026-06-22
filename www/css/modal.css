@@ -465,6 +465,8 @@
 
 .export-modal-box {
     max-width: 520px;
+    max-height: 85vh;
+    overflow-y: auto;
 }
 
 .export-modal-copy {
@@ -474,6 +476,20 @@
     margin-bottom: 20px;
 }
 
+.export-section {
+
+    margin-top: 22px;
+}
+
+.export-section-title {
+
+    margin-bottom: 14px;
+
+    color: #f3f5fb;
+
+    font-size: 18px;
+}
+
 .export-options {
 
     display: flex;
@@ -481,6 +497,13 @@
     flex-direction: column;
 
     gap: 12px;
+}
+
+.export-options-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .export-option {
@@ -551,6 +574,11 @@
 @media (max-width: 900px) {
 
     .archive-profile-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .export-options-grid {
 
         grid-template-columns: 1fr;
     }

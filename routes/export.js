@@ -12,7 +12,8 @@ router.post(
         try {
             const {
                 includeAlbums = true,
-                includePlaylists = true
+                includePlaylists = true,
+                fields = {}
             } = req.body || {};
 
             const data =
@@ -20,7 +21,8 @@ router.post(
                     includeAlbums:
                         Boolean(includeAlbums),
                     includePlaylists:
-                        Boolean(includePlaylists)
+                        Boolean(includePlaylists),
+                    fields
                 });
 
             res.setHeader(

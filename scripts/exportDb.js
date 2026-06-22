@@ -55,8 +55,22 @@ function buildPlaylistTrack(track) {
 export async function exportDB(options = {}) {
     const {
         includeAlbums = true,
-        includePlaylists = true
+        includePlaylists = true,
+        fields = {}
     } = options;
+
+    const exportFields = {
+        related: fields.related ?? true,
+        year: fields.year ?? true,
+        genrer: fields.genrer ?? true,
+        description: fields.description ?? true,
+        cover: fields.cover ?? true,
+        server: fields.server ?? true,
+        author: fields.author ?? true,
+        savedAt: fields.savedAt ?? true,
+        sourceUrl: fields.sourceUrl ?? true,
+        origin: fields.origin ?? true
+    };
 
     const db =
         new sqlite3.Database(paths.dbFile);
@@ -148,28 +162,72 @@ export async function exportDB(options = {}) {
                     ? album.data_criacao || origin?.data_criacao || ''
                     : origin?.data_criacao || '';
 
-            return {
+            const formattedAlbum = {
                 id: album.id,
                 type: 'album',
                 album: album.titulo,
                 artist: album.artista_nome,
-                related: album.artista_relacionado ?? '',
-                year: album.ano ?? '',
-                genrer: album.genero ?? '',
-                cover: album.cover ?? '',
-                server: album.servidor ?? '',
-                author: album.autor ?? '',
-                savedAt,
-                sourceUrl: origin?.link_site || '',
-                origin: origin ? {
+                tracks
+            };
+
+            if (exportFields.related) {
+                formattedAlbum.related =
+                    album.artista_relacionado ?? '';
+            }
+
+            if (exportFields.year) {
+                formattedAlbum.year =
+                    album.ano ?? '';
+            }
+
+            if (exportFields.genrer) {
+                formattedAlbum.genrer =
+                    album.genero ?? '';
+            }
+
+            if (exportFields.description) {
+                formattedAlbum.description =
+                    albumColumns.includes('descricao')
+                        ? album.descricao ?? ''
+                        : '';
+            }
+
+            if (exportFields.cover) {
+                formattedAlbum.cover =
+                    album.cover ?? '';
+            }
+
+            if (exportFields.server) {
+                formattedAlbum.server =
+                    album.servidor ?? '';
+            }
+
+            if (exportFields.author) {
+                formattedAlbum.author =
+                    album.autor ?? '';
+            }
+
+            if (exportFields.savedAt) {
+                formattedAlbum.savedAt =
+                    savedAt;
+            }
+
+            if (exportFields.sourceUrl) {
+                formattedAlbum.sourceUrl =
+                    origin?.link_site || '';
+            }
+
+            if (exportFields.origin) {
+                formattedAlbum.origin = origin ? {
                     id: origin.id,
                     album_id: origin.album_id,
                     nome_album: origin.nome_album,
                     link_site: origin.link_site,
                     data_criacao: origin.data_criacao
-                } : null,
-                tracks
-            };
+                } : null;
+            }
+
+            return formattedAlbum;
         });
 
         const playlistsFormatadas = playlists.map(playlist => {
@@ -183,20 +241,57 @@ export async function exportDB(options = {}) {
                     ? playlist.data_criacao || ''
                     : '';
 
-            return {
+            const formattedPlaylist = {
                 id: playlist.id,
                 type: 'playlist',
                 album: playlist.titulo,
                 artist: playlist.artista_nome,
-                related: playlist.artista_relacionado ?? '',
-                year: playlist.ano ?? '',
-                genrer: playlist.genero ?? '',
-                cover: playlist.cover ?? '',
-                server: playlist.servidor ?? '',
-                author: playlist.autor ?? '',
-                savedAt,
                 tracks
             };
+
+            if (exportFields.related) {
+                formattedPlaylist.related =
+                    playlist.artista_relacionado ?? '';
+            }
+
+            if (exportFields.year) {
+                formattedPlaylist.year =
+                    playlist.ano ?? '';
+            }
+
+            if (exportFields.genrer) {
+                formattedPlaylist.genrer =
+                    playlist.genero ?? '';
+            }
+
+            if (exportFields.description) {
+                formattedPlaylist.description =
+                    playlistColumns.includes('descricao')
+                        ? playlist.descricao ?? ''
+                        : '';
+            }
+
+            if (exportFields.cover) {
+                formattedPlaylist.cover =
+                    playlist.cover ?? '';
+            }
+
+            if (exportFields.server) {
+                formattedPlaylist.server =
+                    playlist.servidor ?? '';
+            }
+
+            if (exportFields.author) {
+                formattedPlaylist.author =
+                    playlist.autor ?? '';
+            }
+
+            if (exportFields.savedAt) {
+                formattedPlaylist.savedAt =
+                    savedAt;
+            }
+
+            return formattedPlaylist;
         });
 
         const exportData = {

@@ -23,6 +23,29 @@ export async function exportDatabaseJson() {
             'export-include-playlists'
         ).checked;
 
+    const fields = {
+        related:
+            document.getElementById('export-field-related').checked,
+        year:
+            document.getElementById('export-field-year').checked,
+        genrer:
+            document.getElementById('export-field-genrer').checked,
+        description:
+            document.getElementById('export-field-description').checked,
+        cover:
+            document.getElementById('export-field-cover').checked,
+        server:
+            document.getElementById('export-field-server').checked,
+        author:
+            document.getElementById('export-field-author').checked,
+        savedAt:
+            document.getElementById('export-field-savedat').checked,
+        sourceUrl:
+            document.getElementById('export-field-sourceurl').checked,
+        origin:
+            document.getElementById('export-field-origin').checked
+    };
+
     const error =
         document.getElementById(
             'export-json-error'
@@ -56,7 +79,8 @@ export async function exportDatabaseJson() {
                     },
                     body: JSON.stringify({
                         includeAlbums,
-                        includePlaylists
+                        includePlaylists,
+                        fields
                     })
                 }
             );
