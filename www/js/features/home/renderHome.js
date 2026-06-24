@@ -2,6 +2,7 @@ import { renderAlbums } from '../albums/pages/renderAlbums.js';
 import { renderPlaylists } from '../playlists/pages/renderPlaylists.js';
 import { renderAlbumPage } from '../albums/pages/renderAlbumPage.js';
 import { renderPlaylistPage } from '../playlists/pages/renderPlaylistPage.js';
+import { prepareNewAlbumModal } from '../albums/modals/modalAlbum.js';
 
 function formatSourceLabel(value) {
     if (!value) {
@@ -200,6 +201,7 @@ export async function renderHome() {
     document
         .getElementById('home-open-create')
         .addEventListener('click', () => {
+            prepareNewAlbumModal();
             document
                 .getElementById('modal-album')
                 .classList.remove('hidden');

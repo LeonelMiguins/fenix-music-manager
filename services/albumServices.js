@@ -1,11 +1,13 @@
 import {
+    deleteAlbumTracksByAlbumId,
     deleteAlbumById,
     findAlbumById,
     findAlbumTracksById,
     findAllAlbums,
     insertAlbum,
     insertAlbumTracks,
-    insertMusicIntoAlbum
+    insertMusicIntoAlbum,
+    updateAlbumById
 } from '../repositories/albumRepository.js';
 
 // =========================
@@ -63,4 +65,13 @@ export async function getAlbumById(id) {
 
 export async function addMusicToAlbum(albumId, music) {
     await insertMusicIntoAlbum(albumId, music);
+}
+
+export async function updateAlbum(albumId, album) {
+    await updateAlbumById(albumId, album);
+    await deleteAlbumTracksByAlbumId(albumId);
+
+    if (album.tracks && album.tracks.length > 0) {
+        await insertAlbumTracks(albumId, album.tracks, album.artist);
+    }
 }

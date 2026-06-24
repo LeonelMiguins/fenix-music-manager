@@ -35,6 +35,30 @@ export function insertAlbum(album) {
     ]);
 }
 
+export function updateAlbumById(albumId, album) {
+    return run(`
+        UPDATE albums
+        SET
+            artista_nome = ?,
+            titulo = ?,
+            ano = ?,
+            genero = ?,
+            cover = ?,
+            servidor = ?,
+            autor = ?
+        WHERE id = ?
+    `, [
+        album.artist,
+        album.album,
+        album.year,
+        album.genrer,
+        album.cover,
+        album.server,
+        album.author,
+        albumId
+    ]);
+}
+
 export async function insertAlbumTracks(albumId, tracks, artist) {
     for (const track of tracks) {
         await run(`
@@ -52,6 +76,13 @@ export async function insertAlbumTracks(albumId, tracks, artist) {
             track.url
         ]);
     }
+}
+
+export function deleteAlbumTracksByAlbumId(albumId) {
+    return run(`
+        DELETE FROM musicas
+        WHERE album_id = ?
+    `, [albumId]);
 }
 
 export function findAlbumById(id) {

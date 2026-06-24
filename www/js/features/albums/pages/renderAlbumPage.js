@@ -2,6 +2,10 @@ import {
     openMusicModal
 }
 from '../../library/modals/addMusicModal.js';
+import {
+    openAlbumEditModal
+}
+from '../modals/modalAlbum.js';
 
 export async function renderAlbumPage(albumId) {
 
@@ -110,6 +114,12 @@ export async function renderAlbumPage(albumId) {
                 <!-- ACTIONS -->
 
                 <div class="album-actions">
+
+                    <button
+                        id="btn-edit-album" class="album-action-btn"
+                    >
+                        Editar Álbum
+                    </button>
 
                     <button
                         id="btn-add-music-album" class="album-action-btn"
@@ -264,6 +274,18 @@ deleteBtn.addEventListener(
     }
 
     
+);
+
+const editBtn =
+    document.getElementById(
+        'btn-edit-album'
+    );
+
+editBtn.addEventListener(
+    'click',
+    () => {
+        openAlbumEditModal(album);
+    }
 );
 
 

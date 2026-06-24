@@ -1,7 +1,9 @@
 import { renderHome } from './features/home/renderHome.js';
 import { renderAlbums } from './features/albums/pages/renderAlbums.js';
 import {
+    closeAlbumModal,
     importJsonAlbum,
+    prepareNewAlbumModal,
     saveAlbum,
     saveAlbumAsJson,
     initGenreSelector
@@ -205,11 +207,12 @@ const modal =
 
 document.addEventListener('click', event => {
     if (event.target.id === 'btn-open-album-modal') {
+        prepareNewAlbumModal();
         modal.classList.remove('hidden');
     }
 
     if (event.target.id === 'app-modal-close') {
-        modal.classList.add('hidden');
+        closeAlbumModal();
     }
 });
 

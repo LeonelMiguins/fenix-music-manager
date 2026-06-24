@@ -5,7 +5,8 @@ import {
     addMusicToAlbum,
     getAlbumById,
     getAlbums,
-    deleteAlbum
+    deleteAlbum,
+    updateAlbum
 } from '../services/albumServices.js';
 import { createPlaylist } from '../services/playlistService.js';
 
@@ -86,6 +87,19 @@ router.get('/:id', async (req, res) => {
         }
 
         res.json(album);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+router.put('/:id', async (req, res) => {
+    try {
+        await updateAlbum(req.params.id, req.body);
+
+        res.json({
+            success: true
+        });
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: err.message });

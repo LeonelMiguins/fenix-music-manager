@@ -2,6 +2,35 @@ let availableGenres = [];
 let selectedGenres = [];
 let genreSelectorInitialized = false;
 
+function getAlbumModal() {
+    return document.getElementById('modal-album');
+}
+
+function getSaveAlbumButton() {
+    return document.getElementById('modal-save-album-btn');
+}
+
+function getAlbumModalMode() {
+    return getAlbumModal().dataset.mode || 'create';
+}
+
+function getEditingAlbumId() {
+    return getAlbumModal().dataset.albumId || '';
+}
+
+function setAlbumModalMode(mode = 'create', albumId = '') {
+    const modal = getAlbumModal();
+    const saveButton = getSaveAlbumButton();
+
+    modal.dataset.mode = mode;
+    modal.dataset.albumId = albumId || '';
+
+    saveButton.textContent =
+        mode === 'edit'
+            ? 'Salvar Alteracoes'
+            : 'Salvar No Banco De Dados';
+}
+
 function normalizeGenreText(value = '') {
     return String(value)
         .trim()
@@ -296,9 +325,7 @@ function getTracksFromModal() {
 // =========================
 
 export function openAlbumModal() {
-
-    document
-        .getElementById('modal-album')
+    getAlbumModal()
         .classList.remove('hidden');
 }
 
@@ -307,10 +334,47 @@ export function openAlbumModal() {
 // =========================
 
 export function closeAlbumModal() {
-
-    document
-        .getElementById('modal-album')
+    getAlbumModal()
         .classList.add('hidden');
+
+    setAlbumModalMode('create');
+}
+
+export function prepareNewAlbumModal() {
+    setAlbumModalMode('create');
+    fillAlbumModal({
+        type: 'album',
+        album: '',
+        artist: '',
+        related: '',
+        year: '',
+        genrer: '',
+        cover: '',
+        server: '',
+        author: '',
+        tracks: []
+    });
+}
+
+export function openAlbumEditModal(album) {
+    setAlbumModalMode('edit', album.id || '');
+    fillAlbumModal({
+        ...album,
+        type: 'album',
+        album: album.album || album.titulo || '',
+        artist: album.artist || album.artista_nome || '',
+        related: album.related || album.artista_relacionado || '',
+        year: album.year || album.ano || '',
+        genrer: album.genrer || album.genero || '',
+        server: album.server || album.servidor || '',
+        author: album.author || album.autor || '',
+        tracks: (album.tracks || []).map(track => ({
+            title: track.title || track.titulo || '',
+            artist: track.artist || track.artista || '',
+            url: track.url || ''
+        }))
+    });
+    openAlbumModal();
 }
 
 // =========================
@@ -318,6 +382,12 @@ export function closeAlbumModal() {
 // =========================
 
 export async function saveAlbum() {
+    const modalMode =
+        getAlbumModalMode();
+
+    const editingAlbumId =
+        getEditingAlbumId();
+
     const selectedType =
         document.querySelector(
             '.album-type-btn.active'
@@ -363,22 +433,41 @@ export async function saveAlbum() {
 
     try {
         const response =
-            await fetch('/api/albums', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(album)
-            });
+            await fetch(
+                modalMode === 'edit'
+                    ? `/api/albums/${editingAlbumId}`
+                    : '/api/albums',
+                {
+                    method:
+                        modalMode === 'edit'
+                            ? 'PUT'
+                            : 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(album)
+                }
+            );
 
         const result =
             await response.json();
 
         console.log(result);
 
-        alert(selectedType + ' salvo!');
+        alert(
+            modalMode === 'edit'
+                ? 'Álbum atualizado!'
+                : selectedType + ' salvo!'
+        );
 
         closeAlbumModal();
+
+        if (modalMode === 'edit' && editingAlbumId) {
+            const { renderAlbumPage } =
+                await import('../pages/renderAlbumPage.js');
+
+            renderAlbumPage(editingAlbumId);
+        }
     } catch (err) {
         console.error(err);
         alert('Erro ao salvar álbum');
@@ -396,15 +485,15 @@ export function fillAlbumModal(album) {
 
     document
         .getElementById('modal-album-titulo')
-        .value = album.album || '';
+        .value = album.album || album.titulo || '';
 
     document
         .getElementById('modal-album-artista')
-        .value = album.artist || '';
+        .value = album.artist || album.artista_nome || '';
 
     document
         .getElementById('modal-album-relacionado')
-        .value = album.related || '';
+        .value = album.related || album.artista_relacionado || '';
 
     setSelectedGenres(
         parseGenres(
@@ -416,15 +505,15 @@ export function fillAlbumModal(album) {
 
     document
         .getElementById('modal-album-servidor')
-        .value = album.server || '';
+        .value = album.server || album.servidor || '';
 
     document
         .getElementById('modal-album-autor')
-        .value = album.author || '';
+        .value = album.author || album.autor || '';
 
     document
         .getElementById('modal-album-ano')
-        .value = album.year || '';
+        .value = album.year || album.ano || '';
 
     const genreSearchInput =
         document.getElementById('modal-genre-search');
@@ -468,12 +557,12 @@ export function fillAlbumModal(album) {
             document.createElement('div');
 
         div.className = 'track-item';
-        div.dataset.title = track.title || '';
-        div.dataset.artist = track.artist || '';
+        div.dataset.title = track.title || track.titulo || '';
+        div.dataset.artist = track.artist || track.artista || '';
         div.dataset.url = track.url || '';
 
         div.innerHTML = `
-            ${index + 1} • ${track.title}${track.artist ? ` - ${track.artist}` : ''}
+            ${index + 1} • ${(track.title || track.titulo || 'Sem titulo')}${(track.artist || track.artista) ? ` - ${track.artist || track.artista}` : ''}
         `;
 
         tracksContainer.appendChild(div);
