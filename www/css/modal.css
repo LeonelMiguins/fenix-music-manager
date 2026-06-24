@@ -677,6 +677,90 @@
     font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
 }
 
+.jango-preview-card {
+
+    margin-top: 16px;
+
+    margin-bottom: 8px;
+
+    padding: 16px;
+
+    border-radius: 16px;
+
+    background: #11151d;
+
+    border: 1px solid #2c3446;
+}
+
+.jango-preview-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-bottom: 14px;
+
+    color: #f3f5fb;
+}
+
+.jango-preview-header span {
+
+    color: #9fb2ff;
+
+    font-size: 13px;
+}
+
+.jango-preview-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    max-height: 220px;
+
+    overflow-y: auto;
+}
+
+.jango-preview-item {
+
+    padding: 12px 14px;
+
+    border-radius: 12px;
+
+    background: #171c29;
+
+    border: 1px solid #2c3446;
+}
+
+.jango-preview-item strong {
+
+    display: block;
+
+    color: #f3f5fb;
+
+    margin-bottom: 4px;
+}
+
+.jango-preview-item span {
+
+    color: #aeb7cd;
+
+    font-size: 14px;
+}
+
+.jango-preview-empty {
+
+    color: #8c95aa;
+
+    font-size: 14px;
+}
+
 .archive-profile-checkbox {
 
     display: flex;

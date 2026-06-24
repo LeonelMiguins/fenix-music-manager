@@ -197,11 +197,11 @@
                 </div>
 
                 <div class="jango-step">
-                    3. Depois de capturar algumas músicas, rode <code>copy(JSON.stringify(jangoCaptureStop(), null, 2))</code> no console.
+                    3. Um painel flutuante vai aparecer na página do Jango mostrando as faixas capturadas em tempo real.
                 </div>
 
                 <div class="jango-step">
-                    4. Cole o JSON aqui e importe.
+                    4. Use o botão <code>Copiar JSON</code> no painel, cole aqui e importe.
                 </div>
             </div>
 
@@ -223,6 +223,19 @@
                 </label>
 
                 <textarea id="jango-json-input" class="jango-json-input" placeholder='Cole aqui o JSON retornado por jangoCaptureStop()'></textarea>
+            </div>
+
+            <div class="jango-preview-card">
+                <div class="jango-preview-header">
+                    <strong>Faixas capturadas</strong>
+                    <span id="jango-preview-count">0 faixas</span>
+                </div>
+
+                <div id="jango-preview-list" class="jango-preview-list">
+                    <div class="jango-preview-empty">
+                        Cole o JSON para visualizar as musicas capturadas.
+                    </div>
+                </div>
             </div>
 
             <button id="btn-import-jango-json" type="button">

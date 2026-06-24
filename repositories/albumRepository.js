@@ -8,6 +8,7 @@ export function findAllAlbums() {
     return all(`
         SELECT *
         FROM albums
+        ORDER BY id DESC
     `);
 }
 
