@@ -3,10 +3,7 @@ import {
 }
 from '../components/albumCard.js';
 
-import {
-    renderAlbumPage
-}
-from './renderAlbumPage.js';
+import { navigateToAlbum } from '../../../navigation.js';
 
 export async function renderAlbums() {
 
@@ -64,8 +61,7 @@ export async function renderAlbums() {
             createAlbumCard(album);
 
         card.addEventListener('click', () => {
-            localStorage.setItem('CURRENT_ALBUM_ID', album.id);
-            renderAlbumPage(album.id);
+            navigateToAlbum(album.id);
         });
 
         grid.appendChild(card);

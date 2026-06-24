@@ -3,10 +3,7 @@ import {
 }
 from '../components/playlistCard.js';
 
-import {
-    renderPlaylistPage
-}
-from './renderPlaylistPage.js';
+import { navigateToPlaylist } from '../../../navigation.js';
 
 export async function renderPlaylists() {
 
@@ -66,16 +63,9 @@ export async function renderPlaylists() {
             );
 
         card.addEventListener('click', () => {
-
-            localStorage.setItem(
-                'CURRENT_PLAYLIST_ID',
+            navigateToPlaylist(
                 playlist.id
             );
-
-            renderPlaylistPage(
-                playlist.id
-            );
-
         });
 
         grid.appendChild(card);

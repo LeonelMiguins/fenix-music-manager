@@ -6,6 +6,7 @@ import {
     openAlbumEditModal
 }
 from '../modals/modalAlbum.js';
+import { navigateToAlbums } from '../../../navigation.js';
 
 export async function renderAlbumPage(albumId) {
 
@@ -257,10 +258,9 @@ deleteBtn.addEventListener(
                 behavior: 'smooth'
             });
 
-            const { renderAlbums } =
-                await import('./renderAlbums.js');
-
-            renderAlbums();
+            navigateToAlbums({
+                replace: true
+            });
 
         } catch (err) {
 

@@ -1,5 +1,3 @@
-import { renderHome } from './features/home/renderHome.js';
-import { renderAlbums } from './features/albums/pages/renderAlbums.js';
 import {
     closeAlbumModal,
     importJsonAlbum,
@@ -28,7 +26,6 @@ import {
     importJangoCapturedJson,
     fillJangoExample
 } from './features/importers/jangoImporter.js';
-import { renderPlaylists } from './features/playlists/pages/renderPlaylists.js';
 import {
     saveMusic,
     closeMusicModal
@@ -38,19 +35,13 @@ import {
     openExportModal,
     closeExportModal
 } from './features/library/actions/exportDatabaseJson.js';
-import { renderSearch } from './features/search/renderSearch.js';
-
-const navigationButtons =
-    document.querySelectorAll('[data-view]');
-
-function setActiveView(viewName) {
-    navigationButtons.forEach(button => {
-        button.classList.toggle(
-            'active',
-            button.dataset.view === viewName
-        );
-    });
-}
+import {
+    initNavigation,
+    navigateToAlbums,
+    navigateToHome,
+    navigateToPlaylists,
+    navigateToSearch
+} from './navigation.js';
 
 document
     .getElementById('export-db-to-json')
@@ -89,22 +80,19 @@ document
 document
     .getElementById('btn-render-home')
     .addEventListener('click', () => {
-        setActiveView('home');
-        renderHome();
+        navigateToHome();
     });
 
 document
     .getElementById('btn-render-albums')
     .addEventListener('click', () => {
-        setActiveView('albums');
-        renderAlbums();
+        navigateToAlbums();
     });
 
 document
     .getElementById('btn-render-playlists')
     .addEventListener('click', () => {
-        setActiveView('playlists');
-        renderPlaylists();
+        navigateToPlaylists();
     });
 
 document
@@ -246,8 +234,7 @@ document
             return;
         }
 
-        setActiveView(null);
-        renderSearch(query);
+        navigateToSearch(query);
     });
 
 document
@@ -264,9 +251,8 @@ document
             return;
         }
 
-        setActiveView(null);
-        renderSearch(query);
+        navigateToSearch(query);
     });
 
-renderHome();
 initGenreSelector();
+initNavigation();

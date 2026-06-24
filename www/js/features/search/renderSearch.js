@@ -8,14 +8,10 @@ import {
 from '../playlists/components/playlistCard.js';
 
 import {
-    renderAlbumPage
+    navigateToAlbum,
+    navigateToPlaylist
 }
-from '../albums/pages/renderAlbumPage.js';
-
-import {
-    renderPlaylistPage
-}
-from '../playlists/pages/renderPlaylistPage.js';
+from '../../navigation.js';
 
 export async function renderSearch(query) {
 
@@ -80,25 +76,14 @@ export async function renderSearch(query) {
                 if (
                     item.type === 'playlist'
                 ) {
-
-                    localStorage.setItem(
-                        'CURRENT_PLAYLIST_ID',
-                        item.id
-                    );
-
-                    renderPlaylistPage(
+                    navigateToPlaylist(
                         item.id
                     );
 
                     return;
                 }
 
-                localStorage.setItem(
-                    'CURRENT_ALBUM_ID',
-                    item.id
-                );
-
-                renderAlbumPage(
+                navigateToAlbum(
                     item.id
                 );
             }

@@ -1,8 +1,10 @@
-import { renderAlbums } from '../albums/pages/renderAlbums.js';
-import { renderPlaylists } from '../playlists/pages/renderPlaylists.js';
-import { renderAlbumPage } from '../albums/pages/renderAlbumPage.js';
-import { renderPlaylistPage } from '../playlists/pages/renderPlaylistPage.js';
 import { prepareNewAlbumModal } from '../albums/modals/modalAlbum.js';
+import {
+    navigateToAlbum,
+    navigateToAlbums,
+    navigateToPlaylist,
+    navigateToPlaylists
+} from '../../navigation.js';
 
 function formatSourceLabel(value) {
     if (!value) {
@@ -209,11 +211,15 @@ export async function renderHome() {
 
     document
         .getElementById('home-open-albums')
-        .addEventListener('click', renderAlbums);
+        .addEventListener('click', () => {
+            navigateToAlbums();
+        });
 
     document
         .getElementById('home-open-playlists')
-        .addEventListener('click', renderPlaylists);
+        .addEventListener('click', () => {
+            navigateToPlaylists();
+        });
 
     document
         .querySelectorAll('.recent-item-card')
@@ -223,21 +229,11 @@ export async function renderHome() {
                     card.dataset;
 
                 if (type === 'playlist') {
-                    localStorage.setItem(
-                        'CURRENT_PLAYLIST_ID',
-                        id
-                    );
-
-                    renderPlaylistPage(id);
+                    navigateToPlaylist(id);
                     return;
                 }
 
-                localStorage.setItem(
-                    'CURRENT_ALBUM_ID',
-                    id
-                );
-
-                renderAlbumPage(id);
+                navigateToAlbum(id);
             });
         });
 }

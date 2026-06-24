@@ -6,6 +6,7 @@ import {
     openPlaylistEditModal
 }
     from '../../albums/modals/modalAlbum.js';
+import { navigateToPlaylists } from '../../../navigation.js';
 
 export async function renderPlaylistPage(playlistId) {
 
@@ -274,10 +275,9 @@ export async function renderPlaylistPage(playlistId) {
                     behavior: 'smooth'
                 });
 
-                const { renderPlaylists } =
-                    await import('./renderPlaylists.js');
-
-                renderPlaylists();
+                navigateToPlaylists({
+                    replace: true
+                });
 
             } catch (err) {
 
