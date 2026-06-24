@@ -3,7 +3,8 @@ import {
     addMusicToPlaylist,
     getPlaylistById,
     getPlaylists,
-    removePlaylist
+    removePlaylist,
+    updatePlaylist
 } from '../services/playlistService.js';
 
 const router = express.Router();
@@ -29,6 +30,19 @@ router.get('/', async (req, res) => {
 router.delete('/:id', async (req, res) => {
     try {
         await removePlaylist(req.params.id);
+
+        res.json({
+            success: true
+        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+router.put('/:id', async (req, res) => {
+    try {
+        await updatePlaylist(req.params.id, req.body);
 
         res.json({
             success: true

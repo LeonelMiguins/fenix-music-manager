@@ -37,6 +37,32 @@ export function insertPlaylist(playlist) {
     ]);
 }
 
+export function updatePlaylistById(playlistId, playlist) {
+    return run(`
+        UPDATE playlists
+        SET
+            artista_nome = ?,
+            artista_relacionado = ?,
+            titulo = ?,
+            ano = ?,
+            genero = ?,
+            cover = ?,
+            servidor = ?,
+            autor = ?
+        WHERE id = ?
+    `, [
+        playlist.artist,
+        playlist.related,
+        playlist.album,
+        playlist.year,
+        playlist.genrer,
+        playlist.cover,
+        playlist.server,
+        playlist.author,
+        playlistId
+    ]);
+}
+
 export async function insertPlaylistTracks(playlistId, tracks, artist, cover) {
     for (const track of tracks) {
         await run(`
@@ -56,6 +82,13 @@ export async function insertPlaylistTracks(playlistId, tracks, artist, cover) {
             track.cover || cover
         ]);
     }
+}
+
+export function deletePlaylistTracksByPlaylistId(playlistId) {
+    return run(`
+        DELETE FROM playlists_musicas
+        WHERE playlist_id = ?
+    `, [playlistId]);
 }
 
 export function deletePlaylistById(id) {

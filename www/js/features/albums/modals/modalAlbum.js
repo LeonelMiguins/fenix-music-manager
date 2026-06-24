@@ -377,6 +377,28 @@ export function openAlbumEditModal(album) {
     openAlbumModal();
 }
 
+export function openPlaylistEditModal(playlist) {
+    setAlbumModalMode('edit', playlist.id || '');
+    fillAlbumModal({
+        ...playlist,
+        type: 'playlist',
+        album: playlist.album || playlist.titulo || '',
+        artist: playlist.artist || playlist.artista_nome || '',
+        related: playlist.related || playlist.artista_relacionado || '',
+        year: playlist.year || playlist.ano || '',
+        genrer: playlist.genrer || playlist.genero || '',
+        server: playlist.server || playlist.servidor || '',
+        author: playlist.author || playlist.autor || '',
+        tracks: (playlist.tracks || []).map(track => ({
+            title: track.title || track.titulo || '',
+            artist: track.artist || track.artista || '',
+            url: track.url || '',
+            cover: track.cover || playlist.cover || ''
+        }))
+    });
+    openAlbumModal();
+}
+
 // =========================
 // SALVAR ÁLBUM
 // =========================
@@ -432,10 +454,16 @@ export async function saveAlbum() {
     console.log('ALBUM:', album);
 
     try {
+        const isEditingPlaylist =
+            modalMode === 'edit' &&
+            selectedType === 'playlist';
+
         const response =
             await fetch(
                 modalMode === 'edit'
-                    ? `/api/albums/${editingAlbumId}`
+                    ? isEditingPlaylist
+                        ? `/api/playlists/${editingAlbumId}`
+                        : `/api/albums/${editingAlbumId}`
                     : '/api/albums',
                 {
                     method:
@@ -456,21 +484,34 @@ export async function saveAlbum() {
 
         alert(
             modalMode === 'edit'
-                ? 'Álbum atualizado!'
+                ? selectedType === 'playlist'
+                    ? 'Playlist atualizada!'
+                    : 'Álbum atualizado!'
                 : selectedType + ' salvo!'
         );
 
         closeAlbumModal();
 
         if (modalMode === 'edit' && editingAlbumId) {
-            const { renderAlbumPage } =
-                await import('../pages/renderAlbumPage.js');
+            if (selectedType === 'playlist') {
+                const { renderPlaylistPage } =
+                    await import('../../playlists/pages/renderPlaylistPage.js');
 
-            renderAlbumPage(editingAlbumId);
+                renderPlaylistPage(editingAlbumId);
+            } else {
+                const { renderAlbumPage } =
+                    await import('../pages/renderAlbumPage.js');
+
+                renderAlbumPage(editingAlbumId);
+            }
         }
     } catch (err) {
         console.error(err);
-        alert('Erro ao salvar álbum');
+        alert(
+            selectedType === 'playlist'
+                ? 'Erro ao salvar playlist'
+                : 'Erro ao salvar álbum'
+        );
     }
 }
 

@@ -1,11 +1,13 @@
 import {
     deletePlaylistById,
+    deletePlaylistTracksByPlaylistId,
     findAllPlaylists,
     findPlaylistById,
     findPlaylistTracksById,
     insertMusicIntoPlaylist,
     insertPlaylist,
-    insertPlaylistTracks
+    insertPlaylistTracks,
+    updatePlaylistById
 } from '../repositories/playlistRepository.js';
 
 export async function getPlaylists() {
@@ -49,4 +51,18 @@ export async function getPlaylistById(id) {
 
 export async function addMusicToPlaylist(playlistId, music) {
     await insertMusicIntoPlaylist(playlistId, music);
+}
+
+export async function updatePlaylist(playlistId, playlist) {
+    await updatePlaylistById(playlistId, playlist);
+    await deletePlaylistTracksByPlaylistId(playlistId);
+
+    if (playlist.tracks && playlist.tracks.length > 0) {
+        await insertPlaylistTracks(
+            playlistId,
+            playlist.tracks,
+            playlist.artist,
+            playlist.cover
+        );
+    }
 }

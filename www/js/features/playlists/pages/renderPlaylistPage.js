@@ -2,6 +2,10 @@ import {
     openMusicModal
 }
     from '../../library/modals/addMusicModal.js';
+import {
+    openPlaylistEditModal
+}
+    from '../../albums/modals/modalAlbum.js';
 
 export async function renderPlaylistPage(playlistId) {
 
@@ -113,6 +117,13 @@ export async function renderPlaylistPage(playlistId) {
 
                     <button
                         class="playlist-action-btn"
+                        id="btn-edit-playlist"
+                    >
+                        Editar Playlist
+                    </button>
+
+                    <button
+                        class="playlist-action-btn"
                         id="btn-add-music-playlist"
                     >
                         + Adicionar Música
@@ -197,6 +208,22 @@ export async function renderPlaylistPage(playlistId) {
         );
 
     });
+
+    // =========================
+    // EDIT PLAYLIST
+    // =========================
+
+    const editBtn =
+        document.getElementById(
+            'btn-edit-playlist'
+        );
+
+    editBtn.addEventListener(
+        'click',
+        () => {
+            openPlaylistEditModal(playlist);
+        }
+    );
 
     // =========================
     // DELETE PLAYLIST
