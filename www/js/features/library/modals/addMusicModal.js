@@ -3,6 +3,51 @@ import { renderPlaylistPage } from '../../playlists/pages/renderPlaylistPage.js'
 
 let CURRENT_TYPE = null;
 let CURRENT_ID = null;
+let CURRENT_MODE = 'create';
+let CURRENT_TRACK_ID = null;
+
+function getMusicModalTitle() {
+    return document.getElementById(
+        'add-music-modal-title'
+    );
+}
+
+function getMusicSaveButton() {
+    return document.getElementById(
+        'btn-save-music'
+    );
+}
+
+function fillMusicForm(music = {}) {
+    document.getElementById(
+        'add-music-title'
+    ).value = music.title || music.titulo || '';
+
+    document.getElementById(
+        'add-music-artist'
+    ).value = music.artist || music.artista || '';
+
+    document.getElementById(
+        'add-music-url'
+    ).value = music.url || '';
+
+    document.getElementById(
+        'add-music-cover'
+    ).value = music.cover || '';
+}
+
+function resetMusicModalState() {
+    CURRENT_MODE = 'create';
+    CURRENT_TRACK_ID = null;
+
+    getMusicModalTitle().textContent =
+        'Adicionar Música';
+
+    getMusicSaveButton().textContent =
+        'Salvar';
+
+    fillMusicForm();
+}
 
 // =========================
 // OPEN
@@ -15,6 +60,43 @@ export function openMusicModal(
 
     CURRENT_TYPE = type;
     CURRENT_ID = id;
+    CURRENT_MODE = 'create';
+    CURRENT_TRACK_ID = null;
+
+    getMusicModalTitle().textContent =
+        'Adicionar Música';
+
+    getMusicSaveButton().textContent =
+        'Salvar';
+
+    fillMusicForm();
+
+    document
+        .getElementById(
+            'modal-add-music'
+        )
+        .classList.remove(
+            'hidden'
+        );
+}
+
+export function openEditMusicModal(
+    type,
+    id,
+    music
+) {
+    CURRENT_TYPE = type;
+    CURRENT_ID = id;
+    CURRENT_MODE = 'edit';
+    CURRENT_TRACK_ID = music.id;
+
+    getMusicModalTitle().textContent =
+        'Editar Música';
+
+    getMusicSaveButton().textContent =
+        'Salvar Alteracoes';
+
+    fillMusicForm(music);
 
     document
         .getElementById(
@@ -38,6 +120,8 @@ export function closeMusicModal() {
         .classList.add(
             'hidden'
         );
+
+    resetMusicModalState();
 }
 
 // =========================
@@ -73,10 +157,15 @@ export async function saveMusic() {
 
         const response =
             await fetch(
-                `/api/${CURRENT_TYPE}s/${CURRENT_ID}/music`,
+                CURRENT_MODE === 'edit'
+                    ? `/api/${CURRENT_TYPE}s/${CURRENT_ID}/music/${CURRENT_TRACK_ID}`
+                    : `/api/${CURRENT_TYPE}s/${CURRENT_ID}/music`,
                 {
 
-                    method: 'POST',
+                    method:
+                        CURRENT_MODE === 'edit'
+                            ? 'PUT'
+                            : 'POST',
 
                     headers: {
                         'Content-Type':
@@ -95,7 +184,11 @@ export async function saveMusic() {
 
         console.log(result);
 
-        alert('Música adicionada!');
+        alert(
+            CURRENT_MODE === 'edit'
+                ? 'Música atualizada!'
+                : 'Música adicionada!'
+        );
 
         closeMusicModal();
 

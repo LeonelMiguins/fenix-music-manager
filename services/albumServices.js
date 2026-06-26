@@ -2,12 +2,15 @@ import {
     deleteAlbumTracksByAlbumId,
     deleteAlbumById,
     findAlbumById,
+    findAlbumByMetadata,
+    findAlbumBySourceUrl,
     findAlbumTracksById,
     findAllAlbums,
     insertAlbum,
     insertAlbumTracks,
     insertMusicIntoAlbum,
-    updateAlbumById
+    updateAlbumById,
+    updateAlbumTrackById
 } from '../repositories/albumRepository.js';
 
 // =========================
@@ -74,4 +77,37 @@ export async function updateAlbum(albumId, album) {
     if (album.tracks && album.tracks.length > 0) {
         await insertAlbumTracks(albumId, album.tracks, album.artist);
     }
+}
+
+export async function updateAlbumTrack(trackId, music) {
+    await updateAlbumTrackById(trackId, music);
+}
+
+export async function getAlbumBySourceUrl(sourceUrl) {
+    if (!sourceUrl) {
+        return null;
+    }
+
+    return findAlbumBySourceUrl(sourceUrl);
+}
+
+export async function findAlbumDuplicateCandidate(album) {
+    const existingBySourceUrl =
+        await getAlbumBySourceUrl(
+            album?.sourceUrl || album?.source_url || ''
+        );
+
+    if (existingBySourceUrl) {
+        return existingBySourceUrl;
+    }
+
+    if (!album?.album || !album?.server || !album?.artist) {
+        return null;
+    }
+
+    return findAlbumByMetadata(
+        album.album,
+        album.server,
+        album.artist
+    );
 }

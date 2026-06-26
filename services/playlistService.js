@@ -3,11 +3,14 @@ import {
     deletePlaylistTracksByPlaylistId,
     findAllPlaylists,
     findPlaylistById,
+    findPlaylistByMetadata,
+    findPlaylistBySourceUrl,
     findPlaylistTracksById,
     insertMusicIntoPlaylist,
     insertPlaylist,
     insertPlaylistTracks,
-    updatePlaylistById
+    updatePlaylistById,
+    updatePlaylistTrackById
 } from '../repositories/playlistRepository.js';
 
 export async function getPlaylists() {
@@ -65,4 +68,37 @@ export async function updatePlaylist(playlistId, playlist) {
             playlist.cover
         );
     }
+}
+
+export async function updatePlaylistTrack(trackId, music) {
+    await updatePlaylistTrackById(trackId, music);
+}
+
+export async function getPlaylistBySourceUrl(sourceUrl) {
+    if (!sourceUrl) {
+        return null;
+    }
+
+    return findPlaylistBySourceUrl(sourceUrl);
+}
+
+export async function findPlaylistDuplicateCandidate(playlist) {
+    const existingBySourceUrl =
+        await getPlaylistBySourceUrl(
+            playlist?.sourceUrl || playlist?.source_url || ''
+        );
+
+    if (existingBySourceUrl) {
+        return existingBySourceUrl;
+    }
+
+    if (!playlist?.album || !playlist?.server || !playlist?.artist) {
+        return null;
+    }
+
+    return findPlaylistByMetadata(
+        playlist.album,
+        playlist.server,
+        playlist.artist
+    );
 }

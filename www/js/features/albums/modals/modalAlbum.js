@@ -10,6 +10,12 @@ function getSaveAlbumButton() {
     return document.getElementById('modal-save-album-btn');
 }
 
+function getDuplicateWarningElement() {
+    return document.getElementById(
+        'modal-duplicate-warning'
+    );
+}
+
 function getAlbumModalMode() {
     return getAlbumModal().dataset.mode || 'create';
 }
@@ -320,6 +326,32 @@ function getTracksFromModal() {
     return tracks;
 }
 
+export function clearDuplicateWarning() {
+    const warning =
+        getDuplicateWarningElement();
+
+    if (!warning) {
+        return;
+    }
+
+    warning.textContent = '';
+    warning.classList.add('hidden');
+}
+
+export function showDuplicateWarning(existingItem) {
+    const warning =
+        getDuplicateWarningElement();
+
+    if (!warning) {
+        return;
+    }
+
+    warning.textContent =
+        `Aviso: ja existe um item parecido no banco${existingItem?.titulo ? ` (${existingItem.titulo})` : ''}. Voce ainda pode salvar outra copia se quiser.`;
+
+    warning.classList.remove('hidden');
+}
+
 // =========================
 // ABRIR MODAL
 // =========================
@@ -338,10 +370,12 @@ export function closeAlbumModal() {
         .classList.add('hidden');
 
     setAlbumModalMode('create');
+    clearDuplicateWarning();
 }
 
 export function prepareNewAlbumModal() {
     setAlbumModalMode('create');
+    clearDuplicateWarning();
     fillAlbumModal({
         type: 'album',
         album: '',
@@ -352,12 +386,14 @@ export function prepareNewAlbumModal() {
         cover: '',
         server: '',
         author: '',
+        sourceUrl: '',
         tracks: []
     });
 }
 
 export function openAlbumEditModal(album) {
     setAlbumModalMode('edit', album.id || '');
+    clearDuplicateWarning();
     fillAlbumModal({
         ...album,
         type: 'album',
@@ -368,6 +404,7 @@ export function openAlbumEditModal(album) {
         genrer: album.genrer || album.genero || '',
         server: album.server || album.servidor || '',
         author: album.author || album.autor || '',
+        sourceUrl: album.sourceUrl || album.source_url || '',
         tracks: (album.tracks || []).map(track => ({
             title: track.title || track.titulo || '',
             artist: track.artist || track.artista || '',
@@ -379,6 +416,7 @@ export function openAlbumEditModal(album) {
 
 export function openPlaylistEditModal(playlist) {
     setAlbumModalMode('edit', playlist.id || '');
+    clearDuplicateWarning();
     fillAlbumModal({
         ...playlist,
         type: 'playlist',
@@ -389,6 +427,7 @@ export function openPlaylistEditModal(playlist) {
         genrer: playlist.genrer || playlist.genero || '',
         server: playlist.server || playlist.servidor || '',
         author: playlist.author || playlist.autor || '',
+        sourceUrl: playlist.sourceUrl || playlist.source_url || '',
         tracks: (playlist.tracks || []).map(track => ({
             title: track.title || track.titulo || '',
             artist: track.artist || track.artista || '',
@@ -447,6 +486,10 @@ export async function saveAlbum() {
             document.getElementById(
                 'modal-album-autor'
             ).value,
+        sourceUrl:
+            document.getElementById(
+                'modal-album-source-url'
+            ).value,
         tracks:
             getTracksFromModal()
     };
@@ -479,6 +522,12 @@ export async function saveAlbum() {
 
         const result =
             await response.json();
+
+        if (!response.ok) {
+            throw new Error(
+                result.error || 'erro ao salvar item'
+            );
+        }
 
         console.log(result);
 
@@ -555,6 +604,14 @@ export function fillAlbumModal(album) {
     document
         .getElementById('modal-album-ano')
         .value = album.year || album.ano || '';
+
+    document
+        .getElementById('modal-album-source-url')
+        .value =
+        album.sourceUrl ||
+        album.source_url ||
+        album.link_site ||
+        '';
 
     const genreSearchInput =
         document.getElementById('modal-genre-search');
@@ -689,6 +746,10 @@ export async function saveAlbumAsJson() {
         author:
             document.getElementById(
                 'modal-album-autor'
+            ).value,
+        sourceUrl:
+            document.getElementById(
+                'modal-album-source-url'
             ).value,
         type: albumType,
         tracks:

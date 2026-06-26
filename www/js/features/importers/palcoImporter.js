@@ -1,7 +1,9 @@
 import {
 
     openAlbumModal,
-    fillAlbumModal
+    fillAlbumModal,
+    showDuplicateWarning,
+    clearDuplicateWarning
 
 } from '../albums/modals/modalAlbum.js';
 
@@ -81,12 +83,19 @@ export async function searchPalcoAlbum() {
 
         return;
     }
-
     // =========================
     // SUCCESS
     // =========================
 
     closePalcoModal();
+
+    if (data.duplicate) {
+        showDuplicateWarning(
+            data.existing
+        );
+    } else {
+        clearDuplicateWarning();
+    }
 
     openAlbumModal();
 

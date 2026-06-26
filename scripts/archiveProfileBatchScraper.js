@@ -96,6 +96,23 @@ function findExistingAlbumByTitleAndAuthor(title, author) {
     });
 }
 
+function findExistingAlbumBySourceUrl(sourceUrl) {
+    return new Promise((resolve, reject) => {
+        db.get(`
+            SELECT
+                albums.id,
+                albums.titulo,
+                albums.source_url
+            FROM albums
+            WHERE source_url = ?
+            LIMIT 1
+        `, [sourceUrl], (err, row) => {
+            if (err) reject(err);
+            else resolve(row || null);
+        });
+    });
+}
+
 async function collectAlbumLinksWithPlaywright(profileUrl, limit, showBrowser) {
     const { chromium } =
         await import('playwright');
@@ -321,6 +338,9 @@ async function importAlbum(detailUrl, index, total, delayMs, dryRun) {
     album.link_site = detailUrl;
 
     const existingAlbum =
+        await findExistingAlbumBySourceUrl(
+            detailUrl
+        ) ||
         await findExistingAlbumByTitleAndAuthor(
             album.album,
             album.author

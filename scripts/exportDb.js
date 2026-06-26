@@ -214,7 +214,9 @@ export async function exportDB(options = {}) {
 
             if (exportFields.sourceUrl) {
                 formattedAlbum.sourceUrl =
-                    origin?.link_site || '';
+                    album.source_url ||
+                    origin?.link_site ||
+                    '';
             }
 
             if (exportFields.origin) {
@@ -289,6 +291,11 @@ export async function exportDB(options = {}) {
             if (exportFields.savedAt) {
                 formattedPlaylist.savedAt =
                     savedAt;
+            }
+
+            if (exportFields.sourceUrl) {
+                formattedPlaylist.sourceUrl =
+                    playlist.source_url || '';
             }
 
             return formattedPlaylist;

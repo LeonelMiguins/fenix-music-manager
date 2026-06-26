@@ -6,9 +6,12 @@ import {
     getAlbumById,
     getAlbums,
     deleteAlbum,
-    updateAlbum
+    updateAlbum,
+    updateAlbumTrack
 } from '../services/albumServices.js';
-import { createPlaylist } from '../services/playlistService.js';
+import {
+    createPlaylist
+} from '../services/playlistService.js';
 
 const router = express.Router();
 
@@ -113,6 +116,19 @@ router.put('/:id', async (req, res) => {
 router.post('/:id/music', async (req, res) => {
     try {
         await addMusicToAlbum(req.params.id, req.body);
+
+        res.json({
+            success: true
+        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+router.put('/:id/music/:trackId', async (req, res) => {
+    try {
+        await updateAlbumTrack(req.params.trackId, req.body);
 
         res.json({
             success: true

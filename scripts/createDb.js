@@ -64,7 +64,8 @@ function initDb() {
                     descricao TEXT,
                     cover TEXT,
                     servidor TEXT,
-                    autor TEXT
+                    autor TEXT,
+                    source_url TEXT
                 )
             `);
 
@@ -102,7 +103,8 @@ function initDb() {
                     descricao TEXT,
                     cover TEXT,
                     servidor TEXT,
-                    autor TEXT
+                    autor TEXT,
+                    source_url TEXT
                 )
             `);
 

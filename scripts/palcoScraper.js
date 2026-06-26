@@ -304,6 +304,8 @@ export async function scrapePalco(url) {
 
             cover,
 
+            sourceUrl: url,
+
             tracks
         };
 

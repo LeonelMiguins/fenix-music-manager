@@ -22,9 +22,10 @@ export function insertPlaylist(playlist) {
             genero,
             cover,
             servidor,
-            autor
+            autor,
+            source_url
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     `, [
         playlist.artist,
         playlist.related,
@@ -33,7 +34,8 @@ export function insertPlaylist(playlist) {
         playlist.genrer,
         playlist.cover,
         playlist.server,
-        playlist.author
+        playlist.author,
+        playlist.sourceUrl || playlist.source_url || ''
     ]);
 }
 
@@ -48,7 +50,8 @@ export function updatePlaylistById(playlistId, playlist) {
             genero = ?,
             cover = ?,
             servidor = ?,
-            autor = ?
+            autor = ?,
+            source_url = ?
         WHERE id = ?
     `, [
         playlist.artist,
@@ -59,6 +62,7 @@ export function updatePlaylistById(playlistId, playlist) {
         playlist.cover,
         playlist.server,
         playlist.author,
+        playlist.sourceUrl || playlist.source_url || '',
         playlistId
     ]);
 }
@@ -117,12 +121,52 @@ export function insertMusicIntoPlaylist(playlistId, music) {
     ]);
 }
 
+export function updatePlaylistTrackById(trackId, music) {
+    return run(`
+        UPDATE playlists_musicas
+        SET
+            titulo = ?,
+            artista = ?,
+            url = ?,
+            cover = ?
+        WHERE id = ?
+    `, [
+        music.title,
+        music.artist,
+        music.url,
+        music.cover,
+        trackId
+    ]);
+}
+
 export function findPlaylistById(id) {
     return get(`
         SELECT *
         FROM playlists
         WHERE id = ?
     `, [id]);
+}
+
+export function findPlaylistBySourceUrl(sourceUrl) {
+    return get(`
+        SELECT *
+        FROM playlists
+        WHERE source_url = ?
+        LIMIT 1
+    `, [sourceUrl]);
+}
+
+export function findPlaylistByMetadata(title, server, artist) {
+    return get(`
+        SELECT *
+        FROM playlists
+        WHERE
+            titulo = ?
+            AND servidor = ?
+            AND artista_nome = ?
+        ORDER BY id DESC
+        LIMIT 1
+    `, [title, server, artist]);
 }
 
 export function findPlaylistTracksById(playlistId) {

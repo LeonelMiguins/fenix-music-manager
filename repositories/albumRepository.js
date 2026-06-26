@@ -21,9 +21,10 @@ export function insertAlbum(album) {
             genero,
             cover,
             servidor,
-            autor
+            autor,
+            source_url
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     `, [
         album.artist,
         album.album,
@@ -31,7 +32,8 @@ export function insertAlbum(album) {
         album.genrer,
         album.cover,
         album.server,
-        album.author
+        album.author,
+        album.sourceUrl || album.source_url || ''
     ]);
 }
 
@@ -45,7 +47,8 @@ export function updateAlbumById(albumId, album) {
             genero = ?,
             cover = ?,
             servidor = ?,
-            autor = ?
+            autor = ?,
+            source_url = ?
         WHERE id = ?
     `, [
         album.artist,
@@ -55,6 +58,7 @@ export function updateAlbumById(albumId, album) {
         album.cover,
         album.server,
         album.author,
+        album.sourceUrl || album.source_url || '',
         albumId
     ]);
 }
@@ -108,6 +112,28 @@ export function deleteAlbumById(id) {
     `, [id]);
 }
 
+export function findAlbumBySourceUrl(sourceUrl) {
+    return get(`
+        SELECT *
+        FROM albums
+        WHERE source_url = ?
+        LIMIT 1
+    `, [sourceUrl]);
+}
+
+export function findAlbumByMetadata(title, server, artist) {
+    return get(`
+        SELECT *
+        FROM albums
+        WHERE
+            titulo = ?
+            AND servidor = ?
+            AND artista_nome = ?
+        ORDER BY id DESC
+        LIMIT 1
+    `, [title, server, artist]);
+}
+
 export function insertMusicIntoAlbum(albumId, music) {
     return run(`
         INSERT INTO musicas (
@@ -122,6 +148,22 @@ export function insertMusicIntoAlbum(albumId, music) {
         music.title,
         music.artist,
         music.url
+    ]);
+}
+
+export function updateAlbumTrackById(trackId, music) {
+    return run(`
+        UPDATE musicas
+        SET
+            titulo = ?,
+            artista = ?,
+            url = ?
+        WHERE id = ?
+    `, [
+        music.title,
+        music.artist,
+        music.url,
+        trackId
     ]);
 }
 

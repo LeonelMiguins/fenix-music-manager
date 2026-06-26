@@ -110,6 +110,8 @@ export async function scrapeArchive(url) {
 
         const albumData = {
 
+            type: 'album',
+
             album: albumName,
 
             artist: "Desconhecido",
@@ -123,6 +125,8 @@ export async function scrapeArchive(url) {
             cover: cover?.startsWith('http')
                 ? cover
                 : 'https://archive.org' + cover,
+
+            sourceUrl: url,
 
             tracks
         };

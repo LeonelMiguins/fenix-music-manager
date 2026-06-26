@@ -3,6 +3,10 @@ import {
 }
 from '../../library/modals/addMusicModal.js';
 import {
+    openEditMusicModal
+}
+from '../../library/modals/addMusicModal.js';
+import {
     openAlbumEditModal
 }
 from '../modals/modalAlbum.js';
@@ -44,15 +48,26 @@ export async function renderAlbumPage(albumId) {
             <div
                 class="album-track"
                 data-url="${track.url}"
+                data-track-id="${track.id || ''}"
             >
 
-                <span class="track-number">
-                    ${index + 1}
-                </span>
+                <div class="track-main-content">
+                    <span class="track-number">
+                        ${index + 1}
+                    </span>
 
-                <span class="track-title">
-                    ${track.titulo || track.title || 'Faixa sem titulo'} - ${track.artista || album.artista_nome}
-                </span>
+                    <span class="track-title">
+                        ${track.titulo || track.title || 'Faixa sem titulo'} - ${track.artista || album.artista_nome}
+                    </span>
+                </div>
+
+                <button
+                    type="button"
+                    class="track-edit-btn"
+                    data-edit-track="${track.id || ''}"
+                >
+                    Editar
+                </button>
 
             </div>
 
@@ -207,6 +222,41 @@ export async function renderAlbumPage(albumId) {
         );
 
     });
+
+    document
+        .querySelectorAll('[data-edit-track]')
+        .forEach(button => {
+            button.addEventListener(
+                'click',
+                event => {
+                    event.stopPropagation();
+
+                    const trackId =
+                        Number(
+                            button.dataset.editTrack
+                        );
+
+                    const track =
+                        album.tracks.find(item =>
+                            Number(item.id) === trackId
+                        );
+
+                    if (!track) {
+                        return;
+                    }
+
+                    openEditMusicModal(
+                        'album',
+                        album.id,
+                        {
+                            ...track,
+                            artist:
+                                track.artista || track.artist || album.artista_nome || ''
+                        }
+                    );
+                }
+            );
+        });
 
 
 // =========================

@@ -140,6 +140,27 @@
     margin-bottom: 22px;
 }
 
+.duplicate-warning {
+
+    margin-bottom: 18px;
+
+    padding: 14px 16px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(226, 161, 81, 0.32);
+
+    background: rgba(226, 161, 81, 0.12);
+
+    color: #ffe2b0;
+
+    line-height: 1.5;
+}
+
+.duplicate-warning.hidden {
+    display: none;
+}
+
 /* =========================
    FORM
 ========================= */

@@ -10,9 +10,19 @@ import backupRoutes from './routes/backup.js';
 import searchRoutes from './routes/search.js';
 import dashboardRoutes from './routes/dashboard.js';
 import { appConfig, paths } from './config/index.js';
+import { findAlbumDuplicateCandidate } from './services/albumServices.js';
+import { findPlaylistDuplicateCandidate } from './services/playlistService.js';
 
 
 const app = express();
+
+async function findDuplicateItem(item) {
+    if (item.type === 'playlist') {
+        return findPlaylistDuplicateCandidate(item);
+    }
+
+    return findAlbumDuplicateCandidate(item);
+}
 
 // MIDDLEWARES
 app.use(express.json());
@@ -62,13 +72,22 @@ app.post(
                 });
             }
 
+            const existingItem =
+                await findDuplicateItem(album);
+
             // sucesso
 
             res.json({
 
                 success: true,
-
-                album
+                album,
+                duplicate: Boolean(existingItem),
+                existing: existingItem
+                    ? {
+                        id: existingItem.id,
+                        titulo: existingItem.titulo
+                    }
+                    : null
             });
 
         } catch (err) {
@@ -197,11 +216,20 @@ app.post(
                 });
             }
 
+            const existingItem =
+                await findDuplicateItem(album);
+
             res.json({
 
                 success: true,
-
-                album
+                album,
+                duplicate: Boolean(existingItem),
+                existing: existingItem
+                    ? {
+                        id: existingItem.id,
+                        titulo: existingItem.titulo
+                    }
+                    : null
             });
 
         } catch (err) {
