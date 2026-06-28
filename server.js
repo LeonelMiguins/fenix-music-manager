@@ -1,4 +1,6 @@
 import express from 'express';
+import fs from 'fs';
+import os from 'os';
 import db from './routes/database.js';
 import exportRoutes from './routes/export.js';
 import albumRoutes from './routes/albums.js';
@@ -13,8 +15,69 @@ import { appConfig, paths } from './config/index.js';
 import { findAlbumDuplicateCandidate } from './services/albumServices.js';
 import { findPlaylistDuplicateCandidate } from './services/playlistService.js';
 
+const packageJson =
+    JSON.parse(
+        fs.readFileSync(
+            new URL('./package.json', import.meta.url),
+            'utf-8'
+        )
+    );
 
 const app = express();
+
+function getNetworkUrls(port) {
+    const interfaces =
+        os.networkInterfaces();
+
+    const urls = [];
+
+    Object.values(interfaces).forEach(addresses => {
+        (addresses || []).forEach(address => {
+            if (
+                address.family === 'IPv4' &&
+                !address.internal
+            ) {
+                urls.push(
+                    `http://${address.address}:${port}`
+                );
+            }
+        });
+    });
+
+    return Array.from(new Set(urls));
+}
+
+function printServerBanner(port) {
+    const appName =
+        packageJson.name || 'app';
+
+    const appVersion =
+        packageJson.version || '0.0.0';
+
+    const localUrl =
+        `http://localhost:${port}`;
+
+    const networkUrls =
+        getNetworkUrls(port);
+
+    console.log('');
+    console.log('========================================');
+    console.log(`Aplicacao: ${appName}`);
+    console.log(`Versao: ${appVersion}`);
+    console.log(`Local: ${localUrl}`);
+
+    if (networkUrls.length > 0) {
+        console.log('Rede:');
+        networkUrls.forEach(url => {
+            console.log(`- ${url}`);
+        });
+    } else {
+        console.log('Rede: nenhum IP local encontrado');
+    }
+
+    console.log('========================================');
+    console.log('');
+}
 
 async function findDuplicateItem(item) {
     if (item.type === 'playlist') {
@@ -265,10 +328,6 @@ app.get('/', (req, res) => {
 // =========================
 
 app.listen(appConfig.port, () => {
-
-    console.log(`
-🚀 servidor:
-http://localhost:${appConfig.port}
-    `);
+    printServerBanner(appConfig.port);
 
 });
