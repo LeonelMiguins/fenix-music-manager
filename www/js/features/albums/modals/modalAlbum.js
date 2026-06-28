@@ -16,6 +16,25 @@ function getDuplicateWarningElement() {
     );
 }
 
+function getDuplicateWarningCopyElement() {
+    return document.querySelector(
+        '#modal-duplicate-warning .duplicate-warning-copy'
+    );
+}
+
+function getDuplicateChoiceButtons() {
+    return {
+        overwrite:
+            document.getElementById(
+                'duplicate-choice-overwrite'
+            ),
+        create:
+            document.getElementById(
+                'duplicate-choice-create'
+            )
+    };
+}
+
 function getAlbumModalMode() {
     return getAlbumModal().dataset.mode || 'create';
 }
@@ -35,6 +54,52 @@ function setAlbumModalMode(mode = 'create', albumId = '') {
         mode === 'edit'
             ? 'Salvar Alteracoes'
             : 'Salvar No Banco De Dados';
+}
+
+function setDuplicateResolutionMode(mode = 'create') {
+    const modal =
+        getAlbumModal();
+
+    modal.dataset.duplicateResolution =
+        mode;
+
+    const buttons =
+        getDuplicateChoiceButtons();
+
+    buttons.overwrite?.classList.toggle(
+        'active',
+        mode === 'overwrite'
+    );
+
+    buttons.create?.classList.toggle(
+        'active',
+        mode !== 'overwrite'
+    );
+}
+
+function getDuplicateResolutionMode() {
+    return (
+        getAlbumModal().dataset.duplicateResolution ||
+        'create'
+    );
+}
+
+function bindDuplicateChoiceButtons(existingItem) {
+    const buttons =
+        getDuplicateChoiceButtons();
+
+    buttons.overwrite.onclick = () => {
+        setDuplicateResolutionMode('overwrite');
+        setAlbumModalMode(
+            'edit',
+            existingItem?.id || ''
+        );
+    };
+
+    buttons.create.onclick = () => {
+        setDuplicateResolutionMode('create');
+        setAlbumModalMode('create');
+    };
 }
 
 function normalizeGenreText(value = '') {
@@ -329,26 +394,37 @@ function getTracksFromModal() {
 export function clearDuplicateWarning() {
     const warning =
         getDuplicateWarningElement();
+    const warningCopy =
+        getDuplicateWarningCopyElement();
 
     if (!warning) {
         return;
     }
 
-    warning.textContent = '';
+    if (warningCopy) {
+        warningCopy.textContent = '';
+    }
+
+    setDuplicateResolutionMode('create');
     warning.classList.add('hidden');
 }
 
 export function showDuplicateWarning(existingItem) {
     const warning =
         getDuplicateWarningElement();
+    const warningCopy =
+        getDuplicateWarningCopyElement();
 
-    if (!warning) {
+    if (!warning || !warningCopy) {
         return;
     }
 
-    warning.textContent =
-        `Aviso: ja existe um item parecido no banco${existingItem?.titulo ? ` (${existingItem.titulo})` : ''}. Voce ainda pode salvar outra copia se quiser.`;
+    warningCopy.textContent =
+        `Ja existe um item parecido no banco${existingItem?.titulo ? ` (${existingItem.titulo})` : ''}. Escolha se voce quer sobrescrever esse cadastro com as novas informacoes e musicas, ou criar um novo item separado.`;
 
+    bindDuplicateChoiceButtons(existingItem);
+    setDuplicateResolutionMode('create');
+    setAlbumModalMode('create');
     warning.classList.remove('hidden');
 }
 
@@ -444,7 +520,9 @@ export function openPlaylistEditModal(playlist) {
 
 export async function saveAlbum() {
     const modalMode =
-        getAlbumModalMode();
+        getDuplicateResolutionMode() === 'overwrite'
+            ? 'edit'
+            : getAlbumModalMode();
 
     const editingAlbumId =
         getEditingAlbumId();

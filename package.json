@@ -8,6 +8,7 @@
     "start": "node server.js",
     "db:create": "node scripts/createDb.js",
     "db:export": "node scripts/exportDbCli.js",
+    "archive:backfill-source-urls": "node scripts/backfillArchiveSourceUrls.js",
     "archive:profile-import": "node scripts/archiveProfileBatchScraper.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

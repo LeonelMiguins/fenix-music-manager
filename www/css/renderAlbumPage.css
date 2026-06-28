@@ -57,6 +57,24 @@
     font-size: 15px;
 }
 
+.album-source-line {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.album-source-link {
+    color: #9fb2ff;
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.2s ease;
+}
+
+.album-source-link:hover {
+    color: #c7d2ff;
+    text-decoration: underline;
+}
+
 .album-actions {
     display: flex;
     gap: 14px;

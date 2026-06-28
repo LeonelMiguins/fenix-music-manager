@@ -144,6 +144,12 @@
 
     margin-bottom: 18px;
 
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
     padding: 14px 16px;
 
     border-radius: 14px;
@@ -155,6 +161,44 @@
     color: #ffe2b0;
 
     line-height: 1.5;
+}
+
+.duplicate-warning-copy {
+    font-size: 14px;
+}
+
+.duplicate-warning-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.duplicate-choice-btn {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(17, 21, 29, 0.75);
+    color: #f3f5fb;
+    border-radius: 12px;
+    padding: 12px 14px;
+    cursor: pointer;
+    font-weight: 700;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.duplicate-choice-btn:hover {
+    border-color: rgba(226, 161, 81, 0.32);
+    transform: translateY(-1px);
+}
+
+.duplicate-choice-btn.active {
+    background: linear-gradient(
+        135deg,
+        rgba(108, 140, 255, 0.92),
+        rgba(124, 58, 237, 0.92)
+    );
+    border-color: transparent;
 }
 
 .duplicate-warning.hidden {
@@ -318,9 +362,9 @@
 
     flex-direction: column;
 
-    gap: 12px;
+    gap: 14px;
 
-    padding: 14px;
+    padding: 16px;
 
     border-radius: 16px;
 
@@ -337,7 +381,12 @@
 
     gap: 10px;
 
-    min-height: 18px;
+    min-height: 52px;
+    max-height: 120px;
+    overflow-y: auto;
+    padding: 4px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .genre-tag {
@@ -391,17 +440,20 @@
     color: white;
 
     outline: none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .genre-options-list {
 
-    display: flex;
+    display: grid;
 
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     gap: 10px;
 
-    max-height: 180px;
+    max-height: 220px;
 
     overflow-y: auto;
 }
@@ -416,11 +468,12 @@
 
     padding: 10px 14px;
 
-    border-radius: 999px;
+    border-radius: 12px;
 
     cursor: pointer;
 
     transition: 0.2s;
+    text-align: left;
 }
 
 .genre-option-btn:hover {
@@ -940,8 +993,16 @@
         grid-template-columns: 1fr;
     }
 
+    .duplicate-warning-actions {
+        grid-template-columns: 1fr;
+    }
+
     .jango-actions-row {
 
+        grid-template-columns: 1fr;
+    }
+
+    .genre-options-list {
         grid-template-columns: 1fr;
     }
 }

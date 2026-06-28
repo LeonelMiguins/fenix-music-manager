@@ -12,6 +12,43 @@ import {
 from '../modals/modalAlbum.js';
 import { navigateToAlbums } from '../../../navigation.js';
 
+function inferAlbumSourceUrl(album) {
+    if (album.source_url) {
+        return album.source_url;
+    }
+
+    if (album.sourceUrl) {
+        return album.sourceUrl;
+    }
+
+    if (album.servidor !== 'internet-archive') {
+        return '';
+    }
+
+    const possibleSources = [
+        album.cover,
+        ...(album.tracks || []).map(track => track.url)
+    ].filter(Boolean);
+
+    for (const source of possibleSources) {
+        const match =
+            String(source).match(
+                /archive\.org\/(?:download|services\/img|[^/]+\/\d+\/items)\/([^/?#]+)|archive\.org\/([^/?#]+)\/([^/?#]+)/
+            );
+
+        const itemId =
+            match?.[1] ||
+            match?.[3] ||
+            '';
+
+        if (itemId) {
+            return `https://archive.org/details/${itemId}`;
+        }
+    }
+
+    return '';
+}
+
 export async function renderAlbumPage(albumId) {
 
     // =========================
@@ -37,6 +74,9 @@ export async function renderAlbumPage(albumId) {
 
     const album =
         await response.json();
+
+    const sourceUrl =
+        inferAlbumSourceUrl(album);
 
     // =========================
     // TRACKS HTML
@@ -72,6 +112,28 @@ export async function renderAlbumPage(albumId) {
             </div>
 
         `).join('');
+
+    const sourceLinkHtml =
+        sourceUrl
+            ? `
+                <p class="album-source-line">
+                    Origem:
+                    <a
+                        class="album-source-link"
+                        href="${sourceUrl}"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        ${sourceUrl}
+                    </a>
+                </p>
+            `
+            : `
+                <p class="album-source-line">
+                    Origem:
+                    ---
+                </p>
+            `;
 
     // =========================
     // PAGE
@@ -124,6 +186,8 @@ export async function renderAlbumPage(albumId) {
                         Servidor:
                         ${album.servidor || '---'}
                     </p>
+
+                    ${sourceLinkHtml}
 
                 </div>
 
